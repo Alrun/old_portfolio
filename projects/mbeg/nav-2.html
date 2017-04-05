@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<style>
+		html {
+			font-family: Arial;
+			font-size: 16px;
+		}
+		body {
+			margin: 0;
+			background: #444;
+		}
+		ul {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+
+		.navbar__container {
+			position: relative;
+			margin: 0;
+		}
+		.nav-main__item {
+			color: #ccc;
+		}
+		.nav-main__item:hover {
+			color: #fff;
+		}
+		.nav-main__item_active,
+		.nav-main__item_active:hover {
+			color: #47b900;
+		}
+		.nav-main__link,
+		.nav-second__link {
+			white-space: nowrap;
+			text-decoration: none;
+			color: inherit;
+			text-align: left;
+		}
+		.nav-main__link {
+			font-size: .9rem;
+			text-transform: uppercase;
+			transition: color .2s;
+		}
+		.nav-second__item {
+			color: #bbb;
+		}
+		.nav-second__item:hover {
+			color: #fff;
+		}
+		.nav-second__link {
+			display: block;
+			border-bottom: 2px solid #222;
+			font-size: 1rem;
+			transition: .25s;
+		}
+		.nav-second__item:hover > .nav-third_dropdown {
+			opacity: 1;
+			transition: .25s;
+		}
+		.nav-second__link:hover {
+			background: #47b900;
+		}
+
+		@media (min-width: 1000px) {
+			.navbar__input {
+				display: none;
+			}
+			.navbar__wrap {
+				max-width: 900px;
+				margin: 0 auto;
+				margin-top: 20px;
+			}
+			.navbar__container {
+				text-align: right;
+			}
+			.nav-main__item:not(:first-child) {
+				margin-left: 1.15rem;
+			}
+			.nav-main {
+				display: inline-block;
+			}
+			.nav-main__item {
+				position: relative;
+				display: inline-block;
+			}
+			.nav-main__item:hover > .nav-second_dropdown {
+				top: 1rem;
+				opacity: 1;
+				transition: opacity .3s;
+			}
+			.nav-second__item {
+				position: relative;
+			}
+			.nav-second__link {
+				padding: .65rem 1.7rem;
+			}
+			.nav-second__link {
+				background-color: #000;
+			}
+			.nav-second_dropdown {
+				top: -9999px;
+				position: absolute;
+				overflow: hidden;
+				opacity: 0;
+			}
+			.nav-second_dropdown {
+				padding-top: 1.2rem;
+			}
+			.nav-second__item:first-child::before {
+				content: '';
+				position: absolute;
+				top: -1.3rem;
+				left: 0.9rem;
+				border-width: 0.25rem .65rem 1rem;
+				border-color: transparent transparent black;
+				border-style: solid;
+			}
+			.nav-second__item:first-child::after {
+				content: '';
+				position: absolute;
+				top: -5px;
+				left: 0;
+				width: 100%;
+				height: 5px;
+				background-color: black;
+			}
+			.icon-dropdown {
+				padding-right: 1rem;
+			}
+			.icon-dropdown::before {
+				content: '';
+				position: absolute;
+				border-style: solid;
+				border-color: #888 transparent transparent;
+				border-width: .35rem .35rem 0;
+				right: 0;
+				top: 50%;
+				margin-top: -.2rem;
+			}
+			.page__title {
+				display: none;
+			}
+		}
+
+		@media (max-width: 999px) {
+			.navbar {
+				height: 50px;
+			}
+			.navbar__wrap {
+				position: fixed;
+				background-color: #000;
+				border-bottom: 5px solid #333;
+				width: 100%;
+				height: 45px;
+			}
+			.nav-main {
+				position: fixed;
+				bottom: 0;
+				top: 50px;
+				left: -100%;
+				overflow-y: auto;
+				overflow-x: hidden;
+				transition: left 1s;
+			}
+			.navbar__input:checked ~ .navbar__container .nav-main {
+				left: 0;
+			}
+			.navbar__input {
+				display: none;
+			}
+			.navbar__toggler {
+				display: block;
+				width: 30px;
+				height: 30px;
+				background-color: rgba(0, 0, 0, .5);
+				position: relative;
+				top: 8px;
+				left: 15px;
+			}
+			.navbar__input:checked ~ .navbar__container .navbar__toggler {
+				position: fixed;
+				height: 100%;
+				width: 100%;
+				top: 0;
+				left: 0;
+			}
+			.navbar__icon {
+				display: block;
+				width: 30px;
+				height: 2px;
+				background-color: #fff;
+				position: relative;
+				top: 22px;
+				left: 15px; 
+			}
+			.navbar__icon::before,
+			.navbar__icon::after {
+				content: '';
+				position: absolute;
+				display: block;
+				width: 30px;
+				height: 2px;
+				background-color: #fff;
+				transition: .35s;
+			}
+			.navbar__icon::before {
+				top: 8px;
+				transition: .35s;
+			}
+			.navbar__icon::after {
+				bottom: 8px;
+				opacity: 1;
+				transition: opacity .2s;
+			}
+			.navbar__input:checked ~ .navbar__container .navbar__icon {
+				transform: rotate(-45deg);
+			}
+			.navbar__input:checked ~ .navbar__container .navbar__icon::before {
+				transform: rotate(-90deg);
+				top: 0;
+			}
+			.navbar__input:checked ~ .navbar__container .navbar__icon::after {
+				opacity: 0;
+			}
+			.page__title {
+				position: absolute;
+				top: 12px;
+				left: 70px;
+				color: #fff;
+				margin: 0;
+			}
+			.nav-main__item_active:hover {
+				color: #fff;
+			}
+			.nav-main__link,
+			.nav-second__link {
+				display: block;
+				padding: .65rem 1rem;
+				border-bottom: 2px solid #222;
+				font-size: 1rem;
+				transition: .25s;
+			}
+			.nav-main__link {
+				background-color: #000;
+			}
+			.nav-main__link:hover {
+				background-color: #47b900;
+			}
+			.nav-second__link {
+				padding-left: 1.6rem;
+				background-color: #111;
+			}
+		}
+
+	</style>
+	<nav class="header-nav">
+		<div class="navbar">
+
+			<div class="navbar__wrap">
+				<input class="navbar__input" id="nav-mini" type="checkbox">
+				<div class="navbar__container">
+
+					<div class="navbar__mobile">
+						<span class="navbar__icon"></span>
+						<label class="navbar__toggler" for="nav-mini">
+						</label>
+						<h3 class="page__title">Главная</h3>
+					</div>
+
+					<ul class="nav-main">
+						<li class="nav-main__item nav-main__item_active"><a class="nav-main__link" href="#Главная">Главная</a></li>
+
+						<li class="nav-main__item">
+							<a class="nav-main__link icon-dropdown" href="#О нас">О нас</a>
+							<ul class="nav-second nav-second_dropdown">
+								<li class="nav-second__item"><a class="nav-second__link" href="#О компании">О компании</a></li>
+								<li class="nav-second__item"><a class="nav-second__link" href="#Реквизиты">Реквизиты</a></li>
+								<li class="nav-second__item"><a class="nav-second__link" href="#Партнеры">Партнеры</a></li>
+								<li class="nav-second__item"><a class="nav-second__link" href="#Отзывы">Отзывы</a></li>
+								<li class="nav-second__item"><a class="nav-second__link" href="#Вакансии">Вакансии</a></li>
+							</ul>
+						</li>
+
+						<li class="nav-main__item"><a class="nav-main__link icon-dropdown" href="#Портфолио">Портфолио</a>
+							<ul class="nav-second nav-second_dropdown">
+								<li class="nav-second__item"><a class="nav-second__link" href="#Меню 1">Проекты</a></li>
+								<li class="nav-second__item"><a class="nav-second__link" href="#Меню 2">Монтаж</a></li>
+							</ul>
+						</li>
+
+						<li class="nav-main__item"><a class="nav-main__link icon-dropdown" href="#Портфолио">Монтаж</a>
+							<ul class="nav-second nav-second_dropdown">
+								<li class="nav-second__item"><a class="nav-second__link" href="#Меню 1">Систем электроснабжения</a></li>
+								<li class="nav-second__item"><a class="nav-second__link" href="#Меню 2">Систем водоснабжения и канализации</a></li>
+								<li class="nav-second__item"><a class="nav-second__link" href="#Меню 3">Систем отопления и вентиляции</a></li>
+								<li class="nav-second__item"><a class="nav-second__link" href="#Меню 3">Слаботочных систем</a></li>
+							</ul>
+						</li>
+
+						<li class="nav-main__item"><a class="nav-main__link icon-dropdown" href="#Портфолио">Проектирование</a>
+							<ul class="nav-second nav-second_dropdown">
+								<li class="nav-second__item"><a class="nav-second__link" href="#Меню 1">Общественных зданий</a></li>
+								<li class="nav-second__item"><a class="nav-second__link" href="#Меню 2">Жилых зданий</a></li>
+								<li class="nav-second__item"><a class="nav-second__link" href="#Меню 3">Производственных зданий</a></li>
+								<li class="nav-second__item"><a class="nav-second__link" href="#Меню 3">Инженерных зданий</a></li>
+							</ul>
+						</li>
+
+						<li class="nav-main__item"><a class="nav-main__link" href="#Контакты">Контакты</a></li>
+
+					</ul>
+				</div>
+			</div>
+
+		</div>
+	</nav>
+	<div class="wrap" style="color: #ccc">
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum temporibus, veniam. Doloribus perferendis, iste corporis consequuntur optio voluptas quam odio facilis ratione reprehenderit dolores aperiam ipsum quos quidem porro autem.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum temporibus, veniam. Doloribus perferendis, iste corporis consequuntur optio voluptas quam odio facilis ratione reprehenderit dolores aperiam ipsum quos quidem porro autem.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum temporibus, veniam. Doloribus perferendis, iste corporis consequuntur optio voluptas quam odio facilis ratione reprehenderit dolores aperiam ipsum quos quidem porro autem.</p>
+	</div>
+
+</body>
+</html>
