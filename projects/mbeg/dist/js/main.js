@@ -20,7 +20,63 @@ $(document).ready(function(){
 		slidesToShow: 3,
 		slidesToScroll: 3,
 		arrows: true,
-		dots: true
+		dots: true,
+		infinite: true,
+		speed: 300,
+		responsive: [
+		{
+			breakpoint: 992,
+			settings: {
+				slidesToShow: 2,
+				slidesToScroll: 2
+			}
+		},
+		{
+			breakpoint: 768,
+			settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1
+			}
+		}
+		]
+	});
+	$('.slider-partner').slick({
+		slidesToShow: 9,
+		slidesToScroll: 1,
+		arrows: true,
+		dots: false,
+		infinite: true,
+		speed: 300,
+		responsive: [
+		{
+			breakpoint: 1200,
+			settings: {
+				slidesToShow: 7,
+				slidesToScroll: 1,
+			}
+		},
+		{
+			breakpoint: 992,
+			settings: {
+				slidesToShow: 5,
+				slidesToScroll: 1
+			}
+		},
+		{
+			breakpoint: 768,
+			settings: {
+				slidesToShow: 3,
+				slidesToScroll: 1
+			}
+		},
+		{
+			breakpoint: 544,
+			settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1
+			}
+		}
+		]
 	});
 
 });
@@ -28,7 +84,7 @@ $(document).ready(function(){
   'use strict';
 
   var file = 'img/sprite.symbol.svg',
-      revision = 9;
+      revision = 1;
 
   if ( !document.createElementNS || !document.createElementNS( 'http://www.w3.org/2000/svg', 'svg' ).createSVGRect )
     return true;
