@@ -11,6 +11,21 @@
 		<title>Contacts</title>
 	</head>
 	<body class="page">
+		<style>
+			.slider-main__item {
+				position: relative;
+			}
+			.slider-main__item::after {
+				content: "";
+				display: block;
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				background-color: rgba(0,0,0,0.4);
+			}
+		</style>
 		<header class="header">
 			<div class="upline">
 				<div class="container">
@@ -60,8 +75,9 @@
 			<div class="header__container">
 				<div class="slider-bg hidden-sm-down">
 					<div class="slider-bg__item"><img class="slider-bg__img" src="img/1.jpg" alt=""></div>
-					<div class="slider-bg__item"><img class="slider-bg__img" src="img/2.jpg" alt=""></div>
-					<div class="slider-bg__item"><img class="slider-bg__img" src="img/3.jpg" alt=""></div>
+					<div class="slider-bg__item"><img class="slider-bg__img" data-lazy="img/2.jpg" alt=""></div>
+					<div class="slider-bg__item"><img class="slider-bg__img" data-lazy="img/3.jpg" alt=""></div>
+					<div class="slider-bg__item"><img class="slider-bg__img" data-lazy="img/4.jpg" alt=""></div>
 				</div>
 				<div class="header__line container">
 					<div class="nav-wrap row">
@@ -131,8 +147,9 @@
 							<div class="slider-main__item">
 								<p class="slider-main__text">Test 1</p><img class="slider-main__img" src="img/1.jpg" alt="">
 							</div>
-							<div class="slider-main__item"><img class="slider-main__img" src="img/2.jpg" alt=""></div>
-							<div class="slider-main__item"><img class="slider-main__img" src="img/3.jpg" alt=""></div>
+							<div class="slider-main__item"><img class="slider-main__img" data-lazy="img/2.jpg" alt=""></div>
+							<div class="slider-main__item"><img class="slider-main__img" data-lazy="img/3.jpg" alt=""></div>
+							<div class="slider-main__item"><img class="slider-main__img" data-lazy="img/4.jpg" alt=""></div>
 						</div>
 					</div>
 				</div>

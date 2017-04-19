@@ -25,14 +25,14 @@ $(document).ready(function(){
 		speed: 300,
 		responsive: [
 		{
-			breakpoint: 992,
+			breakpoint: 1200,
 			settings: {
 				slidesToShow: 2,
 				slidesToScroll: 2
 			}
 		},
 		{
-			breakpoint: 768,
+			breakpoint: 992,
 			settings: {
 				slidesToShow: 1,
 				slidesToScroll: 1
