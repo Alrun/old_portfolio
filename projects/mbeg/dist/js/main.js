@@ -84,7 +84,7 @@ $(document).ready(function(){
   'use strict';
 
   var file = 'img/sprite.symbol.svg',
-      revision = 1;
+      revision = 2;
 
   if ( !document.createElementNS || !document.createElementNS( 'http://www.w3.org/2000/svg', 'svg' ).createSVGRect )
     return true;
