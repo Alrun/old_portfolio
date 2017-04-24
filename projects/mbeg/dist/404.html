@@ -25,6 +25,9 @@
 				right: 0;
 				background-color: rgba(0,0,0,0.3);
 			}
+			.slider-main .slider-main__hero {
+				display: none;
+			}
 		</style>
 		<header class="header">
 			<div class="upline">
@@ -45,29 +48,29 @@
 					</div>
 					<div class="row">
 						<div class="upline__item col-xs-8 col-sm-6 col-md-4 col-lg-3">
-							<div class="upline__content">
+							<div class="upline__img">
 								<svg class="svg-upline__phone ">
 									<use xlink:href="#upline__phone"></use>
 								</svg>
-								<h6 class="upline__text text_main-color">+7 (812) 937 59 77</h6>
 							</div>
+							<h6 class="upline__text text_main-color">+7 (812) 937 59 77</h6>
 						</div>
 						<div class="upline__item col-xs-4 col-sm-6 col-md-4 push-md-4 push-lg-5">
 							<div class="social text-xs-right"><a class="social__link" href="#">
-									<svg class="svg-upline__e-mail ">
-										<use xlink:href="#upline__e-mail"></use>
+									<svg class="svg-upline__phone ">
+										<use xlink:href="#upline__phone"></use>
 									</svg></a><a class="social__link" href="#">
-									<svg class="svg-upline__e-mail ">
-										<use xlink:href="#upline__e-mail"></use>
+									<svg class="svg-upline__phone ">
+										<use xlink:href="#upline__phone"></use>
 									</svg></a></div>
 						</div>
 						<div class="upline__item col-xs-12 col-md-4 pull-md-4 pull-md-4">
-							<div class="upline__content">
+							<div class="upline__img">
 								<svg class="svg-upline__e-mail ">
 									<use xlink:href="#upline__e-mail"></use>
 								</svg>
-								<h6 class="upline__text text_main-color">info@mbeg.ru</h6>
 							</div>
+							<h6 class="upline__text text_main-color">info@mbeg.ru</h6>
 						</div>
 					</div>
 				</div>
@@ -116,8 +119,8 @@
 										</li>
 										<li class="nav-main__item"><a class="nav-main__link icon-dropdown" href="portfolio.html">Портфолио</a>
 											<ul class="nav-second nav-second_dropdown">
-												<li class="nav-second__item"><a class="nav-second__link" href="#Проекты">Проекты</a></li>
-												<li class="nav-second__item"><a class="nav-second__link" href="#Монтаж">Монтаж</a></li>
+												<li class="nav-second__item"><a class="nav-second__link" href="portfolio-montaz.html">Проекты</a></li>
+												<li class="nav-second__item"><a class="nav-second__link" href="portfolio-montaz.html">Монтаж</a></li>
 											</ul>
 										</li>
 										<li class="nav-main__item"><a class="nav-main__link icon-dropdown" href="#Монтаж">Монтаж</a>
@@ -136,7 +139,7 @@
 												<li class="nav-second__item"><a class="nav-second__link" href="#Инженерных зданий">Инженерных систем</a></li>
 											</ul>
 										</li>
-										<li class="nav-main__item"><a class="nav-main__link" href="#Контакты">Контакты</a></li>
+										<li class="nav-main__item"><a class="nav-main__link" href="contacts.html">Контакты</a></li>
 									</ul>
 								</div>
 							</div>
@@ -145,11 +148,25 @@
 					<div class="row">
 						<div class="slider-main">
 							<div class="slider-main__item">
-								<p class="slider-main__text">Test 1</p><img class="slider-main__img" src="img/1.jpg" alt="">
+								<div class="slider-main__hero">
+									<div class="slider-main__text">МБ Инжиниринг</div>
+								</div><img class="slider-main__img" src="img/1.jpg" alt="">
 							</div>
-							<div class="slider-main__item"><img class="slider-main__img" data-lazy="img/2.jpg" alt=""></div>
-							<div class="slider-main__item"><img class="slider-main__img" data-lazy="img/3.jpg" alt=""></div>
-							<div class="slider-main__item"><img class="slider-main__img" data-lazy="img/4.jpg" alt=""></div>
+							<div class="slider-main__item">
+								<div class="slider-main__hero">
+									<div class="slider-main__text">Оборудование</div>
+								</div><img class="slider-main__img" data-lazy="img/2.jpg" alt="">
+							</div>
+							<div class="slider-main__item">
+								<div class="slider-main__hero">
+									<div class="slider-main__text">Проектирование</div>
+								</div><img class="slider-main__img" data-lazy="img/3.jpg" alt="">
+							</div>
+							<div class="slider-main__item">
+								<div class="slider-main__hero">
+									<div class="slider-main__text">Монтаж</div>
+								</div><img class="slider-main__img" data-lazy="img/4.jpg" alt="">
+							</div>
 						</div>
 					</div>
 				</div>

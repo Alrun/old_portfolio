@@ -25,6 +25,9 @@
 				right: 0;
 				background-color: rgba(0,0,0,0.3);
 			}
+			.slider-main .slider-main__hero {
+				display: none;
+			}
 		</style>
 		<header class="header">
 			<div class="upline">
@@ -45,29 +48,29 @@
 					</div>
 					<div class="row">
 						<div class="upline__item col-xs-8 col-sm-6 col-md-4 col-lg-3">
-							<div class="upline__content">
+							<div class="upline__img">
 								<svg class="svg-upline__phone ">
 									<use xlink:href="#upline__phone"></use>
 								</svg>
-								<h6 class="upline__text text_main-color">+7 (812) 937 59 77</h6>
 							</div>
+							<h6 class="upline__text text_main-color">+7 (812) 937 59 77</h6>
 						</div>
 						<div class="upline__item col-xs-4 col-sm-6 col-md-4 push-md-4 push-lg-5">
 							<div class="social text-xs-right"><a class="social__link" href="#">
-									<svg class="svg-upline__e-mail ">
-										<use xlink:href="#upline__e-mail"></use>
+									<svg class="svg-upline__phone ">
+										<use xlink:href="#upline__phone"></use>
 									</svg></a><a class="social__link" href="#">
-									<svg class="svg-upline__e-mail ">
-										<use xlink:href="#upline__e-mail"></use>
+									<svg class="svg-upline__phone ">
+										<use xlink:href="#upline__phone"></use>
 									</svg></a></div>
 						</div>
 						<div class="upline__item col-xs-12 col-md-4 pull-md-4 pull-md-4">
-							<div class="upline__content">
+							<div class="upline__img">
 								<svg class="svg-upline__e-mail ">
 									<use xlink:href="#upline__e-mail"></use>
 								</svg>
-								<h6 class="upline__text text_main-color">info@mbeg.ru</h6>
 							</div>
+							<h6 class="upline__text text_main-color">info@mbeg.ru</h6>
 						</div>
 					</div>
 				</div>
@@ -116,8 +119,8 @@
 										</li>
 										<li class="nav-main__item"><a class="nav-main__link icon-dropdown" href="portfolio.html">Портфолио</a>
 											<ul class="nav-second nav-second_dropdown">
-												<li class="nav-second__item"><a class="nav-second__link" href="#Проекты">Проекты</a></li>
-												<li class="nav-second__item"><a class="nav-second__link" href="#Монтаж">Монтаж</a></li>
+												<li class="nav-second__item"><a class="nav-second__link" href="portfolio-montaz.html">Проекты</a></li>
+												<li class="nav-second__item"><a class="nav-second__link" href="portfolio-montaz.html">Монтаж</a></li>
 											</ul>
 										</li>
 										<li class="nav-main__item"><a class="nav-main__link icon-dropdown" href="#Монтаж">Монтаж</a>
@@ -136,7 +139,7 @@
 												<li class="nav-second__item"><a class="nav-second__link" href="#Инженерных зданий">Инженерных систем</a></li>
 											</ul>
 										</li>
-										<li class="nav-main__item"><a class="nav-main__link" href="#Контакты">Контакты</a></li>
+										<li class="nav-main__item"><a class="nav-main__link" href="contacts.html">Контакты</a></li>
 									</ul>
 								</div>
 							</div>
@@ -145,11 +148,25 @@
 					<div class="row">
 						<div class="slider-main">
 							<div class="slider-main__item">
-								<p class="slider-main__text">Test 1</p><img class="slider-main__img" src="img/1.jpg" alt="">
+								<div class="slider-main__hero">
+									<div class="slider-main__text">МБ Инжиниринг</div>
+								</div><img class="slider-main__img" src="img/1.jpg" alt="">
 							</div>
-							<div class="slider-main__item"><img class="slider-main__img" data-lazy="img/2.jpg" alt=""></div>
-							<div class="slider-main__item"><img class="slider-main__img" data-lazy="img/3.jpg" alt=""></div>
-							<div class="slider-main__item"><img class="slider-main__img" data-lazy="img/4.jpg" alt=""></div>
+							<div class="slider-main__item">
+								<div class="slider-main__hero">
+									<div class="slider-main__text">Оборудование</div>
+								</div><img class="slider-main__img" data-lazy="img/2.jpg" alt="">
+							</div>
+							<div class="slider-main__item">
+								<div class="slider-main__hero">
+									<div class="slider-main__text">Проектирование</div>
+								</div><img class="slider-main__img" data-lazy="img/3.jpg" alt="">
+							</div>
+							<div class="slider-main__item">
+								<div class="slider-main__hero">
+									<div class="slider-main__text">Монтаж</div>
+								</div><img class="slider-main__img" data-lazy="img/4.jpg" alt="">
+							</div>
 						</div>
 					</div>
 				</div>
@@ -157,47 +174,36 @@
 		</header>
 		<main class="portfolio">
 			<section class="portfolio__main container">
-				<div class="block row">
-					<h2 class="h1">Портфолио</h2>
-					<div class="breadcrumbs">
-						<ul class="breadcrumbs__list">
-							<li class="breadcrumbs__item"><a href="#">Портфолио</a></li>
-							<li class="breadcrumbs__item"><a href="#">Портфолио – монтаж</a></li>
-						</ul>
-					</div>
-					<h1 class="h4">Портфолио строительной компании</h1>
-					<p>Компания ООО «МБ Инжиниринг Групп» работает на строительном рынке России более 20 лет, с 1992 года. Основное направление деятельности – проектирование и строительство «под ключ» индивидуальных жилых домов, коттеджных поселков, многоквартирных домов малой и средней этажности, административных и общественных зданий.</p>
-					<p>Наличие солидной производственной базы, транспорта, механизмов, системы складов позволяет успешно конкурировать с подобными строительными организациями по ЦЕНЕ, СРОКАМ и КАЧЕСТВУ выполняемых ремонтно-строительных работ.</p>
-					<p>За время существования компании реализовано более трехсот проектов в Москве, Подмосковье, городах России и ближнего зарубежья.</p>
-					<p>Наша компания выполняет весь комплекс ремонтно-строительных работ без исключения. Все работы ведутся настолько быстро, насколько это позволяет технологический процесс. Работы выполняют высококвалифицированные специалисты.</p>
-				</div>
-				<div class="row">
+				<div class="works-sep row">
 					<div class="block-t">
 						<div class="block-t__wrap">
-							<div class="block-t__content block-t_w50">
-								<div class="welcome text-xs-center"></div>
-								<h2 class="home__title text-xs-center">Основные выполненные проектные работы</h2>
-								<div class="svg-wrap">
-									<svg class="svg-upline__e-mail ">
-										<use xlink:href="#upline__e-mail"></use>
-									</svg>
+							<div class="block-t__img block-t_w50">
+								<div class="container">
+									<div class="row works-sep__item"><img class="works-sep__img" src="img/work-project.jpg">
+										<div class="works-sep__container text-xs-center">
+											<h2 class="works-sep__title">Основные выполненные <span>проектные </span>работы</h2><a class="works-sep__btn btn btn_active" href="portfolio-montaz.html">Перейти</a>
+										</div>
+									</div>
 								</div>
 							</div>
-							<div class="block-t__content block-t_w50">
-								<div class="shop text-xs-center"> </div>
-								<h2 class="home__title text-xs-center">Основные выполненные монтажные работы</h2>
-								<div class="svg-wrap">
-									<svg class="svg-upline__e-mail ">
-										<use xlink:href="#upline__e-mail"></use>
-									</svg>
+							<div class="block-t__img block-t_w50">
+								<div class="container">
+									<div class="row works-sep__item"><img class="works-sep__img" src="img/work-montaz.jpg">
+										<div class="works-sep__container text-xs-center">
+											<h2 class="works-sep__title">Основные выполненные <span>монтажные </span>работы</h2><a class="works-sep__btn btn btn_active" href="portfolio-montaz.html">Перейти</a>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 				<div class="block row">
-					<h3>Основные выполненные работы</h3>
-					<p> Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Большого приставка речью инициал ты осталось, назад лучше грамматики коварных, обеспечивает несколько взгляд рукопись сих семантика реторический безопасную его. Безорфографичный.</p>
+					<h1 class="h3 h1">Портфолио строительной компании</h1>
+					<p>Компания ООО «МБ Инжиниринг Групп» работает на строительном рынке России более 20 лет, с 1992 года. Основное направление деятельности – проектирование и строительство «под ключ» индивидуальных жилых домов, коттеджных поселков, многоквартирных домов малой и средней этажности, административных и общественных зданий.</p>
+					<p>Наличие солидной производственной базы, транспорта, механизмов, системы складов позволяет успешно конкурировать с подобными строительными организациями по ЦЕНЕ, СРОКАМ и КАЧЕСТВУ выполняемых ремонтно-строительных работ.</p>
+					<p>За время существования компании реализовано более трехсот проектов в Москве, Подмосковье, городах России и ближнего зарубежья.</p>
+					<p>Наша компания выполняет весь комплекс ремонтно-строительных работ без исключения. Все работы ведутся настолько быстро, насколько это позволяет технологический процесс. Работы выполняют высококвалифицированные специалисты.</p>
 				</div>
 			</section>
 		</main>

@@ -5,7 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<meta http-equiv="x-ua-compatible" content="ie=edge">
 		<meta name="description" content="Описание главной страницы">
-		<meta name="keywords" content="Ключевые слова">
+		<meta name="keywords" content="Ключевые слова для главной страницы">
 		<link rel="stylesheet" href="css/vendor.css">
 		<link rel="stylesheet" href="css/main.css">
 		<title>МБ Инжиниринг Групп | Главная Страница</title>
@@ -24,6 +24,9 @@
 				left: 0;
 				right: 0;
 				background-color: rgba(0,0,0,0.3);
+			}
+			.slider-main .slider-main__hero {
+				display: none;
 			}
 		</style>
 		<header class="header">
@@ -45,29 +48,29 @@
 					</div>
 					<div class="row">
 						<div class="upline__item col-xs-8 col-sm-6 col-md-4 col-lg-3">
-							<div class="upline__content">
+							<div class="upline__img">
 								<svg class="svg-upline__phone ">
 									<use xlink:href="#upline__phone"></use>
 								</svg>
-								<h6 class="upline__text text_main-color">+7 (812) 937 59 77</h6>
 							</div>
+							<h6 class="upline__text text_main-color">+7 (812) 937 59 77</h6>
 						</div>
 						<div class="upline__item col-xs-4 col-sm-6 col-md-4 push-md-4 push-lg-5">
 							<div class="social text-xs-right"><a class="social__link" href="#">
-									<svg class="svg-upline__e-mail ">
-										<use xlink:href="#upline__e-mail"></use>
+									<svg class="svg-upline__phone ">
+										<use xlink:href="#upline__phone"></use>
 									</svg></a><a class="social__link" href="#">
-									<svg class="svg-upline__e-mail ">
-										<use xlink:href="#upline__e-mail"></use>
+									<svg class="svg-upline__phone ">
+										<use xlink:href="#upline__phone"></use>
 									</svg></a></div>
 						</div>
 						<div class="upline__item col-xs-12 col-md-4 pull-md-4 pull-md-4">
-							<div class="upline__content">
+							<div class="upline__img">
 								<svg class="svg-upline__e-mail ">
 									<use xlink:href="#upline__e-mail"></use>
 								</svg>
-								<h6 class="upline__text text_main-color">info@mbeg.ru</h6>
 							</div>
+							<h6 class="upline__text text_main-color">info@mbeg.ru</h6>
 						</div>
 					</div>
 				</div>
@@ -116,8 +119,8 @@
 										</li>
 										<li class="nav-main__item"><a class="nav-main__link icon-dropdown" href="portfolio.html">Портфолио</a>
 											<ul class="nav-second nav-second_dropdown">
-												<li class="nav-second__item"><a class="nav-second__link" href="#Проекты">Проекты</a></li>
-												<li class="nav-second__item"><a class="nav-second__link" href="#Монтаж">Монтаж</a></li>
+												<li class="nav-second__item"><a class="nav-second__link" href="portfolio-montaz.html">Проекты</a></li>
+												<li class="nav-second__item"><a class="nav-second__link" href="portfolio-montaz.html">Монтаж</a></li>
 											</ul>
 										</li>
 										<li class="nav-main__item"><a class="nav-main__link icon-dropdown" href="#Монтаж">Монтаж</a>
@@ -136,7 +139,7 @@
 												<li class="nav-second__item"><a class="nav-second__link" href="#Инженерных зданий">Инженерных систем</a></li>
 											</ul>
 										</li>
-										<li class="nav-main__item"><a class="nav-main__link" href="#Контакты">Контакты</a></li>
+										<li class="nav-main__item"><a class="nav-main__link" href="contacts.html">Контакты</a></li>
 									</ul>
 								</div>
 							</div>
@@ -145,11 +148,25 @@
 					<div class="row">
 						<div class="slider-main">
 							<div class="slider-main__item">
-								<p class="slider-main__text">Test 1</p><img class="slider-main__img" src="img/1.jpg" alt="">
+								<div class="slider-main__hero">
+									<div class="slider-main__text">МБ Инжиниринг</div>
+								</div><img class="slider-main__img" src="img/1.jpg" alt="">
 							</div>
-							<div class="slider-main__item"><img class="slider-main__img" data-lazy="img/2.jpg" alt=""></div>
-							<div class="slider-main__item"><img class="slider-main__img" data-lazy="img/3.jpg" alt=""></div>
-							<div class="slider-main__item"><img class="slider-main__img" data-lazy="img/4.jpg" alt=""></div>
+							<div class="slider-main__item">
+								<div class="slider-main__hero">
+									<div class="slider-main__text">Оборудование</div>
+								</div><img class="slider-main__img" data-lazy="img/2.jpg" alt="">
+							</div>
+							<div class="slider-main__item">
+								<div class="slider-main__hero">
+									<div class="slider-main__text">Проектирование</div>
+								</div><img class="slider-main__img" data-lazy="img/3.jpg" alt="">
+							</div>
+							<div class="slider-main__item">
+								<div class="slider-main__hero">
+									<div class="slider-main__text">Монтаж</div>
+								</div><img class="slider-main__img" data-lazy="img/4.jpg" alt="">
+							</div>
 						</div>
 					</div>
 				</div>
@@ -161,15 +178,27 @@
 					<div class="block-t">
 						<div class="block-t__wrap">
 							<div class="block-t__content block-t_w50">
-								<div class="welcome text-xs-center">Добро пожаловать в </div>
-								<h1 class="home__title text-xs-center"><span class="text_main-color">mbe</span>ngineering group</h1>
+								<div class="welcome text-xs-center">
+									<div class="welcome__item">
+										<div class="welcome__text h4 text_title-color">Добро пожаловать в </div>
+									</div>
+									<div class="welcome__item">
+										<h1 class="welcome__text h2 text_title-color"><span class="text_main-color">mbe</span>ngineering group</h1>
+									</div>
+								</div>
 								<p>ООО «МБИ» – это команда профессионалов, обеспечивающих время, бюджет и внимание к деталям, что дает вам высочайшее качество выполненных работ.</p>
 								<p>Компания, предлагающая четкие коммуникационные линии, ориентированные на предоставление персональных услуг.</p>
 								<p>Компания, которая ставит ваши потребности и требования во-первых, и все это MBEngineering Group.</p>
 							</div>
 							<div class="block-t__content block-t_w50">
-								<div class="shop text-xs-center">Наш интернет-магазин </div>
-								<h2 class="h1 home__title text-xs-center"><span class="text_main-color">техносбыт 24</span></h2>
+								<div class="shop text-xs-center">
+									<div class="shop__item">
+										<div class="shop__text h4 text_title-color">Наш интернет-магазин</div>
+									</div>
+									<div class="shop__item">
+										<div class="shop__text h2 text_main-color">техносбыт 24</div>
+									</div>
+								</div>
 								<p>Наш интернет-магазин занимается продажей светодиодного оборудования для физических и юридических лиц.</p>
 								<p>В нашем интернет-магазине Вы найдете:</p>
 								<ul class="list">
@@ -200,7 +229,7 @@
 			</section>
 			<section class="home__uslugi container">
 				<div class="block row">
-					<h2>К вашим услугам</h2>
+					<h2 class="h2">К вашим услугам</h2>
 					<div class="uslugi row">
 						<div class="uslugi__item col-md-6 col-lg-3 text-xs-center">
 							<div class="uslugi__icon">
@@ -208,7 +237,7 @@
 									<use xlink:href="#logo"></use>
 								</svg>
 							</div>
-							<h4 class="uslugi__title">Проектировщики</h4><a class="uslugi__link btn btn_invert" href="#">Подробнее</a>
+							<h4 class="uslugi__title">Проектировщики</h4><a class="uslugi__link btn" href="#">Подробнее</a>
 						</div>
 						<div class="uslugi__item col-md-6 col-lg-3 text-xs-center">
 							<div class="uslugi__icon">
@@ -240,64 +269,64 @@
 			<section class="home__projects">
 				<div class="container">
 					<div class="row">
-						<h2>Основные проекты</h2>
+						<h2 class="h2">Основные проекты</h2>
 					</div>
 					<div class="row">
 						<div class="offset-xs-1 col-xs-10">
 							<div class="row">
 								<div class="slider-work">
 									<div class="slider-work__item"><img class="slider-work__img" src="img/work-1.jpg" alt="">
-										<div class="slider-desc">
-											<h6 class="slider-desc__title">Административное здание г.Санкт-Петербург</h6>
-											<div class="slider-desc__text">Проектирование</div>
+										<div class="work-desc">
+											<h6 class="work-desc__title">Административное здание г.Санкт-Петербург</h6>
+											<div class="work-desc__text">Проектирование</div>
 										</div>
 									</div>
 									<div class="slider-work__item"><img class="slider-work__img" src="img/work-2.jpg" alt="">
-										<div class="slider-desc">
-											<h6 class="slider-desc__title">Коттеджный поселок «Суходольское» п.Громово</h6>
-											<div class="slider-desc__text">Проектирование</div>
+										<div class="work-desc">
+											<h6 class="work-desc__title">Коттеджный поселок «Суходольское» п.Громово</h6>
+											<div class="work-desc__text">Проектирование</div>
 										</div>
 									</div>
 									<div class="slider-work__item"><img class="slider-work__img" src="img/work-3.jpg" alt="">
-										<div class="slider-desc">
-											<h6 class="slider-desc__title">12-ти секционный жилой дом г.Домодедово</h6>
-											<div class="slider-desc__text">Проектирование</div>
+										<div class="work-desc">
+											<h6 class="work-desc__title">12-ти секционный жилой дом г.Домодедово</h6>
+											<div class="work-desc__text">Проектирование</div>
 										</div>
 									</div>
 									<div class="slider-work__item"><img class="slider-work__img" data-lazy="img/work-4.jpg" alt="">
-										<div class="slider-desc">
-											<h6 class="slider-desc__title">Здание общеобразовательной школы г.Санкт-Петербург, ул.Садовая</h6>
-											<div class="slider-desc__text">Проектирование</div>
+										<div class="work-desc">
+											<h6 class="work-desc__title">Здание общеобразовательной школы г.Санкт-Петербург, ул.Садовая</h6>
+											<div class="work-desc__text">Проектирование</div>
 										</div>
 									</div>
 									<div class="slider-work__item"><img class="slider-work__img" data-lazy="img/work-5.jpg" alt="">
-										<div class="slider-desc">
-											<h6 class="slider-desc__title">ТК с административно-складскими зданиями г.Дзержинск</h6>
-											<div class="slider-desc__text">Проектирование</div>
+										<div class="work-desc">
+											<h6 class="work-desc__title">ТК с административно-складскими зданиями г.Дзержинск</h6>
+											<div class="work-desc__text">Проектирование</div>
 										</div>
 									</div>
 									<div class="slider-work__item"><img class="slider-work__img" data-lazy="img/work-6.jpg" alt="">
-										<div class="slider-desc">
-											<h6 class="slider-desc__title">Здания автотранспортного предприятия п.Федоровское</h6>
-											<div class="slider-desc__text">Проектирование</div>
+										<div class="work-desc">
+											<h6 class="work-desc__title">Здания автотранспортного предприятия п.Федоровское</h6>
+											<div class="work-desc__text">Проектирование</div>
 										</div>
 									</div>
 									<div class="slider-work__item"><img class="slider-work__img" data-lazy="img/work-7.jpg" alt="">
-										<div class="slider-desc">
-											<h6 class="slider-desc__title">ТК с административно-складскими зданиями г.Дзержинск</h6>
-											<div class="slider-desc__text">Проектирование</div>
+										<div class="work-desc">
+											<h6 class="work-desc__title">ТК с административно-складскими зданиями г.Дзержинск</h6>
+											<div class="work-desc__text">Проектирование</div>
 										</div>
 									</div>
 									<div class="slider-work__item"><img class="slider-work__img" data-lazy="img/work-7.jpg" alt="">
-										<div class="slider-desc">
-											<h6 class="slider-desc__title">ТК с административно-складскими зданиями г.Дзержинск</h6>
-											<div class="slider-desc__text">Проектирование</div>
+										<div class="work-desc">
+											<h6 class="work-desc__title">ТК с административно-складскими зданиями г.Дзержинск</h6>
+											<div class="work-desc__text">Проектирование</div>
 										</div>
 									</div>
 									<div class="slider-work__item"><img class="slider-work__img" data-lazy="img/work-7.jpg" alt="">
-										<div class="slider-desc">
-											<h6 class="slider-desc__title">ТК с административно-складскими зданиями г.Дзержинск</h6>
-											<div class="slider-desc__text">Проектирование</div>
+										<div class="work-desc">
+											<h6 class="work-desc__title">ТК с административно-складскими зданиями г.Дзержинск</h6>
+											<div class="work-desc__text">Проектирование</div>
 										</div>
 									</div>
 								</div>
@@ -310,7 +339,7 @@
 				</div>
 			</section>
 			<section class="home__why container">
-				<h2>Почему мы?</h2>
+				<h2 class="h2">Почему мы?</h2>
 				<div class="why row">
 					<div class="why__item col-md-6 col-lg-3 push-lg-3 text-xs-center">
 						<div class="why__icon">
@@ -349,6 +378,7 @@
 						<p class="why__text">Все работы выполняются в соответствии с требованиями нормативной документации, с применением современных материалов и оборудования.</p>
 					</div>
 				</div>
+				<div class="building"><img class="building__img" src="img/building.png"></div>
 			</section>
 		</main>
 		<footer class="footer">

@@ -4,11 +4,11 @@
 		<meta http-equiv="content-type" content="text/html; charset=utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<meta http-equiv="x-ua-compatible" content="ie=edge">
-		<meta name="description" content="Description of page Contacts">
-		<meta name="keywords" content="Keywords of page Contacts">
+		<meta name="description" content="Описание страницы контакты">
+		<meta name="keywords" content="Ключевые слова для страницы контакты">
 		<link rel="stylesheet" href="css/vendor.css">
 		<link rel="stylesheet" href="css/main.css">
-		<title>Contacts</title>
+		<title>МБ Инжиниринг Групп | Контакты</title>
 	</head>
 	<body class="page">
 		<style>
@@ -24,6 +24,9 @@
 				left: 0;
 				right: 0;
 				background-color: rgba(0,0,0,0.3);
+			}
+			.slider-main .slider-main__hero {
+				display: none;
 			}
 		</style>
 		<header class="header">
@@ -45,29 +48,29 @@
 					</div>
 					<div class="row">
 						<div class="upline__item col-xs-8 col-sm-6 col-md-4 col-lg-3">
-							<div class="upline__content">
+							<div class="upline__img">
 								<svg class="svg-upline__phone ">
 									<use xlink:href="#upline__phone"></use>
 								</svg>
-								<h6 class="upline__text text_main-color">+7 (812) 937 59 77</h6>
 							</div>
+							<h6 class="upline__text text_main-color">+7 (812) 937 59 77</h6>
 						</div>
 						<div class="upline__item col-xs-4 col-sm-6 col-md-4 push-md-4 push-lg-5">
 							<div class="social text-xs-right"><a class="social__link" href="#">
-									<svg class="svg-upline__e-mail ">
-										<use xlink:href="#upline__e-mail"></use>
+									<svg class="svg-upline__phone ">
+										<use xlink:href="#upline__phone"></use>
 									</svg></a><a class="social__link" href="#">
-									<svg class="svg-upline__e-mail ">
-										<use xlink:href="#upline__e-mail"></use>
+									<svg class="svg-upline__phone ">
+										<use xlink:href="#upline__phone"></use>
 									</svg></a></div>
 						</div>
 						<div class="upline__item col-xs-12 col-md-4 pull-md-4 pull-md-4">
-							<div class="upline__content">
+							<div class="upline__img">
 								<svg class="svg-upline__e-mail ">
 									<use xlink:href="#upline__e-mail"></use>
 								</svg>
-								<h6 class="upline__text text_main-color">info@mbeg.ru</h6>
 							</div>
+							<h6 class="upline__text text_main-color">info@mbeg.ru</h6>
 						</div>
 					</div>
 				</div>
@@ -116,8 +119,8 @@
 										</li>
 										<li class="nav-main__item"><a class="nav-main__link icon-dropdown" href="portfolio.html">Портфолио</a>
 											<ul class="nav-second nav-second_dropdown">
-												<li class="nav-second__item"><a class="nav-second__link" href="#Проекты">Проекты</a></li>
-												<li class="nav-second__item"><a class="nav-second__link" href="#Монтаж">Монтаж</a></li>
+												<li class="nav-second__item"><a class="nav-second__link" href="portfolio-montaz.html">Проекты</a></li>
+												<li class="nav-second__item"><a class="nav-second__link" href="portfolio-montaz.html">Монтаж</a></li>
 											</ul>
 										</li>
 										<li class="nav-main__item"><a class="nav-main__link icon-dropdown" href="#Монтаж">Монтаж</a>
@@ -136,7 +139,7 @@
 												<li class="nav-second__item"><a class="nav-second__link" href="#Инженерных зданий">Инженерных систем</a></li>
 											</ul>
 										</li>
-										<li class="nav-main__item"><a class="nav-main__link" href="#Контакты">Контакты</a></li>
+										<li class="nav-main__item"><a class="nav-main__link" href="contacts.html">Контакты</a></li>
 									</ul>
 								</div>
 							</div>
@@ -145,17 +148,84 @@
 					<div class="row">
 						<div class="slider-main">
 							<div class="slider-main__item">
-								<p class="slider-main__text">Test 1</p><img class="slider-main__img" src="img/1.jpg" alt="">
+								<div class="slider-main__hero">
+									<div class="slider-main__text">МБ Инжиниринг</div>
+								</div><img class="slider-main__img" src="img/1.jpg" alt="">
 							</div>
-							<div class="slider-main__item"><img class="slider-main__img" data-lazy="img/2.jpg" alt=""></div>
-							<div class="slider-main__item"><img class="slider-main__img" data-lazy="img/3.jpg" alt=""></div>
-							<div class="slider-main__item"><img class="slider-main__img" data-lazy="img/4.jpg" alt=""></div>
+							<div class="slider-main__item">
+								<div class="slider-main__hero">
+									<div class="slider-main__text">Оборудование</div>
+								</div><img class="slider-main__img" data-lazy="img/2.jpg" alt="">
+							</div>
+							<div class="slider-main__item">
+								<div class="slider-main__hero">
+									<div class="slider-main__text">Проектирование</div>
+								</div><img class="slider-main__img" data-lazy="img/3.jpg" alt="">
+							</div>
+							<div class="slider-main__item">
+								<div class="slider-main__hero">
+									<div class="slider-main__text">Монтаж</div>
+								</div><img class="slider-main__img" data-lazy="img/4.jpg" alt="">
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</header>
-		<p>contacts Test</p>
+		<main class="contacts">
+			<section class="contacts__main container">
+				<div class="row">
+					<div class="block-t">
+						<div class="block-t__wrap">
+							<div class="block-t__content block-t_w33">
+								<div class="container">
+									<div class="row contacts__item">
+										<h2 class="h1 contacts__title">Контакты</h2>
+										<p>Всегда рады Вас видеть у нас в гостях!</p>
+										<p>Мы работаем: пн-пт с 9 до 20</p>
+									</div>
+								</div>
+							</div>
+							<div class="block-t__img block-t_w66">
+								<div class="container">
+									<div class="row contacts__item">
+										<div class="contacts__img-wrap"><img class="contacts__img" src="img/1.jpg" alt=""></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="block-t">
+						<div class="block-t__wrap">
+							<div class="block-t__img block-t_w66">
+								<div class="container">
+									<div class="row contacts__item">
+										<div class="contacts__map">
+											<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.3446016505745!2d30.432206251564892!3d59.94301688178884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631f855b811b5%3A0xbe2730b98941f0ee!2z0K_QutC-0YDQvdCw0Y8g0YPQuy4sIDEzLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTk1MjQ4!5e0!3m2!1sru!2sru!4v1492974964892" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen></iframe>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="block-t__content block-t_w33">
+								<div class="container">
+									<div class="row contacts__item">
+										<div class="address">
+											<h1 class="h3 address__main-title text_main-color">Наш адрес</h1>
+											<h5 class="address__title">Главный офис:</h5>
+											<div class="address__text">г.Санкт-Петербург, ул.Якорная, д.13, литер А, офис 311. </div>
+											<h5 class="address__title">Телефон: </h5>
+											<div class="address__text">+7 (812) 937 59 77</div>
+											<h5 class="address__title">E-mail:</h5>
+											<div class="address__text">info@mbeg.ru</div>
+										</div><a class="address__btn btn" href="#">Отправить сообщение</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
 		<footer class="footer">
 			<div class="footer__container container">
 				<div class="footer__row row">
