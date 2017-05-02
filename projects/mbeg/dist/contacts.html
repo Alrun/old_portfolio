@@ -26,7 +26,7 @@
 				bottom: 0;
 				left: 0;
 				right: 0;
-				background-color: rgba(0,0,0,0.3);
+				background-color: rgba(0,0,0,0.2);
 			}
 			.slider-main .slider-main__hero {
 				display: none;
@@ -46,35 +46,35 @@
 									<div class="logo-desc"></div></a>
 								<h5 class="logo-desc__text">Создание проектной документации</h5>
 								<h5 class="logo-desc__text">Строительно-монтажные работы</h5>
-								<h5 class="logo-desc__text">Продажа светодиодного оборудования</h5>
+								<h5 class="logo-desc__text">Продажа электрооборудования</h5>
 							</div>
 						</div>
 						<div class="row">
 							<div class="upline__item col-xs-8 col-sm-6 col-md-4 col-lg-3">
 								<div class="upline__icon">
-									<svg class="svg-upline__phone ">
-										<use xlink:href="#upline__phone"></use>
+									<svg class="svg-phone ">
+										<use xlink:href="#phone"></use>
 									</svg>
 								</div>
 								<h6 class="upline__text cl_main">+7 (812) 937 59 77</h6>
 							</div>
 							<div class="upline__item col-xs-4 col-sm-6 col-md-4 push-md-4 push-lg-5">
-								<div class="social text-xs-right"><span>Мы с социальных сетях:</span><a class="social__link" href="#">
+								<div class="social text-xs-right"><span class="hidden-md-down">Мы в социальных сетях:</span><a class="social__link" href="#">
 										<div class="social__icon">
-											<svg class="svg-upline__phone ">
-												<use xlink:href="#upline__phone"></use>
+											<svg class="svg-social-facebook ">
+												<use xlink:href="#social-facebook"></use>
 											</svg>
 										</div></a><a class="social__link" href="#">
 										<div class="social__icon">
-											<svg class="svg-upline__phone ">
-												<use xlink:href="#upline__phone"></use>
+											<svg class="svg-social-vk ">
+												<use xlink:href="#social-vk"></use>
 											</svg>
 										</div></a></div>
 							</div>
 							<div class="upline__item col-xs-12 col-md-4 pull-md-4 pull-md-4">
 								<div class="upline__icon">
-									<svg class="svg-upline__e-mail ">
-										<use xlink:href="#upline__e-mail"></use>
+									<svg class="svg-mail ">
+										<use xlink:href="#mail"></use>
 									</svg>
 								</div>
 								<h6 class="upline__text cl_main">info@mbeg.ru</h6>
@@ -92,7 +92,7 @@
 				</div>
 				<div class="header__line container">
 					<div class="nav-wrap row">
-						<div class="header-logo hidden-sm-down col-lg-4 col-xl-5">
+						<div class="header-logo hidden-sm-down col-md-1 col-xl-4">
 							<div class="logo"><a class="logo__link" href="index.html">
 									<div class="logo__icon">
 										<svg class="svg-logo ">
@@ -102,11 +102,11 @@
 								<div class="logo-desc hidden-lg-down">
 									<h5 class="logo-desc__text">Создание проектной документации</h5>
 									<h5 class="logo-desc__text">Строительно-монтажные работы</h5>
-									<h5 class="logo-desc__text">Продажа светодиодного оборудования</h5>
+									<h5 class="logo-desc__text">Продажа электрооборудования</h5>
 								</div>
 							</div>
 						</div>
-						<nav class="header-nav col-sm-12 col-lg-8 col-xl-7">
+						<nav class="header-nav col-sm-12 col-md-11 col-xl-8">
 							<div class="navbar">
 								<input class="navbar__input" id="nav-mini" type="checkbox">
 								<div class="navbar__container">
@@ -142,9 +142,9 @@
 										<li class="nav-main__item"><a class="nav-main__link icon-dropdown" href="project.html">Проектирование</a>
 											<ul class="nav-second nav-second_dropdown">
 												<li class="nav-second__item"><a class="nav-second__link" href="project-oz.html">Общественных зданий</a></li>
-												<li class="nav-second__item"><a class="nav-second__link" href="#Жилых зданий">Жилых зданий</a></li>
-												<li class="nav-second__item"><a class="nav-second__link" href="#Производственных зданий">Производственных зданий</a></li>
-												<li class="nav-second__item"><a class="nav-second__link" href="#Инженерных зданий">Инженерных систем</a></li>
+												<li class="nav-second__item"><a class="nav-second__link" href="project-oz.html">Жилых зданий</a></li>
+												<li class="nav-second__item"><a class="nav-second__link" href="project-oz.html">Производственных зданий</a></li>
+												<li class="nav-second__item"><a class="nav-second__link" href="project-is.html">Инженерных систем</a></li>
 											</ul>
 										</li>
 										<li class="nav-main__item"><a class="nav-main__link" href="contacts.html">Контакты</a></li>
@@ -182,36 +182,93 @@
 		</header>
 		<main class="contacts">
 			<div class="container">
-				<div class="row">
-					<div class="block-t">
-						<div class="block-t__wrap">
-							<div class="block-t__content block-t_w33">
-								<h2 class="h1 page__title">Контакты</h2>
-								<h5 class="contacts__title">Всегда рады Вас видеть у нас в гостях!</h5>
-								<p>Мы работаем: пн-пт с 9 до 20</p>
-							</div>
-							<div class="block-t__img block-t_w66">
-								<div class="contacts__img-wrap"><img class="contacts__img" src="img/contacts.jpg" alt=""></div>
-							</div>
+				<div class="row block">
+					<div class="col-xs-12">
+						<div class="breadcrumbs">
+							<ul class="breadcrumbs__list">
+								<li class="breadcrumbs__item"><a class="breadcrumbs__link" href="index.html"><span class="breadcrumbs__icon">
+											<svg class="svg-home ">
+												<use xlink:href="#home"></use>
+											</svg></span></a></li>
+								<li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Контакты</a></li>
+							</ul>
 						</div>
+						<h1 class="h1 page__title">Контакты</h1>
 					</div>
+					<div class="col-xs-12">
+						<h4 class="contacts__title">ООО «Инжиниринг Групп»</h4>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row-table">
 					<div class="block-t">
 						<div class="block-t__wrap">
-							<div class="block-t__img block-t_w66">
+							<div class="block-t__content block-t_w66">
 								<div class="contacts__map">
+									<h3>Мы на карте</h3>
 									<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.3446016505745!2d30.432206251564892!3d59.94301688178884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631f855b811b5%3A0xbe2730b98941f0ee!2z0K_QutC-0YDQvdCw0Y8g0YPQuy4sIDEzLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTk1MjQ4!5e0!3m2!1sru!2sru!4v1492974964892" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen></iframe>
+								</div>
+								<div class="contacts__feedback">
+									<h3>Напишите нам</h3>
+									<div class="row feedback">
+										<form class="feedback__form form">
+											<div class="form__item">
+												<div class="col-md-2">
+													<label for="InputName">Имя<span class="cl_main">*</span></label>
+												</div>
+												<div class="col-md-10">
+													<input class="form__input" type="text" required="required" name="InputName" placeholder="Ваше имя" id="InputName">
+												</div>
+											</div>
+											<div class="form__item">
+												<div class="col-md-2">
+													<label for="InputEmail">E-mail<span class="cl_main">*</span></label>
+												</div>
+												<div class="col-md-10">
+													<input class="form__input" type="email" required="required" name="InputEmail" placeholder="Адрес электронной почты" id="InputEmail">
+												</div>
+											</div>
+											<div class="form__item">
+												<div class="col-md-2">
+													<label for="InputMessage">Сообщение<span class="cl_main">*</span></label>
+												</div>
+												<div class="col-md-10">
+													<textarea class="form__textarea" rows="3" required="required" name="InputMessage" placeholder="Ваше сообщение" id="InputMessage"></textarea>
+												</div>
+											</div>
+											<div class="form__item">
+												<div class="col-md-12">
+													<p class="form__text"><span class="cl_main">* </span>обязательные для заполнения</p>
+												</div>
+											</div>
+										</form>
+									</div>
+									<div class="feedback__btn-wrap">
+										<button class="feedback__btn btn" href="#" id="send">Отправить</button>
+									</div>
 								</div>
 							</div>
 							<div class="block-t__content block-t_w33">
-								<div class="contacts-address">
-									<h1 class="h3 contacts-address__main-title cl_main">Наш адрес</h1>
-									<h5 class="contacts-address__title">Главный офис:</h5>
-									<p class="contacts-address__text">г.Санкт-Петербург, ул.Якорная, д.13, литер А, офис 311. </p>
-									<h5 class="contacts-address__title">Телефон: </h5>
-									<p class="contacts-address__text">+7 (812) 937 59 77</p>
-									<h5 class="contacts-address__title">E-mail:</h5>
-									<p class="contacts-address__text">info@mbeg.ru</p>
-								</div><a class="contacts-address__btn btn" href="#">Отправить сообщение</a>
+								<div class="contacts__address">
+									<h1 class="h3 contacts__main-title">Наш адрес</h1>
+									<h5 class="contacts__title">Главный офис:</h5>
+									<p class="contacts__text">г.Санкт-Петербург, ул.Якорная, д.13, литер А, офис 311. </p>
+									<h5 class="contacts__title">Телефоны:</h5>
+									<p class="contacts__text cl_title">+7 (812) 937-59-77</p>
+									<p class="contacts__text cl_title">+7 (950) 005-02-56</p>
+									<h5 class="contacts__title">E-mail:</h5>
+									<p class="contacts__text">info@mbeg.ru</p>
+								</div>
+								<div class="contacts__time">
+									<h3 class="contacts__main-title">Режим работы</h3>
+									<p class="contacts__text">Пн-Пт: 08.00-22.00</p>
+									<p class="contacts__text">Сб-Вс: выходной</p>
+								</div>
+								<div class="contacts__rek">
+									<h3 class="contacts__main-title">Наши реквизиты</h3>
+									<div class="contacts__btn-wrap"><a class="contacts__btn btn" href="#">Скачать</a></div>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -224,7 +281,7 @@
 					<div class="footer__item col-md-6 col-lg-3 col-xl-4">
 						<div class="footer__logo">
 							<div class="logo">
-								<div class="logo__img">
+								<div class="logo__icon">
 									<svg class="svg-logo ">
 										<use xlink:href="#logo"></use>
 									</svg>
@@ -256,15 +313,21 @@
 					</div>
 					<div class="footer__item col-md-6 col-lg-3 col-xl-2 text-sm-right text-lg-left">
 						<h3 class="footer__title">Поделиться</h3>
-						<div class="share"><a class="share__link" href="">
-								<svg class="svg-upline__e-mail ">
-									<use xlink:href="#upline__e-mail"></use>
-								</svg></a><a class="share__link" href="">
-								<svg class="svg-upline__e-mail ">
-									<use xlink:href="#upline__e-mail"></use>
-								</svg></a><a class="share__link" href="">
-								<svg class="svg-upline__e-mail ">
-									<use xlink:href="#upline__e-mail"></use>
+						<div class="share"><a class="share__link" href="#">
+								<svg class="svg-social-vk ">
+									<use xlink:href="#social-vk"></use>
+								</svg></a><a class="share__link" href="#">
+								<svg class="svg-social-facebook ">
+									<use xlink:href="#social-facebook"></use>
+								</svg></a><a class="share__link" href="#">
+								<svg class="svg-social-vk ">
+									<use xlink:href="#social-vk"></use>
+								</svg></a><a class="share__link" href="#">
+								<svg class="svg-social-vk ">
+									<use xlink:href="#social-vk"></use>
+								</svg></a><a class="share__link" href="#">
+								<svg class="svg-social-facebook ">
+									<use xlink:href="#social-facebook"></use>
 								</svg></a></div>
 					</div>
 				</div>
