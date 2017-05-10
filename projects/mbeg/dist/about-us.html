@@ -8,10 +8,13 @@
 		<meta name="keywords" content="Ключевые слова для страницы о нас">
 		<link rel="stylesheet" href="css/vendor.css">
 		<link rel="stylesheet" href="css/main.css">
-		<title>МБ Инжиниринг Групп | О нас</title>
+		<title>О нас | МБ Инжиниринг Групп</title>
 	</head>
 	<body class="page">
 		<style>
+			.slider-main {
+				max-height: 360px;
+			}
 			.slider-main__item {
 				position: relative;
 			}
@@ -23,54 +26,59 @@
 				bottom: 0;
 				left: 0;
 				right: 0;
-				background-color: rgba(0,0,0,0.3);
+				background-color: rgba(0,0,0,0.2);
 			}
 			.slider-main .slider-main__hero {
 				display: none;
 			}
 		</style>
 		<header class="header">
-			<div class="upline">
-				<div class="container">
-					<div class="upline-logo row hidden-md-up">
-						<div class="logo col-sm-12">
-							<div class="logo__img">
-								<svg class="svg-logo ">
-									<use xlink:href="#logo"></use>
-								</svg>
-							</div>
-							<div class="logo-desc">
-								<h6 class="logo-desc__text">Создание проектной документации</h6>
-								<h6 class="logo-desc__text">Строительно-монтажные работы</h6>
-								<h6 class="logo-desc__text">Продажа светодиодного и климатического оборудования</h6>
+			<div class="header__item">
+				<div class="upline">
+					<div class="container">
+						<div class="upline-logo row hidden-md-up">
+							<div class="logo col-sm-12"><a class="logo__link" href="index.html">
+									<div class="logo__icon">
+										<svg class="svg-logo ">
+											<use xlink:href="#logo"></use>
+										</svg>
+									</div>
+									<div class="logo-desc"></div></a>
+								<h5 class="logo-desc__text">Создание проектной документации</h5>
+								<h5 class="logo-desc__text">Строительно-монтажные работы</h5>
+								<h5 class="logo-desc__text">Продажа электрооборудования</h5>
 							</div>
 						</div>
-					</div>
-					<div class="row">
-						<div class="upline__item col-xs-8 col-sm-6 col-md-4 col-lg-3">
-							<div class="upline__img">
-								<svg class="svg-upline__phone ">
-									<use xlink:href="#upline__phone"></use>
-								</svg>
+						<div class="row">
+							<div class="upline__item col-xs-8 col-sm-6 col-md-4 col-lg-3">
+								<div class="upline__icon">
+									<svg class="svg-phone ">
+										<use xlink:href="#phone"></use>
+									</svg>
+								</div>
+								<h6 class="upline__text cl_main">+7 (812) 937 59 77</h6>
 							</div>
-							<h6 class="upline__text text_main-color">+7 (812) 937 59 77</h6>
-						</div>
-						<div class="upline__item col-xs-4 col-sm-6 col-md-4 push-md-4 push-lg-5">
-							<div class="social text-xs-right"><a class="social__link" href="#">
-									<svg class="svg-upline__phone ">
-										<use xlink:href="#upline__phone"></use>
-									</svg></a><a class="social__link" href="#">
-									<svg class="svg-upline__phone ">
-										<use xlink:href="#upline__phone"></use>
-									</svg></a></div>
-						</div>
-						<div class="upline__item col-xs-12 col-md-4 pull-md-4 pull-md-4">
-							<div class="upline__img">
-								<svg class="svg-upline__e-mail ">
-									<use xlink:href="#upline__e-mail"></use>
-								</svg>
+							<div class="upline__item col-xs-4 col-sm-6 col-md-4 push-md-4 push-lg-5">
+								<div class="social text-xs-right"><a class="social__link" href="#">
+										<div class="social__icon">
+											<svg class="svg-social-facebook ">
+												<use xlink:href="#social-facebook"></use>
+											</svg>
+										</div></a><a class="social__link" href="#">
+										<div class="social__icon">
+											<svg class="svg-social-vk ">
+												<use xlink:href="#social-vk"></use>
+											</svg>
+										</div></a></div>
 							</div>
-							<h6 class="upline__text text_main-color">info@mbeg.ru</h6>
+							<div class="upline__item col-xs-12 col-md-4 pull-md-4 pull-md-4">
+								<div class="upline__icon">
+									<svg class="svg-mail ">
+										<use xlink:href="#mail"></use>
+									</svg>
+								</div>
+								<h6 class="upline__text cl_main">info@mbeg.ru</h6>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -84,37 +92,37 @@
 				</div>
 				<div class="header__line container">
 					<div class="nav-wrap row">
-						<div class="header-logo hidden-sm-down col-lg-4 col-xl-5">
-							<div class="logo">
-								<div class="logo__img">
-									<svg class="svg-logo ">
-										<use xlink:href="#logo"></use>
-									</svg>
-								</div>
+						<div class="header-logo hidden-sm-down col-md-1 col-xl-4">
+							<div class="logo"><a class="logo__link" href="index.html">
+									<div class="logo__icon">
+										<svg class="svg-logo ">
+											<use xlink:href="#logo"></use>
+										</svg>
+									</div></a>
 								<div class="logo-desc hidden-lg-down">
-									<h6 class="logo-desc__text">Создание проектной документации</h6>
-									<h6 class="logo-desc__text">Строительно-монтажные работы</h6>
-									<h6 class="logo-desc__text">Продажа светодиодного и климатического оборудования</h6>
+									<h5 class="logo-desc__text">Создание проектной документации</h5>
+									<h5 class="logo-desc__text">Строительно-монтажные работы</h5>
+									<h5 class="logo-desc__text">Продажа электрооборудования</h5>
 								</div>
 							</div>
 						</div>
-						<nav class="header-nav col-sm-12 col-lg-8 col-xl-7">
+						<nav class="header-nav col-sm-12 col-md-11 col-xl-8">
 							<div class="navbar">
 								<input class="navbar__input" id="nav-mini" type="checkbox">
 								<div class="navbar__container">
 									<div class="navbar__mobile"><span class="navbar__icon"></span>
 										<label class="navbar__toggler" for="nav-mini"></label>
-										<h3 class="page__title">Главная</h3>
+										<h3 class="nav__page-title">Главная</h3>
 									</div>
 									<ul class="nav-main">
 										<li class="nav-main__item nav-main__item_active"><a class="nav-main__link" href="index.html">Главная</a></li>
-										<li class="nav-main__item"><a class="nav-main__link icon-dropdown" href="#О нас">О нас</a>
+										<li class="nav-main__item"><a class="nav-main__link icon-dropdown" href="about-us.html">О нас</a>
 											<ul class="nav-second nav-second_dropdown">
-												<li class="nav-second__item"><a class="nav-second__link" href="#О компании">О компании</a></li>
-												<li class="nav-second__item"><a class="nav-second__link" href="#Реквизиты">Реквизиты</a></li>
-												<li class="nav-second__item"><a class="nav-second__link" href="#Партнеры">Партнеры</a></li>
-												<li class="nav-second__item"><a class="nav-second__link" href="#Отзывы">Отзывы</a></li>
-												<li class="nav-second__item"><a class="nav-second__link" href="#Вакансии">Вакансии</a></li>
+												<li class="nav-second__item"><a class="nav-second__link" href="about-company.html">О компании</a></li>
+												<li class="nav-second__item"><a class="nav-second__link" href="details.html">Реквизиты</a></li>
+												<li class="nav-second__item"><a class="nav-second__link" href="partners.html">Партнеры</a></li>
+												<li class="nav-second__item"><a class="nav-second__link" href="otzivi.html">Отзывы</a></li>
+												<li class="nav-second__item"><a class="nav-second__link" href="vacancy.html">Вакансии</a></li>
 											</ul>
 										</li>
 										<li class="nav-main__item"><a class="nav-main__link icon-dropdown" href="portfolio.html">Портфолио</a>
@@ -123,7 +131,7 @@
 												<li class="nav-second__item"><a class="nav-second__link" href="portfolio-montaz.html">Монтаж</a></li>
 											</ul>
 										</li>
-										<li class="nav-main__item"><a class="nav-main__link icon-dropdown" href="#Монтаж">Монтаж</a>
+										<li class="nav-main__item"><a class="nav-main__link icon-dropdown" href="montaz.html">Монтаж</a>
 											<ul class="nav-second nav-second_dropdown">
 												<li class="nav-second__item"><a class="nav-second__link" href="#Систем электроснабжения">Систем электроснабжения</a></li>
 												<li class="nav-second__item"><a class="nav-second__link" href="#Систем водоснабжения и канализации">Систем водоснабжения и канализации</a></li>
@@ -131,12 +139,12 @@
 												<li class="nav-second__item"><a class="nav-second__link" href="#Слаботочных систем">Слаботочных систем</a></li>
 											</ul>
 										</li>
-										<li class="nav-main__item"><a class="nav-main__link icon-dropdown" href="#">Проектирование</a>
+										<li class="nav-main__item"><a class="nav-main__link icon-dropdown" href="project.html">Проектирование</a>
 											<ul class="nav-second nav-second_dropdown">
-												<li class="nav-second__item"><a class="nav-second__link" href="#Общественных зданий">Общественных зданий</a></li>
-												<li class="nav-second__item"><a class="nav-second__link" href="#Жилых зданий">Жилых зданий</a></li>
-												<li class="nav-second__item"><a class="nav-second__link" href="#Производственных зданий">Производственных зданий</a></li>
-												<li class="nav-second__item"><a class="nav-second__link" href="#Инженерных зданий">Инженерных систем</a></li>
+												<li class="nav-second__item"><a class="nav-second__link" href="project-oz.html">Общественных зданий</a></li>
+												<li class="nav-second__item"><a class="nav-second__link" href="project-oz.html">Жилых зданий</a></li>
+												<li class="nav-second__item"><a class="nav-second__link" href="project-oz.html">Производственных зданий</a></li>
+												<li class="nav-second__item"><a class="nav-second__link" href="project-is.html">Инженерных систем</a></li>
 											</ul>
 										</li>
 										<li class="nav-main__item"><a class="nav-main__link" href="contacts.html">Контакты</a></li>
@@ -172,17 +180,46 @@
 				</div>
 			</div>
 		</header>
+		<main class="about-us">
+			<div class="container">
+				<div class="row block">
+					<div class="col-xs-12">
+						<div class="breadcrumbs">
+							<ul class="breadcrumbs__list">
+								<li class="breadcrumbs__item"><a class="breadcrumbs__link" href="index.html"><span class="breadcrumbs__icon">
+											<svg class="svg-home ">
+												<use xlink:href="#home"></use>
+											</svg></span></a></li>
+								<li class="breadcrumbs__item"><a class="breadcrumbs__link" href="about-us.html">О нас</a></li>
+							</ul>
+						</div>
+						<h2 class="h1 page__title">О нас</h2>
+						<div class="row">
+							<div class="about-us__wrap col-xs-12">
+								<h4 class="about-us__title"><a class="about-us__link" href="about-company.html">О компании</a></h4>
+								<h4 class="about-us__title"><a class="about-us__link" href="details.html">Реквизиты</a></h4>
+								<h4 class="about-us__title"><a class="about-us__link" href="partners.html">Партнеры</a></h4>
+								<h4 class="about-us__title"><a class="about-us__link" href="reviews.html">Отзывы</a></h4>
+								<h4 class="about-us__title"><a class="about-us__link" href="jobs.html">Вакансии</a></h4>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
 		<footer class="footer">
 			<div class="footer__container container">
 				<div class="footer__row row">
 					<div class="footer__item col-md-6 col-lg-3 col-xl-4">
-						<div class="logo">
-							<div class="logo__img">
-								<svg class="svg-logo ">
-									<use xlink:href="#logo"></use>
-								</svg>
+						<div class="footer__logo">
+							<div class="logo">
+								<div class="logo__icon">
+									<svg class="svg-logo ">
+										<use xlink:href="#logo"></use>
+									</svg>
+								</div>
+								<p class="logo__text">Общество с ограниченной ответственностью «МБ Инжиниринг Групп» (ООО «МБИ») – это профессиональная команда инженеров-проектировщиков и монтажников, которая предлагает Вам свои услуги в области проетирования и строительства различных объектов недвижимости и инженерных систем.</p>
 							</div>
-							<p class="logo__text">Общество с ограниченной ответственностью «МБ Инжиниринг Групп» (ООО «МБИ») – это профессиональная команда инженеров-проектировщиков и монтажников, которая предлагает Вам свои услуги в области проетирования и строительства различных объектов недвижимости и инженерных систем.</p>
 						</div>
 					</div>
 					<div class="footer__item col-md-6 col-lg-3 col-xl-3 text-sm-right text-lg-left">
@@ -208,70 +245,60 @@
 					</div>
 					<div class="footer__item col-md-6 col-lg-3 col-xl-2 text-sm-right text-lg-left">
 						<h3 class="footer__title">Поделиться</h3>
-						<div class="share"><a class="share__link" href="">
-								<svg class="svg-upline__e-mail ">
-									<use xlink:href="#upline__e-mail"></use>
-								</svg></a><a class="share__link" href="">
-								<svg class="svg-upline__e-mail ">
-									<use xlink:href="#upline__e-mail"></use>
-								</svg></a><a class="share__link" href="">
-								<svg class="svg-upline__e-mail ">
-									<use xlink:href="#upline__e-mail"></use>
+						<div class="share"><a class="share__link" href="#">
+								<svg class="svg-social-vk ">
+									<use xlink:href="#social-vk"></use>
+								</svg></a><a class="share__link" href="#">
+								<svg class="svg-social-facebook ">
+									<use xlink:href="#social-facebook"></use>
+								</svg></a><a class="share__link" href="#">
+								<svg class="svg-social-vk ">
+									<use xlink:href="#social-vk"></use>
+								</svg></a><a class="share__link" href="#">
+								<svg class="svg-social-vk ">
+									<use xlink:href="#social-vk"></use>
+								</svg></a><a class="share__link" href="#">
+								<svg class="svg-social-facebook ">
+									<use xlink:href="#social-facebook"></use>
 								</svg></a></div>
 					</div>
 				</div>
 				<div class="footer__row row">
 					<div class="col-xs-10 offset-xs-1">
-						<h2>Наши партнеры</h2>
+						<h2 class="home__title">Наши партнеры</h2>
 						<div class="row">
 							<div class="slider-partner text-xs-center">
 								<div class="slider-partner__item"><a class="slider-partner__link" href="#">
-										<svg class="svg-logo ">
-											<use xlink:href="#logo"></use>
+										<svg class="svg-p-kidburg ">
+											<use xlink:href="#p-kidburg"></use>
 										</svg></a></div>
 								<div class="slider-partner__item"><a class="slider-partner__link" href="#">
-										<svg class="svg-logo ">
-											<use xlink:href="#logo"></use>
+										<svg class="svg-p-aviasales ">
+											<use xlink:href="#p-aviasales"></use>
 										</svg></a></div>
 								<div class="slider-partner__item"><a class="slider-partner__link" href="#">
-										<svg class="svg-logo ">
-											<use xlink:href="#logo"></use>
+										<svg class="svg-p-ikea ">
+											<use xlink:href="#p-ikea"></use>
 										</svg></a></div>
 								<div class="slider-partner__item"><a class="slider-partner__link" href="#">
-										<svg class="svg-logo ">
-											<use xlink:href="#logo"></use>
+										<svg class="svg-p-minimax ">
+											<use xlink:href="#p-minimax"></use>
 										</svg></a></div>
 								<div class="slider-partner__item"><a class="slider-partner__link" href="#">
-										<svg class="svg-logo ">
-											<use xlink:href="#logo"></use>
+										<svg class="svg-p-yota ">
+											<use xlink:href="#p-yota"></use>
 										</svg></a></div>
 								<div class="slider-partner__item"><a class="slider-partner__link" href="#">
-										<svg class="svg-logo ">
-											<use xlink:href="#logo"></use>
+										<svg class="svg-p-fazer ">
+											<use xlink:href="#p-fazer"></use>
 										</svg></a></div>
 								<div class="slider-partner__item"><a class="slider-partner__link" href="#">
-										<svg class="svg-logo ">
-											<use xlink:href="#logo"></use>
+										<svg class="svg-p-kvartira ">
+											<use xlink:href="#p-kvartira"></use>
 										</svg></a></div>
 								<div class="slider-partner__item"><a class="slider-partner__link" href="#">
-										<svg class="svg-logo ">
-											<use xlink:href="#logo"></use>
-										</svg></a></div>
-								<div class="slider-partner__item"><a class="slider-partner__link" href="#">
-										<svg class="svg-logo ">
-											<use xlink:href="#logo"></use>
-										</svg></a></div>
-								<div class="slider-partner__item"><a class="slider-partner__link" href="#">
-										<svg class="svg-logo ">
-											<use xlink:href="#logo"></use>
-										</svg></a></div>
-								<div class="slider-partner__item"><a class="slider-partner__link" href="#">
-										<svg class="svg-logo ">
-											<use xlink:href="#logo"></use>
-										</svg></a></div>
-								<div class="slider-partner__item"><a class="slider-partner__link" href="#">
-										<svg class="svg-logo ">
-											<use xlink:href="#logo"></use>
+										<svg class="svg-p-daikin ">
+											<use xlink:href="#p-daikin"></use>
 										</svg></a></div>
 							</div>
 						</div>
@@ -280,7 +307,7 @@
 			</div>
 			<div class="footer__downline">
 				<div class="container">
-					<h6 class="downline__text text-xs-center">©2017 МБ Инжиниринг Групп</h6>
+					<h5 class="downline__text text-xs-center">©2017 МБ Инжиниринг Групп</h5>
 				</div>
 			</div>
 		</footer>
