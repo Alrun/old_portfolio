@@ -49,13 +49,28 @@ $(document).ready(function(){
 		centerMode: true,
 		speed: 300
 	});
+	$('.slider-reviews-main').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		arrows: false,
+		fade: true,	
+		asNavFor: '.slider-reviews-nav'
+	});
+	$('.slider-reviews-nav').slick({
+		slidesToShow: 5,
+		slidesToScroll: 1,
+		asNavFor: '.slider-reviews-main',
+		//dots: true,
+		//centerMode: true,
+		focusOnSelect: true
+	});
 
 });
 ;( function( window, document ) {
   'use strict';
 
   var file = 'img/sprite.symbol.svg',
-      revision = 5;
+      revision = 6;
 
   if ( !document.createElementNS || !document.createElementNS( 'http://www.w3.org/2000/svg', 'svg' ).createSVGRect )
     return true;
