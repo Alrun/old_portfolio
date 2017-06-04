@@ -31,7 +31,7 @@ d.slice(e-c+1,e+c+2).addClass("slick-active").attr("aria-hidden","false")),0===a
   'use strict';
 
   var file = 'img/sprite.symbol.svg',
-      revision = 3;
+      revision = 5;
 
   if ( !document.createElementNS || !document.createElementNS( 'http://www.w3.org/2000/svg', 'svg' ).createSVGRect )
     return true;
