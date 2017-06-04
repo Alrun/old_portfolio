@@ -31,7 +31,7 @@ d.slice(e-c+1,e+c+2).addClass("slick-active").attr("aria-hidden","false")),0===a
   'use strict';
 
   var file = 'img/sprite.symbol.svg',
-      revision = 2;
+      revision = 3;
 
   if ( !document.createElementNS || !document.createElementNS( 'http://www.w3.org/2000/svg', 'svg' ).createSVGRect )
     return true;
@@ -76,6 +76,14 @@ d.slice(e-c+1,e+c+2).addClass("slick-active").attr("aria-hidden","false")),0===a
 }( window, document ) );
 $(document).ready(function(){
 	
+	// Fix anchor
+	$(window).on('load', function(){
+	  var top = $(window.location.hash).offset().top;
+	  $('html,body').stop().animate({
+	    scrollTop: top
+	  }, 300);
+	});
+
 	// Slick-carousel
 	$('.slider-main').slick({
 		slidesToShow: 1,
@@ -93,6 +101,7 @@ $(document).ready(function(){
 		fade: true,
 		asNavFor: '.slider-main'
 	});
+
 	$('.slider-works').slick({
 		slidesToShow: 3,
 		slidesToScroll: 3,
@@ -101,46 +110,66 @@ $(document).ready(function(){
 		infinite: true,
 		speed: 300,
 		responsive: [
-		{
-			breakpoint: 1200,
-			settings: {
-				slidesToShow: 2,
-				slidesToScroll: 2
+			{
+				breakpoint: 1200,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 2
+				}
+			},
+			{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					dots: false
+				}
 			}
-		},
-		{
-			breakpoint: 992,
-			settings: {
-				slidesToShow: 1,
-				slidesToScroll: 1
-			}
-		}
 		]
 	});
+
 	$('.slider-partner').slick({
 		arrows: true,
-		initialSlide: 12,
+		initialSlide: 5, //5
+		slidesToShow: 5, //5
+		slidesToScroll: 5, //5
 		dots: false,
 		infinite: true,
 		variableWidth: true,
 		centerMode: true,
 		speed: 300
 	});
+
 	$('.slider-reviews-main').slick({
 		slidesToShow: 1,
 		slidesToScroll: 1,
-		arrows: false,
 		fade: true,	
 		asNavFor: '.slider-reviews-nav'
 	});
 	$('.slider-reviews-nav').slick({
 		slidesToShow: 5,
 		slidesToScroll: 1,
+		arrows: false,
 		asNavFor: '.slider-reviews-main',
-		//dots: true,
-		//centerMode: true,
-		focusOnSelect: true
+		focusOnSelect: true,
+		responsive: [
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 1
+				}
+			},
+			{
+				breakpoint: 544,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 1
+				}
+			}
+		]
 	});
+
 
 	// Magnific-popup
 
@@ -220,6 +249,8 @@ $(document).ready(function(){
 
 	// Footer - Map
 	$('.footer-map').magnificPopup({
+
+		tClose: 'Закрыть (Esc)',
 		disableOn: 700,
 		type: 'iframe',
 		mainClass: 'mfp-fade',
