@@ -131,7 +131,7 @@ $(document).ready(function(){
 	$('.slider-partner').slick({
 		arrows: true,
 		initialSlide: 5, //5
-		slidesToShow: 5, //5
+		slidesToShow: 7, //5
 		slidesToScroll: 5, //5
 		dots: false,
 		infinite: true,
