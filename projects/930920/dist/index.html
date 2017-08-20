@@ -5,7 +5,6 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<meta http-equiv="x-ua-compatible" content="ie=edge">
 		<meta name="description" content="Компания Авто Групп осуществляет грузоперевозки и переезды по городу Ярославль, Ярославской области и регионам. А также предоставляет услуги грузчиков, разнорабочих и работников складов.">
-		<meta name="keywords" content="грузоперевозки, заказ грузовой газели, грузчики, переезды, экспедирование грузов">
 		<link rel="stylesheet" href="css/main.css">
 		<title>Грузовые перевозки | Квартирный и офисный переезд</title><!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -14,54 +13,51 @@
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
 	</head>
-	<body class="page">
-		<style>
-			.test {
-				max-height: 360px;
-			}
-		</style>
-		<header>
+	<style>.header__container {background-image: url(img/main.jpg);}</style>
+	<body class="page" data-spy="scroll" data-target=".navbar">
+		<header class="header" id="ss-header">
 			<nav class="navbar navbar-inverse">
 				<div class="container">
 					<div class="row">
 						<div class="container-fluid">
-							<!-- Brand and toggle get grouped for better mobile display-->
 							<div class="navbar-header">
-								<button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+								<button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
 								<button class="navbar-brand" type="button" data-toggle="modal" data-target="#aboutModal">Авто Групп</button>
 							</div>
-							<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+							<div class="collapse navbar-collapse" id="navbar-collapse">
 								<ul class="nav navbar-nav navbar-right">
-									<li class="nav__item hidden-xs nav__item_active"><a class="nav__link" href="#">
-											<div class="icon-home-1"></div></a></li>
-									<li class="nav__item"><a class="nav__link" href="#">Услуги</a></li>
-									<li class="nav__item"><a class="nav__link" href="#">Цены</a></li>
-									<li class="nav__item"><a class="nav__link" href="#">Преимущества</a></li>
-									<li class="nav__item"><a class="nav__link" href="#">Отзывы</a></li>
-									<li class="nav__item"><a class="nav__link" href="#">Контакты</a></li>
+									<li class="menu-item hidden-xs"><a href="#ss-header"><i class="icon icon-home"></i></a></li>
+									<li class="menu-item"><a href="#ss-services">Услуги</a></li>
+									<li class="menu-item"><a href="#ss-prices">Цены</a></li>
+									<li class="menu-item"><a href="#ss-advantages">Преимущества</a></li>
+									<li class="menu-item"><a href="#ss-reviews">Отзывы</a></li>
+									<li class="menu-item"><a href="#ss-contacts">Контакты</a></li>
 								</ul>
 							</div>
 						</div>
 					</div>
 				</div>
 			</nav>
-			<div class="main">
-				<div class="main-content">
+			<div class="header__container">
+				<div class="header__wrap">
 					<div class="container">
 						<div class="row">
-							<div class="col-sm-5 col-md-5 col-lg-4">
-								<div class="phone">
-									<div class="row">
-										<div class="col-sm-6">
-											<div>+7 (4852) 930-920</div>
-										</div>
-										<div class="col-sm-6">
-											<div>+7 (915) 991-28-41</div>
+							<div class="col-sm-5 col-md-4">
+								<div class="pennant"></div>
+								<div class="header__content">
+									<div class="title">
+										<h1 class="title__text text-uppercase">Грузоперевозки<span class="break-xs-up">и грузчики в</span><span class="break-xs-up">Ярославле</span></h1>
+									</div>
+									<div class="phone">
+										<div class="row">
+											<div class="col-sm-6">
+												<div class="phone__item">+7 (4852) 930-920</div>
+											</div>
+											<div class="col-sm-6">
+												<div class="phone__item phone__item_right">+7 (915) 991-28-41</div>
+											</div>
 										</div>
 									</div>
-								</div>
-								<div class="title">
-									<h1 class="title__text text-uppercase">Грузоперевозки и грузчики в Ярославле</h1>
 								</div>
 							</div>
 						</div>
@@ -70,24 +66,16 @@
 			</div>
 		</header>
 		<main>
-			<section class="slider" id="slider">
+			<section class="slider">
 				<div class="container">
 					<div class="row">
 						<div class="carousel slide" id="carousel-promo" data-ride="carousel" data-interval="false">
-							<!-- Indicators-->
-							<ol class="carousel-indicators">
-								<li class="active" data-target="#carousel-promo" data-slide-to="0"></li>
-								<li data-target="#carousel-promo" data-slide-to="1"></li>
-								<li data-target="#carousel-promo" data-slide-to="2"></li>
-								<li data-target="#carousel-promo" data-slide-to="3"></li>
-								<li data-target="#carousel-promo" data-slide-to="4"></li>
-							</ol>
-							<!-- Wrapper for slides-->
+							<ol class="carousel-indicators"></ol>
 							<div class="carousel-inner" role="listbox">
-								<div class="item active">
+								<div class="item">
 									<div class="col-sm-6 col-sm-offset-3">
 										<div class="slide__back text-center">
-											<div class="slide__img-wrap"><img class="slide__img slide__img_faded" src="img/pereezdy.jpg" alt=""></div>
+											<div class="slide__img-wrap img-fade"><img src="img/pereezdy.jpg" alt=""></div>
 										</div>
 									</div>
 									<div class="col-sm-3 static">
@@ -106,7 +94,7 @@
 																</div>
 															</div>
 															<div class="col-sm-5 col-md-4 slide-full__price-wrap">
-																<div class="slide-full__price text-nowrap">950 <span class="rub">a</span>/час</div>
+																<div class="slide-full__price text-nowrap">950 <span class="rub rub_red">a</span>/час</div>
 															</div>
 														</div>
 														<div class="row">
@@ -116,7 +104,9 @@
 																</div>
 															</div>
 															<div class="col-sm-5 col-md-4">
-																<div class="slide-full__btn-wrap"><a class="btn btn-info btn-lg" href="#scroll-slide__price" data-toggle="collapse" data-target="#collapseslide__price" role="button">Сделать заявку</a></div>
+																<div class="slide-full__btn-wrap">
+																	<button class="btn btn-warning btn-lg" type="button" data-toggle="modal" data-target="#detaileModal">Подробнее</button>
+																</div>
 															</div>
 														</div>
 													</div>
@@ -135,12 +125,14 @@
 										<div class="slide__right">
 											<div class="slide__content">
 												<h3 class="slide__title">Грузчики в Ярославле</h3>
-												<ul>
-													<li>Квартирный, дачный и офисный переезд</li>
-													<li>Сборка/разборка мебели</li>
-													<li>Разгрузка/погрузка фур и ж/д вагонов</li>
-													<li>Складские работы</li>
-												</ul>
+												<div class="slide__desc">
+													<ul>
+														<li>Квартирный, дачный и офисный переезд</li>
+														<li>Сборка/разборка мебели</li>
+														<li>Разгрузка/погрузка фур и ж/д вагонов</li>
+														<li>Складские работы</li>
+													</ul>
+												</div>
 												<table>
 													<tbody>
 														<tr>
@@ -170,9 +162,11 @@
 										<div class="slide__right">
 											<div class="slide__content">
 												<h3 class="slide__title">Газель в Ярославле (3м) тент</h3>
-												<div class="slide__text">Грузоподъемность – 1500 кг</div>
-												<div class="slide__text">Максимальный объем груза – 9 куб.м</div>
-												<p class="slide__text">Количество пассажирских мест – 2</p>
+												<div class="slide__desc">
+													<div>Грузоподъемность – 1500 кг</div>
+													<div>Максимальный объем груза – 9 куб.м</div>
+													<div>Количество пассажирских мест – 2</div>
+												</div>
 												<table>
 													<tbody>
 														<tr>
@@ -203,9 +197,11 @@
 										<div class="slide__right">
 											<div class="slide__content">
 												<h3 class="slide__title">Удлиненная газель (4м) тент</h3>
-												<div class="slide__text">Грузоподъемность – 1500 кг</div>
-												<div class="slide__text">Максимальный объем груза – 18 куб.м</div>
-												<p class="slide__text">Количество пассажирских мест – 2</p>
+												<div class="slide__desc">
+													<div>Грузоподъемность – 1500 кг</div>
+													<div>Максимальный объем груза – 18 куб.м</div>
+													<div>Количество пассажирских мест – 2</div>
+												</div>
 												<table>
 													<tbody>
 														<tr>
@@ -236,9 +232,11 @@
 										<div class="slide__right">
 											<div class="slide__content">
 												<h3 class="slide__title">Газель фермер (4м) тент</h3>
-												<div class="slide__text">Грузоподъемность – 1500 кг</div>
-												<div class="slide__text">Максимальный объем груза – 18 куб.м</div>
-												<p class="slide__text">Количество пассажирских мест – 6</p>
+												<div class="slide__desc">
+													<div>Грузоподъемность – 1500 кг</div>
+													<div>Максимальный объем груза – 18 куб.м</div>
+													<div>Количество пассажирских мест – 6</div>
+												</div>
 												<table>
 													<tbody>
 														<tr>
@@ -259,13 +257,13 @@
 										</div>
 									</div>
 								</div>
-							</div>
-							<!-- Controls--><a class="left carousel-control" href="#carousel-promo" role="button" data-slide="prev"><span class="icon-arrow_left" aria-hidden="true"></span><span class="sr-only">Previous</span></a><a class="right carousel-control" href="#carousel-promo" role="button" data-slide="next"><span class="icon-arrow_right" aria-hidden="true"></span><span class="sr-only">Next</span></a>
+							</div><a class="left carousel-control" href="#carousel-promo" role="button" data-slide="prev"><span class="icon-arrow_left" aria-hidden="true"></span><span class="sr-only">Previous</span></a><a class="right carousel-control" href="#carousel-promo" role="button" data-slide="next"><span class="icon-arrow_right" aria-hidden="true"></span><span class="sr-only">Next</span></a>
 						</div>
 					</div>
 				</div>
 			</section>
-			<section class="services" id="services">
+			<div class="anchor" id="ss-services"></div>
+			<section class="services">
 				<div class="container">
 					<div class="row text-center">
 						<div class="col-lg-10 col-lg-offset-1">
@@ -274,7 +272,7 @@
 						<div class="h2 page__title page__title_white">Услуги</div>
 						<div class="container">
 							<div class="row">
-								<div class="col-md-4 col-sm-4">
+								<div class="services__item col-md-4 col-sm-4">
 									<div class="pop">
 										<div class="pop__data" data-toggle="popover" data-trigger="hover" data-delay="300" data-placement="top" title="Грузоперевозки по городу – 400 р/ч*" data-content="Грузоперевозки по городу Ярославль. (*минимальный заказ 2 часа)">
 											<div class="pop__icon icon icon-gorod"></div>
@@ -282,7 +280,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="col-md-4 col-sm-4">
+								<div class="services__item col-md-4 col-sm-4">
 									<div class="pop">
 										<div class="pop__data" data-toggle="popover" data-trigger="hover" data-delay="300" data-placement="top" title="Переезды – 950 р/час*" data-content="В стоимость услуги входит газель и 2 грузчика. (*минимальный заказ 2 часа)">
 											<div class="pop__icon icon icon-pereezdi"></div>
@@ -290,7 +288,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="col-md-4 col-sm-4">
+								<div class="services__item col-md-4 col-sm-4">
 									<div class="pop">
 										<div class="pop__data" data-toggle="popover" data-trigger="hover" data-delay="300" data-placement="top" title="Межгород от 14 р/км*" data-content="Дополнительная точка по межгороду – 500 р. Простой на загрузке/разгрузке – 400 р/час. (*оплачивается в обе стороны)">
 											<div class="pop__icon icon icon-mezhgorod"></div>
@@ -298,11 +296,7 @@
 										</div>
 									</div>
 								</div>
-							</div>
-						</div>
-						<div class="container">
-							<div class="row">
-								<div class="col-md-4 col-md-offset-2 col-sm-5 col-sm-offset-1">
+								<div class="services__item col-md-4">
 									<div class="pop">
 										<div class="pop__data" data-toggle="popover" data-trigger="hover" data-delay="300" data-placement="top" title="Грузчики от 250 р/час*" data-content="Опытные грузчики выполнят все поставленные задачи максимально быстро и предельно аккуратно. (*минимальный заказ 2 часа)">
 											<div class="pop__icon icon icon-gruzchiki"></div>
@@ -310,7 +304,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="col-md-4 col-sm-5">
+								<div class="services__item col-md-4">
 									<div class="pop">
 										<div class="pop__data" data-toggle="popover" data-trigger="hover" data-delay="300" data-placement="top" title="Экспедирование – 500 р" data-content="Комплекс мероприятий, связанных с сопровождением и доставкой груза до пункта назначения.">
 											<div class="pop__icon icon icon-expedirovanie"></div>
@@ -323,10 +317,11 @@
 					</div>
 				</div>
 			</section>
-			<section class="prices" id="prices">
+			<div class="anchor" id="ss-prices"></div>
+			<section class="prices">
 				<div class="container">
 					<div class="row">
-						<div class="h2 page__title text-center">Наши цены</div>
+						<h6 class="h2 page__title text-center">Наши цены</h6>
 						<div class="container">
 							<table class="table table-bordered table-striped">
 								<thead>
@@ -347,7 +342,7 @@
 									</tr>
 									<tr>
 										<td class="text-left">Заказать газель (4м) по городу</td>
-										<td class="text-right">550<span class="rub">a</span>/час<span class="text-danger">*</span></td>
+										<td class="text-right">550<span class="rub">a</span>/час<span class="text-warning">*</span></td>
 										<td class="text-center">2</td>
 									</tr>
 									<tr>
@@ -357,7 +352,7 @@
 									</tr>
 									<tr>
 										<td class="text-left">Услуги грузчиков, разнорабочих и работников складов</td>
-										<td class="text-right">550<span class="rub">a</span>/час<span class="text-danger">*</span></td>
+										<td class="text-right">550<span class="rub">a</span>/час<span class="text-warning">*</span></td>
 										<td class="text-center">2</td>
 									</tr>
 									<tr>
@@ -367,7 +362,7 @@
 									</tr>
 									<tr>
 										<td class="text-left">Экспедирование</td>
-										<td class="text-right">550<span class="rub">a</span>/час<span class="text-danger">*</span></td>
+										<td class="text-right">550<span class="rub">a</span>/час<span class="text-warning">*</span></td>
 										<td class="text-center">2</td>
 									</tr>
 									<tr>
@@ -377,7 +372,7 @@
 									</tr>
 									<tr>
 										<td class="text-left">Заказ газели (4м) межгород</td>
-										<td class="text-right">550<span class="rub">a</span>/час<span class="text-danger">*</span></td>
+										<td class="text-right">550<span class="rub">a</span>/час<span class="text-warning">*</span></td>
 										<td class="text-center">2</td>
 									</tr>
 									<tr>
@@ -387,80 +382,61 @@
 									</tr>
 									<tr>
 										<td class="text-left">Заказ газели фермер межгород</td>
-										<td class="text-right">550<span class="rub">a</span>/час<span class="text-danger">*</span></td>
+										<td class="text-right">550<span class="rub">a</span>/час<span class="text-warning">*</span></td>
 										<td class="text-center">2</td>
 									</tr>
 								</tbody>
 							</table>
-							<div class="h5 text-sm-right"><span class="text-danger">*</span>При заказе 2 грузчиков на 8 часовой рабочий день</div>
-							<div class="h5 text-sm-right"><span class="text-danger">**</span>Считается в обе стороны</div>
+							<div class="h6 text-sm-right"><span class="text-warning">*</span>При заказе 2 грузчиков на 8 часовой рабочий день</div>
+							<div class="h6 text-sm-right"><span class="text-warning">**</span>Считается в обе стороны</div>
 						</div>
 					</div>
 				</div>
 			</section>
-			<section class="advantages" id="advantages">
+			<div class="anchor" id="ss-advantages"></div>
+			<section class="advantages">
 				<div class="container">
 					<div class="row">
-						<div class="h2 page__title text-center">Почему выбирают нас?</div>
+						<h6 class="h2 page__title text-center">Почему выбирают нас?</h6>
 						<div class="col-md-12">
 							<div class="row">
 								<div class="col-md-6">
-									<div class="advantages__icon">
-										<div class="icon icon-manager"></div>
-									</div>
+									<div class="advantages__icon"><i class="icon icon-manager"></i></div>
 									<div class="advantages__desc">
 										<div class="advantages__title h4">Индивидуальный менеджер</div>
 										<p class="advantages__text">Вам назначается индивидуальный менеджер, который контролирует весь ход работы а также, возможные изменения по времени.</p>
 									</div>
 								</div>
 								<div class="col-md-6">
-									<div class="advantages__icon">
-										<div class="icon icon-lock"></div>
-									</div>
+									<div class="advantages__icon"><i class="icon icon-lock"></i></div>
 									<div class="advantages__desc">
 										<div class="advantages__title h4">Фиксированная цена</div>
 										<p class="advantages__text">При заказе вы оговариваете фиксированную цену за определенные услуги, которая не изменится в дальнейшем.</p>
 									</div>
 								</div>
-							</div>
-						</div>
-						<div class="col-md-12">
-							<div class="row">
 								<div class="col-md-6">
-									<div class="advantages__icon">
-										<div class="icon icon-hands"></div>
-									</div>
+									<div class="advantages__icon"><i class="icon icon-hands"></i></div>
 									<div class="advantages__desc">
 										<div class="advantages__title h4">Собственный автопарк</div>
 										<p class="advantages__text">Компания владеет собственным автопарком с опытным и проверенным персоналом.</p>
 									</div>
 								</div>
 								<div class="col-md-6">
-									<div class="advantages__icon">
-										<div class="icon icon-bank"></div>
-									</div>
+									<div class="advantages__icon"><i class="icon icon-bank"></i></div>
 									<div class="advantages__desc">
 										<div class="advantages__title h4">Безналичный расчет</div>
 										<p class="advantages__text">Транспортные услуги можно оплатить как за наличный так и безналичный расчет. Наша компания предоставляет полный комплект документов.</p>
 									</div>
 								</div>
-							</div>
-						</div>
-						<div class="col-md-12">
-							<div class="row">
 								<div class="col-md-6">
-									<div class="advantages__icon">
-										<div class="icon icon-secure"></div>
-									</div>
+									<div class="advantages__icon"><i class="icon icon-secure"></i></div>
 									<div class="advantages__desc">
 										<div class="advantages__title h4">Материальная ответственность</div>
 										<p class="advantages__text">Наша компания несет полную материальную ответственность за груз во время транспортировки, согласно договору на грузоперевозки.</p>
 									</div>
 								</div>
 								<div class="col-md-6">
-									<div class="advantages__icon">
-										<div class="icon icon-forwarding"></div>
-									</div>
+									<div class="advantages__icon"><i class="icon icon-forwarding"></i></div>
 									<div class="advantages__desc">
 										<div class="advantages__title h4">Экспедирование грузов</div>
 										<p class="advantages__text">Наша компания предоставляет сервис по приемке и сдаче товара по накладной при доставке груза в несколько точек.</p>
@@ -471,23 +447,18 @@
 					</div>
 				</div>
 			</section>
-			<section class="reviews" id="reviews">
+			<div class="anchor" id="ss-reviews"></div>
+			<section class="reviews">
 				<div class="container">
 					<div class="row">
-						<div class="h2 page__title text-center">Отзывы клиентов</div>
+						<h6 class="h2 page__title text-center">Отзывы клиентов</h6>
 						<div class="carousel slide" id="carousel-reviews" data-ride="carousel" data-interval="false">
-							<ol class="carousel-indicators">
-								<li class="active" data-target="#carousel-reviews" data-slide-to="0"></li>
-								<li data-target="#carousel-reviews" data-slide-to="1"></li>
-								<li data-target="#carousel-reviews" data-slide-to="2"></li>
-								<li data-target="#carousel-reviews" data-slide-to="3"></li>
-								<li data-target="#carousel-reviews" data-slide-to="4"></li>
-							</ol>
+							<ol class="carousel-indicators"></ol>
 							<div class="carousel-inner" role="listbox">
 								<div class="item">
 									<div class="col-sm-3 col-sm-offset-1">
 										<div class="slide__left">
-											<div class="slide__img-wrap"><img class="slide__img reviews__photo img-thumbnail" src="img/review-1.jpg" alt=""></div>
+											<div class="slide__img-wrap review__img"><img class="slide__img" src="img/review-1.jpg" alt=""></div>
 										</div>
 									</div>
 									<div class="col-sm-7">
@@ -503,7 +474,7 @@
 								<div class="item">
 									<div class="col-sm-3 col-sm-offset-1">
 										<div class="slide__left">
-											<div class="slide__img-wrap"><img class="slide__img reviews__photo img-thumbnail" src="img/review-no-foto.jpg" alt=""></div>
+											<div class="slide__img-wrap review__img"><img class="slide__img" src="img/review-no-photo.jpg" alt=""></div>
 										</div>
 									</div>
 									<div class="col-sm-7">
@@ -519,7 +490,7 @@
 								<div class="item">
 									<div class="col-sm-3 col-sm-offset-1">
 										<div class="slide__left">
-											<div class="slide__img-wrap"><img class="slide__img reviews__photo img-thumbnail" src="img/review-no-foto.jpg" alt=""></div>
+											<div class="slide__img-wrap review__img"><img src="img/review-no-photo.jpg" alt=""></div>
 										</div>
 									</div>
 									<div class="col-sm-7">
@@ -535,7 +506,7 @@
 								<div class="item">
 									<div class="col-sm-3 col-sm-offset-1">
 										<div class="slide__left">
-											<div class="slide__img-wrap"><img class="slide__img reviews__photo img-thumbnail" src="img/review-2.jpg" alt=""></div>
+											<div class="slide__img-wrap review__img"><img src="img/review-2.jpg" alt=""></div>
 										</div>
 									</div>
 									<div class="col-sm-7">
@@ -547,18 +518,20 @@
 										</div>
 									</div>
 								</div>
-								<div class="item active">
+								<div class="item">
 									<div class="col-sm-3 col-sm-offset-1">
 										<div class="slide__left">
-											<div class="slide__img-wrap"><img class="slide__img reviews__photo img-thumbnail" src="img/review-add.jpg" alt=""></div>
+											<div class="slide__img-wrap review__img"><img src="img/review-add.jpg" alt=""></div>
 										</div>
 									</div>
 									<div class="col-sm-7">
 										<div class="slide__right">
 											<div class="slide__content">
 												<div class="slide__title reviews__name h3">Оставьте отзыв о нашей работе</div>
-												<button class="reviews__btn btn btn-info btn-lg" type="button" data-toggle="modal" data-target="#myModal">Добавить отзыв</button>
-												<div class="h3 reviews-add">
+												<div class="review__btn-wrap">
+													<button class="reviews__btn btn btn-info btn-lg" type="button" data-toggle="modal" data-target="#reviewModal">Добавить отзыв</button>
+												</div>
+												<div class="h3 reviews-add hidden">
 													<div class="reviews-add__alert h3">Спасибо за ваш отзыв!</div>
 													<div class="reviews-add__text h4">Ваши данные успешно отправлены.</div>
 												</div>
@@ -571,6 +544,7 @@
 					</div>
 				</div>
 			</section>
+			<div class="anchor" id="ss-contacts"></div>
 		</main>
 		<div class="modal fade" id="aboutModal" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
 			<div class="modal-dialog modal-lg" role="document">
@@ -586,12 +560,12 @@
 								<p>Наша компания быстро и качественно решит самые разнообразные задачи, поставленные клиентами, будь то организация офисного переезда, квартирный переезд под ключ или дачный переезд.</p>
 								<p>Мы работаем в сфере перевозки грузов автотранспортом уже не первый год, поэтому уверенно можем предложить своим клиентам:</p>
 								<ul>
-									<li>точное соблюдение сроков доставки;</li>
-									<li>гибкое планирование каждого маршрута;</li>
-									<li>тщательный контроль на протяжении всего пути следования;</li>
-									<li>различные варианты снижения затрат на доставку;</li>
-									<li>работу с грузами различного типа;</li>
-								</ul><br>
+									<li>Точное соблюдение сроков доставки;</li>
+									<li>Гибкое планирование каждого маршрута;</li>
+									<li>Тщательный контроль на протяжении всего пути следования;</li>
+									<li>Различные варианты снижения затрат на доставку;</li>
+									<li>Работу с грузами различного типа;</li>
+								</ul>
 								<p>Основной вид нашей деятельности — это предоставление услуги профессиональных грузчиков, организация транспортных услуг во время квартирных, офисных, дачных переездов и грузовые междугородние перевозки. Самым главным в оказании таких услуг являются два правила: своевременность доставки и сохранение целостности груза. Сотрудники нашей компании осознают важность своей роли в этом серьёзном деле, поэтому они всегда готовы быстро и предельно аккуратно выполнить свои обязанности.</p>
 								<p>В числе предоставляемых услуг:</p>
 								<ul>
@@ -602,7 +576,7 @@
 									<li>Складские работы;</li>
 									<li>Любые погрузочно-разгрузочные работы;</li>
 									<li>Такелажные работы;</li>
-								</ul><br>
+								</ul>
 								<p>Перевозки на газели — это самые востребованные перевозки по городу, так как это наиболее мобильное транспортное средство, способное перевозить грузы массой до 1,5 тонн, что позволяет решить много проблем, связанных с грузоперевозками в самые короткие сроки. Так же это самые дешевые перевозки, так как экономически нецелесообразно покупать, или арендовать большой грузовик, чтобы использовать его объем наполовину.</p>
 								<p>Заказ газели для перевозки, недорого обойдется для Вас и Ваших близких, так как у нас существуют фиксированные тарифы, которые менеджер четко оговаривает с Вами.</p>
 								<p>Наши опытные сотрудники всегда работают четко и очень быстро, не заставляя Вас ожидать долгое время, тем самым экономя ваши средства.  Если вам необходимо заказать газель для перевозки мебели, то наши грузчики помогут вам разобрать и собрать ее на месте погрузки и выгрузки.</p>
@@ -611,27 +585,54 @@
 						</div>
 					</div>
 					<div class="modal-footer">
-						<button class="btn btn-default" type="button" data-dismiss="modal">Close</button>
-						<button class="btn btn-primary" type="button">Save changes</button>
+						<button class="btn btn-info" type="button" data-dismiss="modal">Закрыть</button>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+		<div class="modal fade" id="detaileModal" tabindex="-1" role="dialog" aria-labelledby="SystemModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="SystemModalLabel">Квартирные, офисные и дачные переезды</h4>
+					</div>
+					<div class="modal-body">
+						<div class="row">
+							<div class="col-md-12">
+								<p>День переезда может быть сопряжен с сильным стрессом, особенно если вы планируете воспользоваться услугами своих родственников и знакомых. При переноске тяжелых вещей в помещениях с большим количеством лестниц, повышается риск порчи имущества и получения травм вашими работниками. Но это не означает, что опыт должен быть несчастным.</p>
+								<p>После десяти лет в данном бизнесе, мы отточили мастерство перемещения наших клиентов из одного помещения в другое. Наша компания может сделать день переезда менее утомительным. Воспользовавшись услугами профессиональных грузчиков, вы уменьшаете стресс до минимума и способствуете получению положительного опыта.</p>
+								<p>Помимо городского и междугороднего переезда, мы так же предоставляем услуги:</p>
+								<ul>
+									<li>Упаковка/Распаковка</li>
+									<li>Погрузка/Разгрузка</li>
+									<li>Упаковочный материал</li>
+								</ul>
+								<p>Для заказа услуги переезда, Вам достаточно позвонить по номеру 930920, +7 (915) 991-28-41 или воспользоваться функцией Заказа звонка, и наш менеджер свяжется с Вами сразу, как только сможет.</p>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button class="btn btn-info" type="button" data-dismiss="modal">Закрыть</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" id="reviewModal" tabindex="-1" role="dialog">
 			<div class="modal-dialog">
 				<div class="modal-content">
 					<div class="modal-header">
 						<button class="close" type="button" data-dismiss="modal">×</button>
-						<h3 class="modal-title" id="myModalLabel">Оставить отзыв</h3>
+						<h3 class="modal-title" id="reviewModalLabel">Оставить отзыв</h3>
 					</div>
 					<div class="modal-body">
 						<form class="form-horizontal">
 							<div class="form-group has-feedback">
-								<label class="control-label col-xs-3" for="InputName">Ф.И.О.<span class="text-danger">*</span></label>
+								<label class="control-label col-xs-3" for="InputName">Ф.И.О.<span class="text-warning">*</span></label>
 								<div class="col-xs-9 col-sm-8">
 									<div class="input-group"><span class="input-group-addon"><i class="icon icon-person"></i></span>
 										<input class="form-control" id="InputName" type="text" required="required" name="InputName" placeholder="Фамилия И.О.">
-									</div><span class="form-control-feedback icon-ok"></span>
+									</div><span class="form-control-feedback"></span>
 								</div>
 							</div>
 							<div class="form-group">
@@ -647,53 +648,50 @@
 								</div>
 							</div>
 							<div class="form-group has-feedback">
-								<label class="control-label col-xs-3" for="InputPhone">Телефон<span class="text-danger">*</span></label>
+								<label class="control-label col-xs-3" for="InputPhone">Телефон<span class="text-warning">*</span></label>
 								<div class="col-xs-9 col-sm-8">
 									<div class="input-group"><span class="input-group-addon">+7</span>
 										<input class="form-control" id="InputPhone" type="text" required="required" pattern="^[-+0-9()s]+$" name="InputPhone" placeholder="Ваш номер телефона">
-									</div><span class="form-control-feedback icon-error"></span>
+									</div><span class="form-control-feedback"></span>
 								</div>
 							</div>
 							<div class="form-group has-feedback">
-								<label class="control-label col-xs-3" for="InputEmail">E-mail<span class="text-danger">*</span></label>
+								<label class="control-label col-xs-3" for="InputEmail">E-mail<span class="text-warning">*</span></label>
 								<div class="col-xs-9 col-sm-8">
 									<div class="input-group"><span class="input-group-addon"><i class="icon icon-mail"></i></span>
 										<input class="form-control" id="InputEmail" type="email" required="required" name="InputEmail" placeholder="Ваш e-mail">
-									</div><span class="form-control-feedback icon icon-error"></span>
+									</div><span class="form-control-feedback icon"></span>
 								</div>
 							</div>
 							<div class="form-group">
-								<label class="control-label col-xs-3" for="InputReview">Ваш отзыв<span class="text-danger">*</span></label>
+								<label class="control-label col-xs-3" for="InputReview">Ваш отзыв<span class="text-warning">*</span></label>
 								<div class="col-xs-9 col-sm-8">
 									<textarea class="form-control" id="InputReview" rows="3" required="required" name="InputText" placeholder="Введите текст"></textarea>
 								</div>
 							</div>
 						</form>
 						<div class="text-right">
-							<p class="text-danger">* - обязательные поля</p>
+							<p class="text-warning">* - обязательные поля</p>
 						</div>
 					</div>
 					<div class="modal-footer">
 						<div class="btn-center">
 							<button class="btn btn-default" type="button" data-dismiss="modal">Отмена</button>
-							<button class="btn btn-primary" id="save" type="button">Отправить</button>
+							<button class="btn btn-primary" id="send" type="button">Отправить</button>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 		<footer>
-			<div class="contacts" id="contacts">
-				<div class="yar"></div>
-				<div class="cont">
-					<div class="tel text-left">
+			<div class="contacts">
+				<div class="contacts__bg"></div>
+				<div class="contacts__container">
+					<div class="contacts__content text-left">
 						<div class="h2 page__title text-center">Контакты</div>
-						<div class="contacts__item"><span class="contacts__img">
-								<div class="icon icon-phone"></div></span><span class="contacts__text">+7 (4852) 930-920</span></div>
-						<div class="contacts__item"><span class="contacts__img">
-								<div class="icon icon-phone"></div></span><span class="contacts__text">+7 (915) 991-28-41</span></div>
-						<div class="contacts__item"><span class="contacts__img">
-								<div class="icon icon-at"></div></span><span class="contacts__text">930920.yar@gmail.com</span></div>
+						<div class="contacts__item"><span class="contacts__img"><i class="icon icon-phone"></i></span><span class="contacts__text">+7 (4852) 930-920</span></div>
+						<div class="contacts__item"><span class="contacts__img"><i class="icon icon-phone"></i></span><span class="contacts__text">+7 (915) 991-28-41</span></div>
+						<div class="contacts__item"><span class="contacts__img"><i class="icon icon-at"></i></span><span class="contacts__text">930920.yar@gmail.com</span></div>
 					</div>
 				</div>
 			</div>
@@ -701,11 +699,23 @@
 				<div class="footer-cont">
 					<div class="container">
 						<div class="row">
-							<div class="col-xs-6"><a href="http://vk.com/yar930920" target="_blank">
-									<div class="icon icon-social-vk"></div></a>
-								<div class="icon icon-social-vk"></div>
+							<div class="footer-social col-sm-4">
+								<div class="social">
+									<div class="social__item"><a href="http://vk.com/yar930920" target="_blank" title="Наша группа в VK"><i class="icon icon-social-vk"></i></a></div>
+									<div class="share">
+										<div class="share__btn">Поделиться<span class="share__icon"><i class="icon-social-share"></i></span></div>
+										<div class="share__drop">
+											<div class="share42init" data-path="img/"></div>
+										</div>
+									</div>
+								</div>
 							</div>
-							<div class="col-xs-6 text-right">
+							<div class="footer-metrika col-sm-4"><a href="https://metrika.yandex.ru/stat/?id=35426540&amp;amp;from=informer" target="_blank" rel="nofollow"><img src="//informer.yandex.ru/informer/35426540/3_0_FFC520FF_FFA500FF_0_pageviews" style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)" onclick="try{Ya.Metrika.informer({i:this,id:35426540,lang:'ru'});return false}catch(e){}"></a>
+								<noscript>
+									<div><img src="https://mc.yandex.ru/watch/35426540" style="position:absolute; left:-9999px;" alt=""></div>
+								</noscript>
+							</div>
+							<div class="footer-copyright col-sm-4">
 								<div class="copyright">
 									<div class="h6 mb_0">Auto Group &copy; 2015–2017</div>
 									<div class="h6 text_light">All Rights Reserved.</div>

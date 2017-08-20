@@ -1,0 +1,14 @@
+/* Custom Reset */
+
+// * {
+//   outline: none;
+// }
+
+/* Symbol SVG fix */
+body > svg {
+  display: none;
+}
+
+svg {
+	vertical-align: top;
+}

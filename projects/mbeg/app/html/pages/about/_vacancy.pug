@@ -1,0 +1,96 @@
+main.vacancy
+
+	.container
+		.row.block
+			.col-xs-12
+				.breadcrumbs
+					ul.breadcrumbs__list
+						li.breadcrumbs__item
+							a.breadcrumbs__link(href="index.html")
+								span.breadcrumbs__icon
+									+svg-icon('home')
+						li.breadcrumbs__item
+							a.breadcrumbs__link(href="about.html") О компании
+						li.breadcrumbs__item
+							a.breadcrumbs__link(href="vacancy.html") Вакансии
+				h2.h1.page__title.mb_1-5 Вакансии
+
+				p.vacancy__text
+					|Наша команда постоянно совершенствует свои навыки, как в проектировании, так и в реализации объектов строительства. Также мы открыты для сотрудничества как с квалифицированными и талантливыми специалистами, так и с начинающими будущими инженерами-проектировщиками и монтажниками.
+				p.vacancy__text
+					|Если Вы ответственно подходите к делу, хотите совершенствовать свои навыки в кругу профессионалов в области проектирования и строительства и заинтересованы в создании или продолжении своей профессиональной карьеры в нашей команде, мы будем рады рассмотреть Вас в качестве потенциальных кандидатов при наличии открытой вакансии.
+				p.vacancy__text
+					|Для этого просто отправьте нам информацию о себе, заполнив форму обратной связи. Если у вас есть резюме, отправте его на нашу почту 
+					span.cl_main.underline info@mbeg.ru
+					|. Наши специалисты свяжутся с Вами.
+
+	.container
+		.row.row_fix
+
+			.vacancy__item.col-md-6
+				.row
+					.col-xs-12.block
+						h1.vacancy__title.h3 Открытые вакансии
+						ul.list
+							li.list__item
+								span.list__icon
+									+svg-icon('checkbox')
+								p.list__title
+									|Инженер-проектировщик систем электроснабжения
+							li.list__item
+								span.list__icon
+									+svg-icon('checkbox')
+								p.list__title
+									|Помощник прораба (бригадир) по монтажу слаботочных систем и сетей электроснабжения
+
+			
+			.vacancy__item.col-md-6
+				.row
+					.col-xs-12.block
+						.contacts-feedback
+							h3.contacts-feedback__title Форма обратной связи
+							.contacts-feedback__form.row
+								form.form.row
+									.form__item
+										.col-lg-3
+											label.form__label(for="InputName")
+												|Ф.И.О
+												span.form__span.cl_main
+													|*
+										.col-lg-9
+											input.form__input#InputName(type="text" required="required" name="InputName" placeholder="Фамилия Имя Отчество")
+									.form__item
+										.col-lg-3
+											label.form__label(for="InputPhone")
+												|Телефон
+												span.form__span.cl_main
+													|*
+										.col-lg-9
+											input.form__input#InputPhone(type="text" required="required" name="InputPhone" pattern="^[-+0-9()\s]+$" placeholder="Номер телефона")
+									.form__item
+										.col-lg-3
+											label.form__label(for="InputEmail")
+												|E-mail
+												span.form__span.cl_main
+													|*
+										.col-lg-9
+											input.form__input#InputEmail(type="email" required="required" name="InputEmail" placeholder="Адрес электронной почты")
+									.form__item
+										.col-lg-3
+											label.form__label(for="InputMessage")
+												|Сообщение
+												span.form__span.cl_main
+													|*
+										.col-lg-9
+											textarea.form__textarea#InputMessage(rows="3" required="required" name="InputMessage" placeholder="Ваше сообщение")
+									.form__item
+										.col-md-12.text-xs-center.text-lg-right
+											p.form__text
+												span.form__span.cl_main
+													|* 
+												|- Обязательные поля
+									.form__item
+										.col-md-12.text-xs-center.text-lg-right
+											.form__btn-wrap
+												button.form__btn.btn#send(type="button") Отправить
+								.contacts-feedback__success.text-xs-center.h4.cl_main.hidden-xs-up Ваше сообщение успешно отправлено!

@@ -1,0 +1,57 @@
+#carousel-reviews .carousel-control {
+	background-image: none;
+}
+
+.review__img > img {
+	width: 85%;
+	margin-bottom: 15px;
+	padding: 4px;
+	background-color: #fff;
+	border: 1px solid #ddd;
+}
+
+.reviews__text {
+	font-weight: 300;
+}
+
+.reviews__btn {
+	margin-top: 20px;
+}
+
+.reviews-add {
+	margin-top: 30px;
+
+	&__alert {
+		color: #555;
+	}
+
+	&__text {
+		font-weight: 300;
+		color: #1b6d85;
+	}
+}
+
+
+@media (max-width: 767px) {
+	.review__img > img {
+		max-width: 70%;
+	}
+	.review__btn-wrap {
+		text-align: center;
+	}
+	.reviews__name {
+		margin-top: -10px;
+		text-align: center;
+	}
+	.reviews__job {
+		margin-bottom: 15px;
+		text-align: center;
+	}
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+	#carousel-reviews .carousel-indicators {
+		bottom: -40px;
+	}
+}

@@ -1,0 +1,15 @@
+extends html/layouts/_default
+
+block page-vars
+	-
+		var page = {
+			title: 'Проектирование жилых зданий | МБ Инжиниринг Групп',
+			description: 'Компания ООО МБИ оказывает услуги по проектированию жилых зданий',
+			keywords: 'проектирование жилых зданий'
+		};
+
+block nav
+	include html/includes/navbar-active/_style-project
+
+block body
+	include html/pages/project/_project-zz

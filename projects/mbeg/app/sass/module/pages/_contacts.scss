@@ -1,0 +1,22 @@
+.contacts__title {
+	margin-bottom: 0;
+}
+.contacts-address__text {
+	color: darken($title-color, 15%);
+}
+.contacts-map__iframe {
+	width: 100%;
+}
+.contacts__link {
+	border-bottom: 1px dotted darken($title-color, 25%);
+	color: darken($title-color, 25%);
+	transition: 0.25s;
+
+	&:hover {
+		border-bottom: 1px dotted $main-color;
+		color: $main-color;
+	}
+}
+.contacts__btn {
+	margin-top: 1rem;
+}

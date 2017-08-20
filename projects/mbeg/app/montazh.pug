@@ -1,0 +1,15 @@
+extends html/layouts/_default
+
+block page-vars
+	-
+		var page = {
+			title: 'Монтаж | МБ Инжиниринг Групп',
+			description: 'Компания МБ Инжиниринг Групп оказывает профессиональные монтажные услуги всех видов систем.',
+			keywords: 'монтаж инженерных систем, стоимость монтажа инженерных систем, монтаж инженерных сетей и систем'
+		};
+
+block nav
+	include html/includes/navbar-active/_style-montazh
+
+block body
+	include html/pages/montazh/_montazh

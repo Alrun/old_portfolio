@@ -1,0 +1,15 @@
+extends html/layouts/_default
+
+block page-vars
+	-
+		var page = {
+			title: 'Проектирование производственных зданий | МБ Инжиниринг Групп',
+			description: 'Компания ООО МБИ оказывает услуги по проектированию производственных зданий',
+			keywords: 'проектирование производственных зданий'
+		};
+
+block nav
+	include html/includes/navbar-active/_style-project
+
+block body
+	include html/pages/project/_project-pz

@@ -1,0 +1,24 @@
+{
+  "name": "verstka_test_001",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Alex <fkhey2016@yandex.ru>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "normalize-css": "normalize.css#^5.0.0",
+    "jquery-migrate": "3.0.0",
+    "slick-carousel": "^1.6.0",
+    "magnific-popup": "^1.1.0"
+  }
+}

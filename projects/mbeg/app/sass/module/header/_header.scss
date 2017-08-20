@@ -1,0 +1,99 @@
+.header__container {
+	position: relative;
+}
+
+.slider-main .slick-active .slider-main__hero {
+	display: block;
+}
+
+.hero {
+	position: absolute;
+	text-align: center;
+	z-index: 100;
+	color: #fff;
+
+	&::after,
+	&::before {
+		content: "";
+		display: block;
+		position: absolute;
+	}
+
+	&::before {
+		left: 2px;
+		bottom: 8px;
+		width: 30%;
+		height: 40%;
+		border-left: 2px solid $title-color;
+		border-bottom: 2px solid $title-color;
+	}
+
+	&::after {
+		top: 11px;
+		right: 2px;
+		width: 15%;
+		height: 40%;
+		border-right: 2px solid $title-color;
+		border-top: 2px solid $title-color;
+	}
+
+	&_left-top {
+		left: 8%;
+		top: 15%;
+	}
+	&_left-bottom {
+		left: 8%;
+		bottom: 20%;
+	}
+	&_right-top {
+		right: 8%;
+		top: 15%;
+	}
+	&_right-bottom {
+		right: 8%;
+		bottom: 20%;
+	}
+}
+.hero__text-up {
+	margin-bottom: -8px;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+.hero__text-main {
+	font-size: 40px;
+	text-transform: uppercase;
+	margin: 0 20px;
+	font-weight: 700;
+}
+.hero__text-down {
+	display: inline-block;
+	min-height: 16px;
+	margin-top: 10px;
+	text-transform: uppercase;
+}
+.hero__btn {
+	position: absolute;
+	z-index: 100;
+	right: 0;
+	font-size: 13px;
+	padding: 10px 15px;
+}
+
+@media (min-width: 768px) {
+	.nav-wrap {
+		position: relative;
+		padding: 10px 0;
+	}
+	.header-nav {
+		position: absolute;
+		right: 0;
+		top: 50%;
+		margin-top: -0.625rem;
+	}
+}
+
+@media (max-width: 767px) {
+	.upline {
+		margin-top: 50px;
+	}
+}

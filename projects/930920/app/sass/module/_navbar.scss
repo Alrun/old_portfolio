@@ -1,0 +1,83 @@
+.navbar {
+	margin-bottom: 0;
+	border: none;
+	background-color: darken($second-cl, 5%);
+	z-index: 1;
+}
+.navbar-inverse .navbar-brand {
+	border: none;
+	background-color: transparent;
+	color: #fff;
+	transition: 0.2s;
+
+	&:hover {
+		color: #ccc;
+	}
+}
+.navbar-inverse .navbar-collapse {
+	border-color: $second-cl;
+}
+.navbar-inverse .navbar-toggle {
+	border-color: transparent;
+	&:hover,
+	&:focus {
+		background-color: transparent;
+	}
+}
+
+.menu-item {
+	color: #fff;
+	transition: 0.2s;
+
+	&:hover {
+		color: #ccc;
+	}
+}
+.nav li a {
+	color: inherit !important;
+}
+
+
+@media (min-width: 768px) {
+	.navbar {
+		width: 100%;
+		border-radius: 0;
+		z-index: 100;
+		position: absolute;
+		bottom: -50px;		
+	}
+	.menu-item {
+		border-bottom: 4px solid transparent;
+	}
+	.nav .active {
+		border-bottom-color: $main-cl;
+		color: $main-cl;
+
+		&:hover {
+			color: $main-cl;
+		}
+	}
+
+	.nav .active .icon-home {
+		background-position: 0 -46px;
+	}
+
+	.nav li a {
+		padding-bottom: 11px !important;
+	}
+	.nav .active > a {
+		background-color: transparent !important;
+	}
+}
+
+
+// Float menu
+.float-menu_normal {
+	position: absolute;
+	bottom: -50px;
+}
+.float-menu_fixed {
+	position: fixed;
+	top: 0;
+	bottom: inherit;
+}

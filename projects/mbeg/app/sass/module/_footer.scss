@@ -1,0 +1,55 @@
+.logo__text {
+	padding-right: 45px;
+	line-height: 1.1;
+	color: $text-color;
+}
+.footer-nav__item + .footer-nav__item {
+	margin-top: 0.1875rem;
+}
+.footer-nav__link {
+	color: $title-color;
+	transition: all 0.2s;
+	
+	&:hover {
+		color: $main-color;
+	}
+}
+
+.address__link {
+	border-bottom: 1px dashed;
+	border-color: $text-color;
+	text-transform: none;
+	font-style: italic;
+	color: $text-color;
+	transition: all 0.2s;
+}
+.address__link:hover {
+	color: $main-color;
+	border-color: $main-color;
+}
+.address__text {
+	color: $title-color;
+}
+
+.footer-phone__two {
+	margin-left: 1.65rem;
+}
+
+
+.slider-partner__item {
+	margin: 0 15px;
+}
+
+.slider-partner__link {
+	display: block;
+	height: 64px;
+}
+.slider-partner__link::before {
+	content: "";
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+.slider-partner__item svg {
+	vertical-align: middle;
+}

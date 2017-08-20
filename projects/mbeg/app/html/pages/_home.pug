@@ -1,0 +1,177 @@
+main.home
+
+	section.home__greet.container
+		.row-table
+			.block-t
+				.block-t__wrap
+					.block-t__content.block-t_w50
+						.home-left
+							.welcome
+								.welcome__text.welcome__text_up Добро пожаловать в 
+								h1.welcome__text.welcome__text_down
+									span.welcome__span.cl_main mbe
+									|ngineering group
+							p.home-left__text
+								span.home-left__span.cl_main.underline
+									|ООО "МБИ"
+								| - это профессиональная команда инженеров-проектировщиков и инженеров-монтажников. Мы предлагаем услуги в области проектирования и строительства различных объектов недвижимости и инженерных систем.
+							p.home-left__text
+								|Высокий уровень профессионализма наших сотрудников позволяют планировать и реализовывать проекты любой сложности, учитывая все необходимые детали. Опыт компании подтверждается имеющимся 
+								a.home-left__link.cl_main(href="about.html#certificates") допуском СРО
+								|  на проведение данных работ.
+							p.home-left__text
+								|Поэтому, обращаясь в нашу компанию, Вы передаете решение своих самых важных Задач в надежные руки специалистов своего дела.
+							p.home-left__text
+								|Все работы выполняются в соответствии с требованиями нормативной документации, с применением современных материалов и оборудования.
+
+					.block-t__content.block-t_w50
+						.welcome
+							.welcome__text.welcome__text_up Наш интернет-магазин
+							.welcome__text.welcome__text_down.cl_main техносбыт 24
+						p
+							|В нашем интернет-магазине инженерного оборудования вы сможете приобрести следующие товары:
+
+						ul.list
+							li.list__item
+								span.list__icon
+									+svg-icon('checkbox')
+								p.list__title
+									|Энергосберегающие светодиодные лампы
+							li.list__item
+								span.list__icon
+									+svg-icon('checkbox')
+								p.list__title
+									|Энергосберегающие светодиодные светильники и прожекторы для помещений любого назначения
+							li.list__item
+								span.list__icon
+									+svg-icon('checkbox')
+								p.list__title
+									|Климатическое оборудование (кондиционеры) лучших производителей: Daikin, Mitsubishi, Pioneer, Kentatsu, Midea, POLAR BEAR
+						
+						.shop__link-wrap.row.text-xs-center
+							a.shop__link.text-xs-center(href="http://www.tehnosbyt24.ru/", target="_blank")
+								.shop__icon
+									+svg-icon('p-technosbit', 'text_double')
+
+	section.home__uslugi.container
+		.row.block
+			.col-xs-12
+				h2.home__title.uslugi__main-title К вашим услугам
+			.col-xs-12
+				.uslugi
+					.uslugi__item.col-md-6.col-lg-3.text-xs-center
+						.uslugi__icon
+							+svg-icon('project')
+						h4.uslugi__title Проектировщики
+						a.uslugi__link.btn(href="project.html#projectman") Подробнее
+					.uslugi__item.col-md-6.col-lg-3.text-xs-center
+						.uslugi__icon
+							+svg-icon('montazh')
+						h4.uslugi__title Монтажники
+						a.uslugi__link.btn(href="montazh.html#montazhman") Подробнее
+					.uslugi__item.col-md-6.col-lg-3.text-xs-center
+						.uslugi__icon
+							+svg-icon('manager')
+						h4.uslugi__title Менеджеры
+						a.uslugi__link.btn(href="contacts.html#feedback") Подробнее
+					.uslugi__item.col-md-6.col-lg-3.text-xs-center
+						.uslugi__icon
+							+svg-icon('calculator')
+						h4.uslugi__title Калькулятор
+						a.uslugi__link.btn(href="contacts.html#feedback") Рассчитать
+
+	section.home__projects
+		.container
+			.row
+				.col-xs-12
+					h2.home__title Основные проекты
+			.row
+				.col-xs-10.offset-xs-1.col-xl-12.offset-xl-0
+					.slider-works
+
+						.slider-works__item
+							+works('img/portfolio-montazh-7.jpg', 'Обследование и монтаж инженерных систем в офисном здании «Бородино Плаза» г.Москва', 'Офисное здание «Бородино Плаза» г.Москва', 'Монтаж')
+
+						.slider-works__item
+							+works('img/portfolio-montazh-6.jpg', 'Монтаж электроосвещения и слаботочных систем в торговом центре «Атлантик-Сити» г.Санкт-Петербург', 'ТЦ «Атлантик-Сити» г.Санкт-Петербург', 'Монтаж')
+
+						.slider-works__item
+							+works('img/portfolio-project-7.jpg', 'Разработка рабочей документации для Малоэтажного жилого комплекса в Ленинградская обл.', 'Малоэтажный жилой комплекс Ленинградская обл.', 'Проектирование')
+
+						.slider-works__item
+							+works-lazy('img/portfolio-montazh-2.jpg', 'Монтаж инженерных систем индивидуального жилого дома п.Солнечное Ленинградская обл.', 'Жилой дом п.Солнечное Ленинградская обл.', 'Монтаж')
+
+						.slider-works__item
+							+works-lazy('img/portfolio-montazh-3.jpg', 'Монтаж сетей противопожарной защиты в многоэтажном жилом доме п.Новоселье Ленинградская обл.', 'Многоэтажный жилой дом п.Новоселье Ленинградская обл.', 'Монтаж')
+
+						.slider-works__item
+							+works-lazy('img/portfolio-montazh-4.jpg', 'Монтаж сетей электроснабжения в коттеджном поселке «Суходольское» Ленинградская обл.', 'Коттеджный поселок «Суходольское» Ленинградская обл.', 'Монтаж')
+
+						.slider-works__item
+							+works-lazy('img/portfolio-montazh-5.jpg', 'Монтаж слаботочных систем и сетей электроснабжения многоэтажного жилого дома п.Янино-1 Ленинградская обл.', 'Многоэтажный жилой дом п.Янино-1 Ленинградская обл.', 'Монтаж')
+
+						.slider-works__item
+							+works-lazy('img/portfolio-montazh-8.jpg', 'Реконструкция и монтаж инженерных сетей многоэтажного жилого дома г.Санкт-Петербург', 'Многоэтажный жилой дом г.Санкт-Петербург', 'Монтаж')
+
+						.slider-works__item
+							+works-lazy('img/portfolio-montazh-1.jpg', 'Монтаж инженерных систем детского сада на 150 мест в п.Шушары г.Санкт-Петербург', 'Детский сад п.Шушары г.Санкт-Петербург', 'Монтаж')
+
+						.slider-works__item
+							+works-lazy('img/portfolio-project-1.jpg', 'Проектирование инженерных систем жилого 12-ти секционного дома в г.Домодедово Московская обл.', '12-ти секционный дом г.Домодедово Московская обл.', 'Проектирование')
+
+						.slider-works__item
+							+works-lazy('img/portfolio-project-2.jpg', 'Проектирование инженерных систем торгового комплекса с административными зданиями в г.Москва', 'ТК с административными зданиями г.Москва', 'Проектирование')
+
+						.slider-works__item
+							+works-lazy('img/portfolio-project-3.jpg', 'Проектирование инженерных систем Яхт-клуба в г.Ивангород Ленинградская обл.', 'Яхт-клуб г.Ивангород Ленинградская обл.', 'Проектирование')
+
+						.slider-works__item
+							+works-lazy('img/portfolio-project-4.jpg', 'Разработка проектной документации для Детского лыжно-биатлонного комплекса в п.Лесколово Ленинградская обл.', 'Детский лыжно-биатлонного комплекс п.Лесколово Ленинградская обл.', 'Проектирование')
+
+						.slider-works__item
+							+works-lazy('img/portfolio-project-5.jpg', 'Разработка проектной и рабочей документации для складского логистического комплекса г.Санкт-Петербург', 'Складской логистический комплекс г.Санкт-Петербург', 'Проектирование')
+
+						.slider-works__item
+							+works-lazy('img/portfolio-project-6.jpg', 'Разработка проектной и рабочей документации для Торгового комплекса с административно-складскими зданиями в г.Дзержинский Московская обл.', 'ТК с административно-складскими зданиями г.Дзержинский Московская обл.', 'Проектирование')
+
+						.slider-works__item
+							+works-lazy('img/portfolio-project-8.jpg', 'Проектирование инженерных систем в детском городе профессий Кидбург г.Симферополь республика Крым', 'Детский город профессий Кидбург г.Симферополь республика Крым', 'Проектирование')
+
+						.slider-works__item
+							+works-lazy('img/portfolio-montazh-9.jpg', 'Монтаж систем вентиляции, отопления, водоснабжения и водоотведения общеобразовательной школы на 400 мест г.Санкт-Петербург', 'Общеобразовательная школа на 400 мест г.Санкт-Петербург', 'Монтаж')
+
+						.slider-works__item
+							+works-lazy('img/portfolio-project-9.jpg', 'Проектирование инженерных систем автотранспортного предприятия с административным и производственным зданиями и мойкой в п.Федоровское Ленинградская обл.', 'Автотранспортное предприятие п.Федоровское Ленинградская обл.', 'Проектирование')
+
+			.row
+				.slider-works__btn-wrap.col-xs-12.text-xs-center
+					a.slider-works__btn.btn(href="portfolio.html") Посмотреть все
+
+	section.home__why
+		.container
+			.row
+				.col-xs-12
+					h2.home__title Почему мы?
+			.row.why
+				.why__item.col-md-6.col-lg-3.push-lg-3.text-xs-center
+					.why__icon
+						+svg-icon('team')
+					h4.why__title Команда
+					p.why__text.text-xs-left.text-lg-center Архитекторы. Строители. Менеджеры проекта. Каждый успешный проект начинается с успешной команды.
+				.why__item.col-md-6.col-lg-3.pull-lg-3.text-xs-center
+					.why__icon
+						+svg-icon('experience')
+					h4.why__title Опыт
+					p.why__text.text-xs-left.text-lg-center Высокий уровень квалификации и профессионализм сотрудников нашей компании позволяют создавать и реализовывать проекты любой сложности, соответствующие самым строгим требованиям наших заказчиков.
+				.why__item.col-md-6.col-lg-3.text-xs-center
+					.why__icon
+						+svg-icon('optimization')
+					h4.why__title Оптимизация
+					p.why__text.text-xs-left.text-lg-center Мы работаем в рамках вашего графика и бюджета. Умело применяем здравый смысл и инновационный подход для экономии ваших времени и денег от начала строительства до его завершения.
+				.why__item.col-md-6.col-lg-3.text-xs-center
+					.why__icon
+						+svg-icon('technology')
+					h4.why__title Технологии
+					p.why__text.text-xs-left.text-lg-center Все работы выполняются в соответствии с требованиями нормативной документации, с применением современных материалов и оборудования.
+			.building
+				img.building__img(src="img/building.png", alt="")

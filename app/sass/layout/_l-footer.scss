@@ -1,0 +1,42 @@
+footer {
+	background-color: $main-bg;
+}
+footer h2 {
+	// margin-top: 2rem;
+	text-align: center;
+}
+footer h3 {
+	text-transform: uppercase;
+	font-style: normal;
+}
+footer ul {
+	padding: 0;
+	list-style-type: none;
+}
+footer p,
+footer a {
+	color: $title-color;
+}
+footer a {
+	text-transform: uppercase;
+}
+
+.footer__container {
+	padding-top: 1rem;
+}
+.footer__item {
+	// padding-top: 1.5rem;
+}
+.footer__logo {
+	margin-top: 2rem;
+}
+
+.footer__downline {
+	margin-top: 4rem;
+	background-color: $second-color;
+}
+.footer__downline h6 {
+	padding-top: 1rem;
+	font-style: normal;
+	color: $title-color;
+}

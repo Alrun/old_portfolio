@@ -1,0 +1,53 @@
+.upline {
+	background-color: $second-color;
+}
+.upline svg {
+	vertical-align: bottom;
+}
+.upline__item {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.upline__icon {
+	float: left;
+}
+.upline__icon svg {
+	fill: $title-color;
+}
+.upline__text {
+	display: inline-block;
+	padding-bottom: 0.25em;
+	margin: 0;
+	text-transform: lowercase;
+	vertical-align: middle;
+	font-style: normal;
+}
+.upline__text:not(:first-child) {
+	margin-left: 10px;
+}
+.social__link {
+	display: inline-block;
+	vertical-align: bottom;
+	margin-left: 10px;
+}
+.social__icon svg {
+	stroke: $title-color;
+	stroke-width: 1px;
+	fill: transparent;
+	transition: 0.3s;
+}
+.social__link:hover svg {
+	fill: $title-color;
+}
+.upline-logo {
+	padding: 10px 0;
+}
+
+@media (max-width: 767px) {
+	.upline {
+		background-color: transparent !important;
+	}
+	.svg-mail {
+		margin: 0 5px;
+	}
+}

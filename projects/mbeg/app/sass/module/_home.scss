@@ -1,0 +1,90 @@
+.home__title {
+	margin-bottom: 2rem;
+	text-align: center;
+}
+
+.home-left__link:hover {
+	text-decoration: underline;
+}
+
+.shop__link-wrap {
+	margin-top: 2rem;
+	margin-bottom: 1rem;
+}
+.shop__link {
+	display: inline-block;
+	padding: 5px 20px;
+	border-radius: 10px;
+	background-color: transparent;
+	transition: all 1s;
+	background-color: lighten($second-color, 10%);
+	box-shadow: 1px 1px 15px $main-color;
+}
+.shop__link:hover {
+	background-color: lighten($second-color, 15%);
+	box-shadow: 1px 1px 30px #fff;
+}
+
+
+// uslugi
+.uslugi__main-title {
+	margin-bottom: 0;
+}
+.uslugi__item {
+	margin-top: 2rem;
+}
+.uslugi__icon {
+	fill: darken($title-color, 48%);
+}
+.uslugi__link {
+	margin: 0.5rem 0 1rem; 
+}
+
+
+// projects
+.slider-works {
+	margin-bottom: 4rem;
+}
+.slider-works__img {
+	width: 100%;
+	padding: 0 15px 15px;
+}
+.slider-works .slick-dots {
+	text-align: center;	
+}
+.slider-works .slick-dots li {
+	padding: 2px;
+}
+.slider-works__item {
+	margin-left: 7.5px;
+	margin-right: 7.5px;
+}
+.slider-works .works__desc {
+	background-color: lighten($second-color, 15%) !important;
+}
+
+
+// why
+.home__why {
+	position: relative;
+	padding-bottom: 150px;
+}
+.why__item {
+	margin-bottom: 2rem;
+}
+.why__text {
+	font-size: 0.9375rem;
+}
+.why__icon svg {
+	fill: $main-color;
+}
+.building {
+	position: absolute;
+	bottom: 0;
+	opacity: 0.2;
+}
+.building__img {
+	width: 100%;
+	vertical-align: bottom;
+}
+

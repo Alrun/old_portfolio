@@ -1,0 +1,160 @@
+// Settings
+html {
+	font-size: 16px;
+}
+
+// html,
+// body,
+// button,
+// input,
+// optgroup,
+// select,
+// textarea {
+// 	font-family: $font;
+// }
+
+body {
+  // font-size: 1rem;
+  // font-weight: 400;
+  line-height: 1.1;
+  // color: $text-color;
+  // background-color: lighten($second-color, 12%);
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+	font-family: inherit;
+	font-weight: 400;
+	color: inherit;
+}
+
+// h1, .h1 {font-size: 2rem;}
+// h2, .h2 {font-size: 1.8125rem;}
+// h3, .h3 {font-size: 1.5625rem;}
+// h4, .h4 {font-size: 1.3125rem;}
+// h5, .h5 {font-size: 1.125rem;}
+// h6, .h6 {font-size: 1rem;}
+
+// h1, h2 {
+//   margin-bottom: 0;
+// }
+// .h1 {
+//   color: $title-color;
+// }
+// // .block .h1 {
+// //   padding-top: 2rem;
+// // }
+// h2, h3,
+// .h1, .h2, .h3 {
+//   margin-top: 2rem;
+//   text-transform: uppercase;
+// }
+// h2,
+// .h2 {
+// 	text-transform: uppercase;
+  // margin-bottom: 1.5rem;
+  // color: darken($title-color, 15%);
+// }
+h3,
+.h3 {
+	text-transform: uppercase;
+//   margin-bottom: 1rem;
+//   font-style: italic;
+//   color: darken($title-color, 25%);
+}
+// h4, h5, h6,
+// .h4, .h5, .h6 {
+//   margin-top: 1rem;
+//   font-style: italic;
+
+// }
+// h4,
+// .h4 {
+//   margin-bottom: 1rem;
+//   color: darken($title-color, 35%);
+// }
+// h5, h6,
+// .h5, .h6 {
+//   color: darken($title-color, 55%);
+// }
+
+// h6,
+// .h6 {
+//   text-transform: uppercase;
+// }
+ul {
+	list-style-type: none;
+	padding-left: 2rem;
+}
+li {
+	position: relative;
+
+	&::before {
+		content: '';
+		position: absolute;
+		left: -1em;
+		top: 0.3em;
+		width: 0.6em;
+		height: 0.6em;
+		background-color: red;
+	}
+}
+
+// p {
+//   margin-top: 0;
+//   margin-bottom: 1rem;
+//   letter-spacing: 0.01rem;
+//   font-weight: 400;
+//   word-spacing: 0.2rem;
+// }
+
+// a {
+//   text-decoration: none;
+// }
+
+// img {
+//   width: 100%;
+// }
+
+
+
+// .btn {
+// 	display: inline-block;
+// 	padding: 8px 40px 10px;
+// 	border: 2px solid $main-color;
+// 	text-transform: uppercase;
+// 	font-size: 0.9375rem;
+// 	letter-spacing: 1px;
+// 	color: $main-color;
+// 	transition: all 0.2s;
+
+// 	&:hover {
+// 		color: $title-color;
+// 		background-color: $main-color;
+// 	}
+// 	&:active {
+// 		color: $second-color;
+// 		transition: color 0s;
+// 		font-weight: 500;
+// 	}
+// }
+// .btn_active {
+// 	color: $title-color;
+// 	background-color: $main-color;
+
+// 	&:hover {
+// 		border-color: darken($main-color, 8%);
+// 		background-color: darken($main-color, 8%);
+// 	}
+// }
+
+// .btn[disabled] {
+// 	background-color: #333;
+// 	border-color: #333;
+// 	color: #999;
+// 	cursor: not-allowed;
+// }
+
+// @import 'l-header';
+// @import 'l-body';
+// @import 'l-footer';

@@ -1,0 +1,250 @@
+.info-greet,
+.info-agents,
+.w-search,
+.w-our-office {
+	margin-top: 2rem;
+}
+
+.info {
+	padding-top: 1rem;
+	padding-bottom: 5rem;
+}
+
+@media (min-width: 768px) {
+	.info {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}
+
+.info__text:last-child::after {
+	content: "";
+	display: block;
+	margin-top: 1.5rem;
+	border-top: 2px dotted $text-color;
+	opacity: 0.5;
+}
+
+.info-agents {
+
+	&__head {
+		margin-bottom: 1rem;
+	}
+
+	&__col {
+		margin-bottom: 40px;
+		text-align: left;
+	}
+
+	&__img {
+		width: 100%;
+		border: 4px solid #fff;
+		vertical-align: top;
+		cursor: pointer;
+
+		&:hover {
+			border-color: $second-color;
+		}
+	}
+
+	&__title {
+		margin-top: 15px;
+	}
+
+	&__link {
+		padding: 0px 20px;
+		background: $second-color;
+		text-decoration: none;
+		color: #fff;
+		font-size: 1.5rem;
+		transition: 0.2s;
+
+		&:hover {
+			background: darken($second-color, 10%);
+		}
+	}
+}
+
+.gallery {
+	text-align: center;
+
+	&__input {
+		display: none;
+	}
+
+	&__thumbs {
+		display: inline-block;
+	}
+}
+
+.full {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	padding: 0;
+	margin: 0;
+	opacity: 0;
+	list-style-type: none;
+	z-index: -1;
+	transition: z-index 0.55s, opacity 0.5s;
+	user-select: none;
+	background-color: rgba(0,0,0, 0.5);
+
+	&__item {
+		position: absolute;
+		top: 10%;
+		right: 0;
+		left: 0;
+		transform: scale(0);
+		transition: transform 0.5s;
+	}
+
+	&__container {
+		display: inline-block;
+		position: relative;
+		box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+	}
+
+	&__img {
+		width: 100%;
+		border: 10px solid #fff;
+		vertical-align: top;
+	}
+
+	&__text {
+		position: absolute;
+		bottom: 0px;
+		left: 0;
+		right: 0;
+		padding: 10px;
+		margin: 10px 20% 10px 10px;
+		background-color: rgba(0, 0, 0, 0.5);
+		text-align: left;
+		color: #fff;
+	}
+
+	&__close {
+		position: absolute;
+		right: -35px;
+		top: -0;
+		width: 30px;
+		height: 30px;
+		border-radius: 50%;
+		font-size: 20px;
+		vertical-align: top;
+		font-weight: bold;
+		cursor: pointer;
+		background-color: #fff;
+	}
+}
+
+.gallery__input:checked ~ .full {
+	opacity: 1;
+	z-index: 2;
+	transition: z-index 0.55s, opacity 0.5s;
+}
+
+.gallery__input:nth-of-type(1):checked ~ .full .full__item:nth-of-type(1),
+.gallery__input:nth-of-type(2):checked ~ .full .full__item:nth-of-type(2),
+.gallery__input:nth-of-type(3):checked ~ .full .full__item:nth-of-type(3) {
+	transform: scale(1);
+	transition: transform 0.5s;
+}
+
+.gallery__input:nth-of-type(1):checked ~ .info-agents__col:nth-of-type(1) .info-agents__img,
+.gallery__input:nth-of-type(2):checked ~ .info-agents__col:nth-of-type(2) .info-agents__img,
+.gallery__input:nth-of-type(3):checked ~ .info-agents__col:nth-of-type(3) .info-agents__img {
+	border-color: $second-color;
+}
+
+.search {
+
+	&__label {
+		margin-top: 1rem;
+		margin-bottom: 0.2rem;
+	}
+
+	&__select,
+	&__input {
+		width: 100%;
+		padding: 5px;
+		border: none;
+		background: $main-color;
+		color: $text-color;
+	}
+
+	&__select {
+		cursor: pointer;
+	}
+}
+
+.w-search__btn {
+	display: block;
+	width: 100%;
+	padding: 5px 0px;
+	border: none;
+	margin-top: 2rem;
+	cursor: pointer;
+	background: $second-color;
+	color: #fff;
+	font-size: 1.5rem;
+	transition: 0.2s;
+
+	&:hover {
+		background: darken($second-color, 10%);
+	}
+}
+
+.w-our-office {
+
+	&__img-wrap {
+		background: radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0.20) 0%,rgba(0, 0, 0, 0) 64%);
+	}
+
+	&__img {
+		@include sprite(map);
+		@include icon-full-width(map);
+	}
+
+	&__link {
+		display: inline-block;
+		color: #fff;
+		transition: 0.2s;
+
+		&:hover {
+			color: $second-color;
+		}
+	}
+
+	&__link::before {
+		content: "";
+		display: inline-block;
+		border-width: 4px 6px 4px 4px;
+		border-color: transparent transparent transparent $second-color;
+		border-style: solid;
+	}
+}
+
+
+@media (min-width: 992px) {
+	.info-agents {
+
+		&__col {
+			position: static;
+			margin-bottom: 40px;
+		}
+		
+		&__link {
+			position: absolute;
+			bottom: 0;
+		}
+	}
+}
+
+@media (max-width: 554px) {
+	.full__item {
+		margin: 0 10%;
+	}
+}

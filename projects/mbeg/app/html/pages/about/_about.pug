@@ -1,0 +1,55 @@
+main.about-company
+
+	.container
+		.row.row_fix
+
+			.about-company__item.col-md-3.push-md-9
+				.row
+					.col-xs-12.block
+						.about-company__wrap
+							.about-company__title.h4
+								a.about-company__link(href="about.html") О компании
+							.about-company__title.h4
+								a.about-company__link(href="details.html") Реквизиты
+							.about-company__title.h4
+								a.about-company__link(href="partners.html") Партнеры
+							.about-company__title.h4
+								a.about-company__link(href="reviews.html") Отзывы
+							.about-company__title.h4
+								a.about-company__link(href="vacancy.html") Вакансии
+
+			.about-company__item.col-md-9.pull-md-3
+				.row
+					.col-xs-12.block
+						.breadcrumbs
+							ul.breadcrumbs__list
+								li.breadcrumbs__item
+									a.breadcrumbs__link(href="index.html")
+										span.breadcrumbs__icon
+											+svg-icon('home')
+								li.breadcrumbs__item
+									a.breadcrumbs__link(href="about.html") О компании
+						h1.page__title.h1.mb_1-5#about О компании
+
+						.about__icon
+							+svg-icon('logo', 'text_double')
+						p.about__text
+							|ООО «МБИ» образовалось в результате объединения профессионалов своего дела: инженеров-проектировщиков и инженеров-монтажников.
+						p.about__text.text_white
+							|Занимаясь разработкой проектной документации и строительно-монтажными работами на протяжении многих лет, мы приобрели компетентность в проектировании, согласовании и реализации различных объектов (жилые, общественные, промышленные).
+						p.about__text
+							|Целью создания нашей команды является предоставление честной и качественной услуги в области проектирования и реализации объектов строительства.
+						p.about__text
+							|Мы постоянно совершенствуемся и ищем новые решения в технических задачах, предлагаем более экономичные варианты реализации проектов и более качественные материалы и оборудование.
+						p.about__text
+							|Благодаря совокупности накопленных знаний и опыта, мы выполняем работы «под ключ» с учетом всех требований своих Заказчиков.
+						p.about__text
+							|Полученные допуски СРО позволяют разрабатывать проектную документацию и проводить монтаж инженерных систем для зданий различного назначения.
+
+						.certificates.row#certificates
+							.certificates__item.col-lg-6
+								.row
+									img.certificates__img(src="img/certificate-1.jpg", alt="Допуск СРО", oncontextmenu="return false;")
+							.certificates__item.col-lg-6
+								.row
+									img.certificates__img(src="img/certificate-2.jpg", alt="Свидетельство о допуске к подготовке проектной документации", oncontextmenu="return false;")

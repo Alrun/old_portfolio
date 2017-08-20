@@ -1,0 +1,23 @@
+doctype html
+
+block page-vars
+
+include ../_mixins
+
+html(lang='ru')
+
+	block head
+		include ../includes/_head
+		include ../includes/_styles
+	
+	body.page(data-spy="scroll", data-target=".navbar")
+		
+		include ../includes/_header
+
+		block body
+			include ../pages/_home
+
+		include ../includes/_footer
+
+		block scripts
+			script(src="js/main.js", async)

@@ -1,0 +1,33 @@
+header.header.row
+
+	nav.header__nav
+		include ../../blocks/navbar/_navbar
+
+	.container
+		.header__line.row
+			.logo
+				a.logo__link(href='./index.html')
+					h1.logo__title Real Estate Appraisal
+			.col-md-6.push-md-6
+				.header__line_right.text-xs-center.text-md-right
+					.follow
+						ul.follow__container
+							li.follow__item
+								p.follow__text Follow Us:
+							li.follow__item
+								a.follow__link(href='#')
+									i.follow__icon-tweetter
+							li.follow__item
+								a.follow__link(href='#')
+									i.follow__icon-facebook
+							li.follow__item
+								a.follow__link(href='#')
+									i.follow__icon-add
+		.header__slider.row
+			ul.slider
+				li.slider__item
+					img.slider__img(src="img/slider__slide-1.jpg", alt="House")
+				li.slider__item
+					img.slider__img(src="img/slider__slide-2.jpg", alt="House")
+				li.slider__item
+					img.slider__img(src="img/slider__slide-3.jpg", alt="House")

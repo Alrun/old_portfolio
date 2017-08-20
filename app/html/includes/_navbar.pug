@@ -1,0 +1,59 @@
+.navbar
+	input#nav-mini.navbar__input(type='checkbox')
+	.navbar__container
+
+		.navbar__mobile
+			span.navbar__icon
+			label.navbar__toggler(for='nav-mini')
+			h3.nav__page-title.text_norm МБ Инжиниринг Групп
+		
+		ul.nav-main
+			li.nav-main__item.home_active
+				a.nav-main__link(href='index.html') Главная
+
+			li.nav-main__item.about_active
+				a.nav-main__link.icon-dropdown(href='about.html') О компании
+				ul.nav-second.nav-second_dropdown
+					li.nav-second__item
+						a.nav-second__link(href='details.html') Реквизиты
+					li.nav-second__item
+						a.nav-second__link(href='partners.html') Партнеры
+					li.nav-second__item
+						a.nav-second__link(href='reviews.html') Отзывы
+					li.nav-second__item
+						a.nav-second__link(href='vacancy.html') Вакансии
+
+			li.nav-main__item.portfolio_active
+				a.nav-main__link.icon-dropdown(href='portfolio.html') Портфолио
+				ul.nav-second.nav-second_dropdown
+					li.nav-second__item
+						a.nav-second__link(href='portfolio-project.html') Проекты
+					li.nav-second__item
+						a.nav-second__link(href='portfolio-montazh.html') Монтаж
+
+			li.nav-main__item.montazh_active
+				a.nav-main__link.icon-dropdown(href='montazh.html') Монтаж
+				ul.nav-second.nav-second_dropdown
+					li.nav-second__item
+						a.nav-second__link(href='montazh-el.html') Систем электроснабжения
+					li.nav-second__item
+						a.nav-second__link(href='montazh-vod.html') Систем водоснабжения и канализации
+					li.nav-second__item
+						a.nav-second__link(href='montazh-tep.html') Систем отопления и вентиляции
+					li.nav-second__item
+						a.nav-second__link(href='montazh-cam.html') Слаботочных систем
+
+			li.nav-main__item.project_active
+				a.nav-main__link.icon-dropdown(href='project.html') Проектирование
+				ul.nav-second.nav-second_dropdown
+					li.nav-second__item
+						a.nav-second__link(href='project-oz.html') Общественных зданий
+					li.nav-second__item
+						a.nav-second__link(href='project-zz.html') Жилых зданий
+					li.nav-second__item
+						a.nav-second__link(href='project-pz.html') Производственных зданий
+					li.nav-second__item
+						a.nav-second__link(href='project-is.html') Инженерных систем
+
+			li.nav-main__item.contacts_active
+				a.nav-main__link(href='contacts.html') Контакты

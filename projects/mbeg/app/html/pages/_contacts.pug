@@ -1,0 +1,103 @@
+main.contacts
+
+	.container
+		.row.block
+			.col-xs-12
+				.breadcrumbs
+					ul.breadcrumbs__list
+						li.breadcrumbs__item
+							a.breadcrumbs__link(href="index.html")
+								span.breadcrumbs__icon
+									+svg-icon('home')
+						li.breadcrumbs__item
+							a.breadcrumbs__link(href="contacts.html") Контакты
+				h1.h1.page__title Контакты
+			.col-xs-12
+				h4.contacts__title ООО «МБИ»
+
+	.container
+		.row-table
+			.block-t
+				.block-t__wrap
+					.block-t__content.block-t_w33
+						.contacts-address
+							h1.h3.contacts-address__main-title Наш адрес
+							h5.contacts-address__title Главный офис:
+							p.contacts-address__text
+								|г.Санкт-Петербург, ул.Якорная, д.13, литер А, офис 311. 
+							h5.contacts-address__title Телефоны:
+							.contacts-address__text.cl_title
+								|+7 (812) 937-59-77
+							.contacts-address__text.cl_title
+								|+7 (921) 855-51-66
+							h5.contacts-address__title E-mail:
+							p.contacts-address__text
+								|info@mbeg.ru
+
+						.contacts-time
+							h3.contacts-time__title Режим работы
+							.contacts-time__text
+								|Пн-Пт: 09.00-18.00
+							.contacts-time__text
+								|Сб-Вс: выходной
+
+						.contacts__rekviziti
+							h3.contacts__main-title
+								a.contacts__link(href="details.html#details") Наши реквизиты
+							.contacts__btn-wrap
+								a.contacts__btn.btn(href="download/Rekvizity-OOO-MBI.doc") Скачать
+
+					.block-t__content.block-t_w66
+						.contacts-map
+							h3.contacts-map__title Мы на карте
+
+							iframe.contacts-map__iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.3446016505745!2d30.432206251564892!3d59.94301688178884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631f855b811b5%3A0xbe2730b98941f0ee!2z0K_QutC-0YDQvdCw0Y8g0YPQuy4sIDEzLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTk1MjQ4!5e0!3m2!1sru!2sru!4v1492974964892", width="600", height="450", style="border:0", allowfullscreen)
+
+						.contacts-feedback#feedback
+							h3.contacts-feedback__title Напишите нам
+							.row
+								.contacts-feedback__form.row
+									form.form
+										.form__item
+											.col-md-2
+												label.form__label(for="InputName")
+													|Имя
+													span.form__span.cl_main
+														|*
+											.col-md-10
+												input.form__input#InputName(type="text" required="required" name="InputName" placeholder="Ваше имя")
+										.form__item
+											.col-md-2
+												label.form__label(for="InputPhone")
+													|Телефон
+													span.form__span.cl_main
+														|*
+											.col-md-10
+												input.form__input#InputPhone(type="text" required="required" name="InputPhone" pattern="^[-+0-9()\s]+$" placeholder="Номер телефона")
+										.form__item
+											.col-md-2
+												label.form__label(for="InputEmail")
+													|E-mail
+													span.form__span.cl_main
+														|*
+											.col-md-10
+												input.form__input#InputEmail(type="email" required="required" name="InputEmail" placeholder="Адрес электронной почты")
+										.form__item
+											.col-md-2
+												label.form__label(for="InputMessage")
+													|Сообщение
+													span.form__span.cl_main
+														|*
+											.col-md-10
+												textarea.form__textarea#InputMessage(rows="3" required="required" name="InputMessage" placeholder="Ваше сообщение")
+										.form__item
+											.col-md-12.text-xs-center.text-md-left
+												p.form__text
+													span.form__span.cl_main
+														|* 
+													|- Обязательные поля
+										.form__item
+											.col-md-12.text-xs-center.text-md-left
+												.form__btn-wrap
+													button.form__btn.btn#send(type="button") Отправить
+								.contacts-feedback__success.text-xs-center.h4.cl_main.hidden-xs-up Ваше сообщение успешно отправлено!

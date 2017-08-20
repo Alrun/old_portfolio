@@ -1,0 +1,15 @@
+extends html/layouts/_default
+
+block page-vars
+	-
+		var page = {
+			title: 'Монтаж системы водоснабжения и канализации | МБ Инжиниринг Групп',
+			description: 'Проектирование системы водоснабжения и канализации - полный спектр услуг по монтажу систем водоотведения и канализации любых объектов',
+			keywords: 'монтаж систем водоотведения и канализациии, проектирование систем водоснабжения, проектирование системы канализации'
+		};
+
+block nav
+	include html/includes/navbar-active/_style-montazh
+
+block body
+	include html/pages/montazh/_montazh-vod

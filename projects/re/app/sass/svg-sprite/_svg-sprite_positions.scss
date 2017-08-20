@@ -1,0 +1,13 @@
+$icons: (
+	sprite: (width: 1036px, height: 945px, padding: 5, pngPath: '../img/sprite.png', svgPath: '../img/sprite.svg'),
+
+	carousel__left: (width: 82px, height: 82px, backgroundX: 0px, backgroundY: 0px, bgRelativeX: 0%, bgRelativeY: 0%),
+	carousel__left_active: (width: 82px, height: 82px, backgroundX: 0px, backgroundY: -92px, bgRelativeX: 0%, bgRelativeY: 10.785463071512309%),
+	carousel__right: (width: 82px, height: 82px, backgroundX: 0px, backgroundY: -184px, bgRelativeX: 0%, bgRelativeY: 21.570926143024618%),
+	carousel__right_active: (width: 82px, height: 82px, backgroundX: 0px, backgroundY: -276px, bgRelativeX: 0%, bgRelativeY: 32.356389214536925%),
+	follow__add: (width: 24px, height: 24px, backgroundX: 0px, backgroundY: -368px, bgRelativeX: 0%, bgRelativeY: 40.39517014270033%),
+	follow__facebook: (width: 24px, height: 24px, backgroundX: 0px, backgroundY: -402px, bgRelativeX: 0%, bgRelativeY: 44.12733260153677%),
+	follow__tweetter: (width: 24px, height: 24px, backgroundX: 0px, backgroundY: -436px, bgRelativeX: 0%, bgRelativeY: 47.85949506037321%),
+	logo: (width: 440.3px, height: 122px, backgroundX: 0px, backgroundY: -470px, bgRelativeX: 0%, bgRelativeY: 57.810578105781055%),
+	map: (width: 1026px, height: 333px, backgroundX: 0px, backgroundY: -602px, bgRelativeX: 0%, bgRelativeY: 100%),
+);

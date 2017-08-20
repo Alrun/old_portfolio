@@ -1,0 +1,14 @@
+@import '../../blocks/tooltip/tooltip';
+
+.tooltip {
+	color: $second-color;
+
+	&::before {
+		color: #fff;
+		background: $second-color;
+	}
+
+	&::after {
+		border-color: $second-color transparent transparent transparent;
+	}
+}

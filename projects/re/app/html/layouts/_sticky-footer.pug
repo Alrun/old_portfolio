@@ -1,0 +1,22 @@
+doctype html
+
+block page-vars
+
+html(lang='ru')
+
+	block head
+		include ../includes/_head
+
+	body.page
+		.sticky-footer.container
+			.sticky-footer__table
+				include ../includes/_header
+
+				.sticky-footer__table-row
+					block body
+						include ../pages/_home
+
+				include ../includes/_footer
+
+				block scripts
+					//- script(src="js/main.js")

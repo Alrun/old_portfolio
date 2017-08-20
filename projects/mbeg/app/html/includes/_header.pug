@@ -1,0 +1,92 @@
+header.header
+	.header__item
+		.upline
+			.container
+				.upline-logo.row.hidden-md-up
+					.logo.col-sm-12
+						a.logo__link(href="index.html")
+							.logo__icon
+								+svg-icon('logo')
+							.logo-desc
+						h5.logo-desc__text Разработка проектной документации
+						h5.logo-desc__text Строительно-монтажные работы
+						h5.logo-desc__text Поставка инженерного оборудования
+				.row
+					.upline__item.col-xs-8.col-sm-6.col-md-4.col-lg-3
+						.upline__icon
+							+svg-icon('phone')
+						.upline__text.cl_main +7 (812) 937 59 77
+
+					.upline__item.col-xs-4.col-sm-6.col-md-4.push-md-4.push-lg-5
+						.social.text-xs-right
+							a.social__link(href="https://www.facebook.com/MBEGroup/", target="_blank")
+								.social__icon
+									+svg-icon('social-facebook')
+							a.social__link(href="https://vk.com/tehnosbyt24", target="_blank")
+								.social__icon
+									+svg-icon('social-vk')
+
+					.upline__item.col-xs-12.col-md-4.pull-md-4.pull-md-4
+						.upline__icon
+							+svg-icon('mail')
+						.upline__text.cl_main info@mbeg.ru
+
+	.header__container
+		.slider-bg
+			.slider-bg__item
+				img.slider-bg__img(src="img/slide-1.jpg", alt="")
+			.slider-bg__item
+				img.slider-bg__img(src="/", data-lazy="img/slide-3.jpg", alt="")
+			.slider-bg__item
+				img.slider-bg__img(src="/", data-lazy="img/slide-4.jpg", alt="")
+			.slider-bg__item
+				img.slider-bg__img(src="/", data-lazy="img/slide-2.jpg", alt="")
+
+		.header__line.container
+			.nav-wrap.row.row_fix
+				.header-logo.hidden-sm-down.col-md-1.col-xl-4
+					.logo
+						a.logo__link(href="index.html")
+							.logo__icon
+								+svg-icon('logo')
+						.logo-desc.hidden-lg-down
+							h5.logo-desc__text Разработка проектной документации
+							h5.logo-desc__text Строительно-монтажные работы
+							h5.logo-desc__text Поставка инженерного оборудования
+				nav.header-nav.col-sm-12.col-md-11.col-xl-8
+					include _navbar
+
+			.row
+				.slider-main.hidden-sm-down
+					.slider-main__item
+						.slider-main__hero
+							.hero.hero_left-top
+								.hero__text-up.text-xs-left ООО «МБИ»
+								.hero__text-main МБ Инжиниринг
+								.hero__text-down Групп
+								a.hero__btn.btn.btn_active.text-xs-right(href="about.html#about") О компании
+						img.slider-main__img(src="img/slide-1.jpg", alt="")
+					.slider-main__item
+						.slider-main__hero
+							.hero.hero_right-top
+								.hero__text-up.text-xs-left Любой сложности
+								.hero__text-main Проектирование
+								.hero__text-down
+								a.hero__btn.btn.btn_active.text-xs-right(href="contacts.html#feedback") Заказать
+						img.slider-main__img(src="/", data-lazy="img/slide-3.jpg", alt="")
+					.slider-main__item
+						.slider-main__hero
+							.hero.hero_right-bottom
+								.hero__text-up.text-xs-left Инженерных систем
+								.hero__text-main Монтаж
+								.hero__text-down
+								a.hero__btn.btn.btn_active.text-xs-right(href="contacts.html#feedback") Заказать
+						img.slider-main__img(src="/", data-lazy="img/slide-4.jpg", alt="")
+					.slider-main__item
+						.slider-main__hero
+							.hero.hero_right-bottom
+								.hero__text-up.text-xs-left Инженерного оборудования
+								.hero__text-main Интернет-магазин
+								.hero__text-down
+								a.hero__btn.btn.btn_active.text-xs-right(href="http://www.tehnosbyt24.ru/", target="_blank") Перейти
+						img.slider-main__img(src="/", data-lazy="img/slide-2.jpg", alt="")

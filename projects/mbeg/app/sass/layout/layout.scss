@@ -1,0 +1,40 @@
+.btn {
+	display: inline-block;
+	padding: 8px 40px 10px;
+	border: 2px solid $main-color;
+	text-transform: uppercase;
+	font-size: 0.9375rem;
+	letter-spacing: 1px;
+	color: $main-color;
+	transition: all 0.2s;
+
+	&:hover {
+		color: $title-color;
+		background-color: $main-color;
+	}
+	&:active {
+		color: $second-color;
+		transition: color 0s;
+		font-weight: 500;
+	}
+}
+.btn_active {
+	color: $title-color;
+	background-color: $main-color;
+
+	&:hover {
+		border-color: darken($main-color, 8%);
+		background-color: darken($main-color, 8%);
+	}
+}
+
+.btn[disabled] {
+	background-color: #333;
+	border-color: #333;
+	color: #999;
+	cursor: not-allowed;
+}
+
+@import 'l-header';
+@import 'l-body';
+@import 'l-footer';

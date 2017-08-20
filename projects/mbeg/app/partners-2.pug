@@ -1,0 +1,15 @@
+extends html/layouts/_default
+
+block page-vars
+	-
+		var page = {
+			title: 'Партнеры | МБ Инжиниринг Групп',
+			keywords: 'партнеры МБИ, партнеры компании МБ Инжиниринг Групп',
+			description: 'Партнеры компании МБ Инжиниринг Групп - компании с мировым именем такие как Ikea, Daikin, Fazer, Yota, Кидбург и многие другие.'
+		};
+
+block nav
+	include html/includes/navbar-active/_style-about
+
+block body
+	include html/pages/about/_partners-2

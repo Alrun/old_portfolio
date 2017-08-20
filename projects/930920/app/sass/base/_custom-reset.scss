@@ -1,0 +1,32 @@
+/* Custom Reset */
+html {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+  -ms-overflow-style: scrollbar;
+  -webkit-tap-highlight-color: transparent;
+}
+
+* {
+	-webkit-box-sizing: inherit;
+	box-sizing: inherit;
+	outline: none;
+
+	&::before {
+		-webkit-box-sizing: inherit;
+		box-sizing: inherit;
+  }
+	&::after {
+		-webkit-box-sizing: inherit;
+		box-sizing: inherit;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  margin-top: 0;
+  margin-bottom: 8px;
+}

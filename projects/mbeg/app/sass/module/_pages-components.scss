@@ -1,0 +1,154 @@
+.svg-checkbox {
+	font-size: 14px;
+	fill: $main-color;
+}
+
+
+// Page Breadcrumbs
+.breadcrumbs {
+	padding-top: 2rem;
+}
+.breadcrumbs__list {
+	margin: 0;
+	padding: 0;
+}
+.breadcrumbs__item {
+	display: inline-block;
+	color: $text-color;
+}
+.breadcrumbs__item:last-child {
+	color: $title-color;
+}
+.breadcrumbs__item::after {
+	content: '›';
+	display: inline;
+	margin-left: 0.4rem;
+	margin-right: 0.2rem;
+}
+.breadcrumbs__item:last-child::after {
+	display: none;
+}
+.breadcrumbs__link {
+	vertical-align: top;
+	color: inherit;
+}
+.breadcrumbs__link:hover {
+	text-decoration: underline;
+}
+.breadcrumbs__icon {
+	fill: $main-color;
+}
+
+@media (min-width: 768px) {
+	.breadcrumbs {
+		text-align: right;
+		float: right;
+		padding-top: 2.5rem;
+	}
+
+	// Page Title
+	.page__title {
+		max-width: 65%;
+		margin-top: 1.5rem;
+	}
+}
+
+
+// Form
+.form__label {
+	display: block;
+	margin-bottom: 3px;
+	cursor: pointer;
+}
+.form__input,
+.form__textarea {
+	width: 100%;
+	padding: 5px;
+	margin-bottom: 1rem;
+	border: 1px solid $main-color;
+	background-color: transparent;
+	color: $title-color;
+}
+.form__textarea {
+	resize: vertical;
+}
+.form__span {
+	margin-left: 2px;
+}
+.form__btn {
+	cursor: pointer;
+	background-color: transparent;
+}
+.form__input_error {
+	border-color: #ff0000;
+}
+
+
+// Page Tile
+.tile__item {
+	max-height: 215px;
+	padding-top: 30px;
+	padding-bottom: 50px;
+	margin-left: -7.5px;
+	margin-right: -7.5px;
+}
+.tile__title {
+	padding: 0 10px;
+	color: darken($title-color, 48%);
+	transition: 0.25s;
+}
+.tile__link:hover .tile__title {
+	color: $main-color;
+}
+.tile__icon {
+	fill: darken($title-color, 48%);
+	transition: 0.25s;
+}
+.tile__link:hover .tile__icon {
+	fill: $main-color;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+	.tile__title {
+		font-size: 0.9375rem;
+	}
+}
+
+.welcome {
+	padding-top: 2.5rem;
+	margin-bottom: 2rem;
+	text-align: center;
+}
+.welcome__text {
+	font-style: italic;
+	text-transform: uppercase;
+	color: $title-color;
+	line-height: 1;
+}
+.welcome__text_up {
+	font-size: 1.3125rem;
+}
+.welcome__text_down {
+	font-size: 1.8125rem;
+}
+
+
+// Page Post
+.post__icon {
+	float: left;
+	margin: 0 25px 5px 15px;
+	fill: #858585;
+}
+.post__img-wrap {
+	margin-top: 40px;
+	margin-bottom: 15px;
+}
+.post__img {
+	vertical-align: top;
+}
+
+@media (min-width: 768px) {
+	.post__img-wrap {
+		margin-right: 15px;
+	}
+}
