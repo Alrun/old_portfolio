@@ -1,13 +1,15 @@
-// Background
-$main-color: #47b900; 
-$second-color: #000000;
-$main-bg: lighten($second-color, 6%);
-
 // Font
 @import '../../fonts/play/play';
+
 $sans-serif: Tahoma, Verdana, Arial, sans-serif;
 $serif: serif;
-
-$title-color: #fff;
-$text-color: #979797;
 $font: 'Play', $sans-serif;
+
+
+// Color
+$main: #00f0e6;
+$main-light: lighten($main, 40%);
+
+$second: #07445e;
+$second-light: lighten($second, 10%);
+$second-dark: darken($second, 10%);

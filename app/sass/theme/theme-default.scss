@@ -1,21 +1,31 @@
 .page {
-	background-color: lighten($second-color, 12%);
-	background-image: url("../img/fon.png")
+	background-color: $second-dark;
+	color: $main;
+	background-image: linear-gradient(rgba(0,200,255, 0.1) 2px, transparent 2px),
+	linear-gradient(90deg, rgba(0,200,255, 0.1) 2px, transparent 2px),
+	linear-gradient(rgba(0,200,255, 0.1) 1px, transparent 1px),
+	linear-gradient(90deg, rgba(0,200,255, 0.1) 1px, transparent 1px);
+	background-size:100px 100px, 100px 100px, 20px 20px, 20px 20px;
+	background-position:-2px -2px, -2px -2px, -1px -1px, -1px -1px
 }
 
-section:last-child {
-	margin-bottom: 3rem;
-}
-.home__why {
-	margin-bottom: 0 !important;
+.grad {
+	background-image: repeating-linear-gradient(0deg, transparent, rgba(0,0,0, 0.15) 4px);
 }
 
+// section:last-child {
+// 	margin-bottom: 3rem;
+// }
+// .home__why {
+// 	margin-bottom: 0 !important;
+// }
 
-.footer__container,
-.downline__text {
-	font-size: 0.8125rem;
-}
-.downline__text {
-	padding-top: 0.5rem;
-	font-style: normal;
-}
+
+// .footer__container,
+// .downline__text {
+// 	font-size: 0.8125rem;
+// }
+// .downline__text {
+// 	padding-top: 0.5rem;
+// 	font-style: normal;
+// }

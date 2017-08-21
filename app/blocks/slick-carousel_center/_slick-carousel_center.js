@@ -6,6 +6,7 @@
     slidesToScroll: 1,
     arrows: true,
     draggable: false,
+    focusOnSelect: true,
     responsive: [ 
       {
         breakpoint: 1200,

@@ -5,34 +5,43 @@
 }
 
 @media (-webkit-min-device-pixel-ratio: 1.1), (-webkit-min-device-pixel-ratio: 1.09375), (min-resolution: 105dpi), (min-resolution: 1.1dppx) {
-	.pswp--svg .pswp__button,
-	.pswp--svg .pswp__button--arrow--left:before,
-	.pswp--svg .pswp__button--arrow--right:before {
-		background-image: url(../vendor/photoswipe/res/default-skin.svg);
-	}
+  /* Serve SVG sprite if browser supports SVG and resolution is more than 105dpi */
+  .pswp--svg .pswp__button,
+  .pswp--svg .pswp__button--arrow--left:before,
+  .pswp--svg .pswp__button--arrow--right:before {
+  	background-image: url(../vendor/photoswipe/res/default-skin.svg);
+  }
+  .pswp--svg .pswp__button--arrow--left,
+  .pswp--svg .pswp__button--arrow--right {
+  	background: none;
+  }
 }
-
-.pswp__preloader--active .pswp__preloader__icn {
-	background: url(../img/preloader.gif) 0 0 no-repeat;
-}
-
 .pswp__button--close {
 	background-position: 0 -44px;
 }
-
 .pswp__button--share {
 	background-position: -44px -44px;
 }
-
 .pswp--fs .pswp__button--fs {
 	background-position: -44px 0;
 }
-
 .pswp__button--zoom {
 	display: none;
-	background-position: -88px 0;
+	background-position: -88px 0; 
 }
-
 .pswp--zoomed-in .pswp__button--zoom {
 	background-position: -132px 0;
+}
+.pswp__button--arrow--left:before {
+	left: 6px;
+	background-position: -138px -44px;
+}
+.pswp__button--arrow--right:before {
+	right: 6px;
+	background-position: -94px -44px;
+}
+
+
+.pswp__preloader--active .pswp__preloader__icn {
+	background: url(../img/preloader.gif) 0 0 no-repeat;
 }

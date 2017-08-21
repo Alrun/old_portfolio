@@ -3,18 +3,134 @@
 }
 
 // Portfolio
-.slick-slide__list-title {
-	position: relative;
-	margin:1em 0 0.3em 1rem;
-	text-transform: uppercase;
+.slick-active {
+	cursor: pointer;
+}
+.slick-center {
+	cursor: default;
+}
 
-	&::before {
-		content: '';
-		position: absolute;
-		top: 0.4em;
-		left: -1em;
-		width: 0.7em;
-		height: 0.3em;
-		background-color: red;
+.slick-slide {
+
+	&__inner {
+		background-color: $second-dark;
+		position: relative;
+
+		&::after {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			box-shadow: inset 0 0 15px 5px $main;
+			opacity: 0.2;
+		}
+	}
+
+	&__thumbs {
+		margin: 0 -15px;
+		background-color: #000;
+	}
+
+	&__head {
+		margin: 0 -15px;
+		background-color: $second-light;
+	}
+
+	&__description {
+		margin-bottom: 0;
+	}
+
+	&__list-title {
+		position: relative;
+		margin: 1em 0 0.3em 1.1rem;
+		text-transform: uppercase;
+		color: $main-light;
+
+		&::before {
+			content: '';
+			position: absolute;
+			top: 0.4em;
+			left: -1.1em;
+			width: 0.7em;
+			height: 0.3em;
+			background-color: $main-light;
+		}
+	}
+}
+.slick-active .slick-slide__inner {
+
+	&::after {
+		z-index: 2;
+	}
+}
+.slick-center .slick-slide__inner {
+
+	&::after {
+		z-index: 0;
+	}
+}
+
+.list {
+	padding-left: 2.3rem;
+
+	&__item {
+		position: relative;
+
+		&::before {
+			content: '';
+			position: absolute;
+			left: -1.1em;
+			top: 0.3em;
+			width: 0.6em;
+			height: 0.6em;
+			background-color: $main-light;
+		}
+	}
+}
+
+
+.project {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 3;
+
+	&__list-drop {
+		padding-left: 0;
+		margin-bottom: 0;
+		z-index: -1;
+	}
+
+	&__item {
+		float: left;
+	}
+
+	&__link {
+		float: left;
+		width: 48px;
+		height: 48px;
+		background-color: $second;
+	}
+}
+
+@media (min-width: 768px) {
+	.project {
+		left: auto;
+		right: 0;
+		width: 48px;
+		z-index: 3;
+
+		&__list-drop {
+			position: absolute;
+			top: -100%;
+			left: 0;
+			transition: top 0.5s;
+		}
+	}
+	.project:hover .project__list-drop {
+		top: 100%;
 	}
 }

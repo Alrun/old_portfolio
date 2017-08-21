@@ -1,6 +1,10 @@
 .ps-gallery__item {
 	margin: 0px;
 	padding: 0;
+	z-index: 1;
+}
+.ps-gallery__link {
+	display: block;
 }
 .ps-gallery__img {
 	width: 100%;

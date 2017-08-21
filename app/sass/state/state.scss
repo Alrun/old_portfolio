@@ -181,23 +181,6 @@
   display: none !important;
 }
 
-// Colors
-.cl_main {
-  color: $main-color;
-}
-.cl_second {
-  color: $second-color;
-}
-.cl_title {
-  color: $title-color;
-}
-
-.bg_main {
-  background-color: $main-bg;
-}
-.bg_second {
-  background-color: $second-color;
-}
 
 // Text-transform
 .text_up {
@@ -233,11 +216,6 @@
   font-size: 2rem;
 }
 
-// Text-color
-.text_white {
-  color: darken($title-color, 10%);
-  font-weight: 300;
-}
 
 
 .px-0 {
@@ -254,4 +232,9 @@
 }
 .mb_1-5 {
   margin-bottom: 1.5rem;
+}
+
+
+.overflow_hidden {
+  overflow: hidden;
 }
