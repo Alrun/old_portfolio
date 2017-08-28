@@ -1,0 +1,74 @@
+.page {
+  color: $main;
+  background-color: $second-dark;
+  background-image: linear-gradient(rgba(0,200,255, 0.1) 2px, transparent 2px),
+  linear-gradient(90deg, rgba(0,200,255, 0.1) 2px, transparent 2px),
+  linear-gradient(rgba(0,200,255, 0.1) 1px, transparent 1px),
+  linear-gradient(90deg, rgba(0,200,255, 0.1) 1px, transparent 1px);
+  background-size:100px 100px, 100px 100px, 20px 20px, 20px 20px;
+  background-position:-2px -2px, -2px -2px, -1px -1px, -1px -1px;
+}
+
+.tip-bg {
+  border-bottom: 10px solid $second-dark;
+  background-image: radial-gradient(circle at center, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%), repeating-linear-gradient(0deg, transparent, rgba(0,0,0, 0.15) 4px);
+}
+
+.grad {
+  background-image: repeating-linear-gradient(0deg, transparent, rgba(0,0,0, 0.15) 4px);
+}
+
+.block {
+  margin-bottom: 1.5rem;
+
+  &_bg {
+    box-shadow: inset 0 0 35px 0 rgba($main-light, 0.5);
+    background-color: $second-dark;
+    background-image: repeating-linear-gradient(0deg, transparent, rgba(0,0,0, 0.15) 4px);
+  }
+
+  &__head {
+    display: flex;
+    position: relative;
+    width: 100%;
+    margin-bottom: -45px;
+    align-items: center;
+    background-color: rgba($second, 0.5);
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+
+      border: 1px solid rgba($main, 0.5);
+      box-shadow: inset 0 0 25px 0 rgba($main, 0.5);
+    }
+  }
+
+  &__icon {
+    font-size: 32px;
+    float: left;
+    padding: 7px;
+    margin-right: 15px;
+    background-color: $second;
+  }
+
+  &__title {
+    display: flex;
+    margin-bottom: 0;
+    line-height: 0.8;
+  }
+
+  &__content {
+    padding-top: 45px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .block {
+    margin-bottom: 2rem;
+  }
+}

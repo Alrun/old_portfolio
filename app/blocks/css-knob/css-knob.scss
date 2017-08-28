@@ -1,0 +1,264 @@
+.knob {
+  display: inline-block;
+  position: relative;
+  width: 12em;
+  height: 12em;
+  border: 0.5em solid rgba($main, 0.5);
+  box-sizing: content-box;
+  border-radius: 50%;
+  background-color: $second;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+  }
+
+  &::before {
+    width: 7.5em;
+    height: 7.5em;
+    background-color: $second;
+    transform: translate(-50%, -50%);
+  }
+
+  &::after {
+    width: 8.5em;
+    height: 8.5em;
+    border: 0.9em solid rgba($main, 0.2);
+    transform: translate(-50%, -50%);
+  }
+
+  &__inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 7.5em;
+    height: 7.5em;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: 1;
+    background: $second;
+  }
+
+  &__content {
+    font-size: 1rem;
+  }
+
+  &__text {
+    margin-bottom: 0;
+    font-size: 1.5rem;
+    color: $main;
+  }
+
+  &__bar-wrap {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 6em;
+    height: 12em;
+    overflow: hidden;
+  }
+
+  &__bar-one,
+  &__bar-two {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 12em;
+    height: 12em;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.knob__bar-one::before,
+.knob__bar-one::after,
+.knob__bar-two::before,
+.knob__bar-two::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  border-style: solid;
+  border-radius: 50%;
+}
+
+.knob__bar-one::before,
+.knob__bar-two::before {
+  left: 0;
+  width: 0;
+  height: 0;
+  border-width: 5.2em;
+  transform: rotate(45deg);
+}
+.knob__bar-one::before {
+  border-color: $main transparent transparent $main;
+}
+
+.knob__bar-two::before {
+  display: none;
+  border-color: $main $main transparent transparent;
+}
+
+.knob__bar-one::after,
+.knob__bar-two::after {
+  left: 0;
+  width: 11.5em;
+  height: 11.5em;
+  border-width: 0.3em;
+  box-sizing: border-box;
+  transform: rotate(45deg);
+}
+
+.knob__bar-one::after {
+  border-color: $main transparent transparent $main;
+}
+
+.knob__bar-two::after {
+  display: none;
+  border-color: $main $main transparent transparent;
+}
+
+.knob_55 .knob__bar-wrap,
+.knob_60 .knob__bar-wrap,
+.knob_65 .knob__bar-wrap,
+.knob_70 .knob__bar-wrap,
+.knob_75 .knob__bar-wrap,
+.knob_80 .knob__bar-wrap,
+.knob_85 .knob__bar-wrap,
+.knob_90 .knob__bar-wrap,
+.knob_95 .knob__bar-wrap,
+.knob_100 .knob__bar-wrap {
+  overflow: visible;
+}
+
+.knob_55 .knob__bar-two::before,
+.knob_55 .knob__bar-two::after,
+.knob_60 .knob__bar-two::before,
+.knob_60 .knob__bar-two::after,
+.knob_65 .knob__bar-two::before,
+.knob_65 .knob__bar-two::after,
+.knob_70 .knob__bar-two::before,
+.knob_70 .knob__bar-two::after,
+.knob_75 .knob__bar-two::before,
+.knob_75 .knob__bar-two::after,
+.knob_80 .knob__bar-two::before,
+.knob_80 .knob__bar-two::after,
+.knob_85 .knob__bar-two::before,
+.knob_85 .knob__bar-two::after,
+.knob_90 .knob__bar-two::before,
+.knob_90 .knob__bar-two::after,
+.knob_95 .knob__bar-two::before,
+.knob_95 .knob__bar-two::after,
+.knob_100 .knob__bar-two::before,
+.knob_100 .knob__bar-two::after {
+  display: block;
+}
+
+.knob_5 .knob__bar-one::before,
+.knob_5 .knob__bar-one::after {
+  transform: rotate(-27deg);
+}
+
+.knob_10 .knob__bar-one::before,
+.knob_10 .knob__bar-one::after {
+  transform: rotate(-9deg);
+}
+
+.knob_15 .knob__bar-one::before,
+.knob_15 .knob__bar-one::after {
+  transform: rotate(9deg);
+}
+
+.knob_20 .knob__bar-one::before,
+.knob_20 .knob__bar-one::after {
+  transform: rotate(27deg);
+}
+
+.knob_25 .knob__bar-one::before,
+.knob_25 .knob__bar-one::after {
+  transform: rotate(45deg);
+}
+
+.knob_30 .knob__bar-one::before,
+.knob_30 .knob__bar-one::after {
+  transform: rotate(63deg);
+}
+
+.knob_35 .knob__bar-one::before,
+.knob_35 .knob__bar-one::after {
+  transform: rotate(81deg);
+}
+
+.knob_40 .knob__bar-one::before,
+.knob_40 .knob__bar-one::after {
+  transform: rotate(99deg);
+}
+
+.knob_45 .knob__bar-one::before,
+.knob_45 .knob__bar-one::after {
+  transform: rotate(117deg);
+}
+
+.knob_50 .knob__bar-one::before,
+.knob_50 .knob__bar-one::after {
+  transform: rotate(135deg);
+}
+
+.knob_55 .knob__bar-one::before,
+.knob_55 .knob__bar-one::after {
+  transform: rotate(153deg);
+}
+
+.knob_60 .knob__bar-one::before,
+.knob_60 .knob__bar-one::after {
+  transform: rotate(171deg);
+}
+
+.knob_65 .knob__bar-one::before,
+.knob_65 .knob__bar-one::after {
+  transform: rotate(189deg);
+}
+
+.knob_70 .knob__bar-one::before,
+.knob_70 .knob__bar-one::after {
+  transform: rotate(207deg);
+}
+
+.knob_75 .knob__bar-one::before,
+.knob_75 .knob__bar-one::after {
+  transform: rotate(225deg);
+}
+
+.knob_80 .knob__bar-one::before,
+.knob_80 .knob__bar-one::after {
+  transform: rotate(243deg);
+}
+
+.knob_85 .knob__bar-one::before,
+.knob_85 .knob__bar-one::after {
+  transform: rotate(261deg);
+}
+
+.knob_90 .knob__bar-one::before,
+.knob_90 .knob__bar-one::after {
+  transform: rotate(279deg);
+}
+
+.knob_95 .knob__bar-one::before,
+.knob_95 .knob__bar-one::after {
+  transform: rotate(297deg);
+}
+
+.knob_100 .knob__bar-one::before,
+.knob_100 .knob__bar-one::after {
+  transform: rotate(315deg);
+}

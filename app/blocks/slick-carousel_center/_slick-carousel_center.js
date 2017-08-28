@@ -5,6 +5,7 @@
     slidesToShow: 3,
     slidesToScroll: 1,
     arrows: true,
+    dots: true,
     draggable: false,
     focusOnSelect: true,
     responsive: [ 
@@ -13,7 +14,6 @@
         settings: {
           centerMode: false,
           slidesToShow: 1,
-          dots: true,
           draggable: true
         }
       },
@@ -22,7 +22,6 @@
         settings: {
           slidesToShow: 1,
           arrows: false,
-          dots: true,
           draggable: true
         }
       }

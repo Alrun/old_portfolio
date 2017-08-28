@@ -1,18 +1,3 @@
-.page {
-	background-color: $second-dark;
-	color: $main;
-	background-image: linear-gradient(rgba(0,200,255, 0.1) 2px, transparent 2px),
-	linear-gradient(90deg, rgba(0,200,255, 0.1) 2px, transparent 2px),
-	linear-gradient(rgba(0,200,255, 0.1) 1px, transparent 1px),
-	linear-gradient(90deg, rgba(0,200,255, 0.1) 1px, transparent 1px);
-	background-size:100px 100px, 100px 100px, 20px 20px, 20px 20px;
-	background-position:-2px -2px, -2px -2px, -1px -1px, -1px -1px
-}
-
-.grad {
-	background-image: repeating-linear-gradient(0deg, transparent, rgba(0,0,0, 0.15) 4px);
-}
-
 // section:last-child {
 // 	margin-bottom: 3rem;
 // }

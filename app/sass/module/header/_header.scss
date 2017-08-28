@@ -1,0 +1,172 @@
+.header {
+  padding-bottom: 3rem;
+  margin-bottom: 3rem;
+  background-color: $second-dark;
+}
+
+.version {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+
+.main-circle {
+  //margin-top: 30px;
+  position: relative;
+  padding-top: 100%;
+  border-radius: 50%;
+  box-shadow: inset 0 0 100px rgba(191, 255, 255, 0.5);
+}
+
+.main-circle::before,
+.main-circle::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+}
+
+.main-circle::before {
+  border: 3px solid rgba(191, 255, 255, 0.8);
+}
+
+.main-circle::after {
+  border: 1px solid #00f0e6;
+  margin: -25px;
+}
+
+.main-circle__decor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 8px solid #00f0e6;
+  margin: -20px;
+  border-radius: 50%;
+}
+
+.main-circle__decor::before,
+.main-circle__decor::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+  border-width: 15px;
+  margin: -8px;
+  border-style: solid;
+}
+
+.main-circle__decor::before {
+  border-color: #00f0e6 transparent transparent transparent;
+  transform: rotate(-135deg);
+}
+
+.main-circle__decor::after {
+  border-color: #00f0e6 #00f0e6 transparent transparent;
+  /* transform: rotate(90deg); */
+}
+
+.main-circle__content {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 130px;
+  height: 80px;
+  margin: auto;
+  background-color: deeppink;
+}
+
+.circle-left,
+.circle-right {
+  position: absolute;
+  width: 80%;
+  height: 100px;
+}
+
+.circle-left {
+  bottom: 30px;
+  right: 60px;
+  border-bottom: 1px solid deepskyblue;
+}
+
+.circle-right {
+  top: 30px;
+  left: 60px;
+}
+
+/* 		.circle-left::before,
+.circle-left::after,
+.circle-right::before
+.circle-right::after {
+    content: '';
+    position: absolute;
+    background-color: pink;
+    width: 60px;
+    height: 100px;
+}
+.circle-left::before {
+    right: -60px;
+    top: 0;
+}
+.circle-right::before {
+    left: -60px;
+    top: 0;
+} */
+.circle-left-line {
+  position: absolute;
+  bottom: -1px;
+  right: -27%;
+  width: 27%;
+  height: 71%;
+  overflow: hidden;
+}
+
+.circle-left-line::before,
+.circle-left-line::after {
+  content: '';
+  position: absolute;
+
+}
+
+.circle-left-line::before {
+  top: 85%;
+  left: -55%;
+  width: 150%;
+  height: 1px;
+  background-color: deepskyblue;
+  transform: rotate(145deg);
+}
+
+.circle-left-line::after {
+  top: -400%;
+  right: -450%;
+  width: 500%;
+  height: 588%;
+  border: 1px solid deepskyblue;
+  border-radius: 50%;
+}
+
+.social {
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+}
+
+.social__item {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+  vertical-align: top;
+  border-radius: 50%;
+  background-color: magenta;
+}

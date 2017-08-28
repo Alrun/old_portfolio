@@ -1,12 +1,38 @@
 .ps-gallery__item {
-	margin: 0px;
-	padding: 0;
-	z-index: 1;
+  margin: 0px;
+  padding: 0;
+  z-index: 3;
+  opacity: 0.8;
+  transition: opacity 0.25s;
+
+  &_main {
+    height: 320px;
+    overflow: hidden;
+  }
+
+  &:hover {
+    opacity: 1;
+    // box-shadow: inset 0 0 10px 5px $main;
+  }
 }
+
 .ps-gallery__link {
-	display: block;
+  display: block;
 }
+
 .ps-gallery__img {
-	width: 100%;
-	vertical-align: top;
+  width: 100%;
+  vertical-align: top;
+}
+
+@media (min-width: 768px) {
+  .ps-gallery__item_main {
+    height: 400px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .ps-gallery__item {
+    z-index: 1;
+  }
 }

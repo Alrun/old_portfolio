@@ -1,16 +1,14 @@
-// @import 'header/header_upline';
-// @import 'header/header_logo';
-// @import 'header/header_navbar';
-// @import 'header/header';
+@import 'header/header';
 
 @import '../../blocks/slick-carousel_center/slick-carousel_center';
-@import 'slick';
+
+@import '../../blocks/css-knob/css-knob';
 
 @import 'photoswipe';
 
-// @import 'pages-components';
+@import 'page-components';
 
 @import 'pages/home';
 // @import 'pages/404';
 
-// @import 'footer';
+ @import 'footer';

@@ -200,6 +200,7 @@
   font-style: normal;
 }
 
+
 // Text-decoration
 .underline {
   text-decoration: underline;
@@ -218,22 +219,19 @@
 
 
 
-.px-0 {
-  padding-right: 0 !important;
-  padding-left: 0 !important;
-}
+//.mt_0 {
+//  margin-top: 0;
+//}
+//.mt_1-5 {
+//  margin-top: 1.5rem;
+//}
+//.mb_1-5 {
+//  margin-bottom: 1.5rem;
+//}
 
-
-.mt_0 {
-  margin-top: 0;
+.h_100 {
+  height: 100%;
 }
-.mt_1-5 {
-  margin-top: 1.5rem;
-}
-.mb_1-5 {
-  margin-bottom: 1.5rem;
-}
-
 
 .overflow_hidden {
   overflow: hidden;

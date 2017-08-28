@@ -1,12 +1,96 @@
 main.home
-	
-	section.about
-		h6.h2 Умения
 
-	section
-		h6.h2 Выполненные проекты
+  section.about
+    .container
+      .row
 
-		.container
-			.row
-				.col-md-12
-					include ../../blocks/slick-carousel_center/_slick-carousel_center
+        .about-left.col-md-5.col-lg-4
+
+          .about-left__wrap.row.flex-column
+            .block
+              .about-left__item.col-md-auto
+                .about-photo
+                  img.about-photo__img(src="img/photo.jpg")
+            .block
+              .about-left__item.col-md-auto
+                .about-desc.grad
+                  .about-desc__text
+                    | Разработка быстрых, адаптивных сайтов с валидной, кросс-браузерной версткой и интуитивно понятным для пользователя интерфейсом. Сайты-визитки, посадочные страницы, многостраничные сайты и интернет-магазины.
+                    | Также, имеется опыт в работе с дизайном для полиграфии: визитные карточки, листовки, буклеты и иная печатная продукция.
+            .about-left__item.col-md.block
+              .block_bg.h_100
+
+                .block__head
+                  .block__icon
+                    .icon-tech
+                  h6.block__title.h2 Технологии
+
+                .about-tech.block__content
+                  .about-tech__list
+                    .about-tech__item.text_double
+                      span.tooltip Sass
+                    .about-tech__item
+                      span.tooltip Sass
+                    .about-tech__item.text_double
+                      span.tooltip Sass
+                    .about-tech__item
+                      span.tooltip Sass
+                    .about-tech__item
+                      span.tooltip Sass
+                    .about-tech__item.text_double
+                      span.tooltip Sass
+                    .about-tech__item
+                      span.tooltip Sass
+                    .about-tech__item.text_double
+                      span.tooltip Sass
+                    .about-tech__item.text_double
+                      span.tooltip Sass
+                    .about-tech__item
+                      span.tooltip Sass
+
+        .about-right.col-md-7.col-lg-8
+          .block.block_bg
+            .block__head
+              .block__icon
+                .icon-study
+              h6.block__title.h2 Умения
+            .block__content
+              .skills
+                .skills__wrap
+                  .skills__bg
+                    h4.skills__title Фронтенд
+
+                    .skills__item
+                      +knob('HTML', '95')
+                    .skills__item
+                      +knob('CSS', '95')
+                    .skills__item
+                      +knob('JS', '55')
+
+                  .skills__bg
+                    h4.skills__title Бэкенд
+                    .skills__item
+                      +knob('PHP', '15')
+                    .skills__item
+                      +knob('Node.js', '10')
+                    .skills__item
+                      +knob('MySQL', '20')
+
+                  .skills__bg
+                    h4.skills__title Графика
+                    .skills__item
+                      +knob('PS', '80')
+                    .skills__item
+                      +knob('AI', '70')
+                    .skills__item
+                      +knob('CDR', '45')
+
+  section
+    .container.block.block_bg
+      .row
+        .block__head
+          .block__icon
+            .icon-on-off
+          h6.block__title.h2 Выполненные проекты
+        .block__content.col-md
+          include ../../blocks/slick-carousel_center/_slick-carousel_center

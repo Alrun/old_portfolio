@@ -1,3 +1,5 @@
+'use strict';
+
 // // Fix anchor
 // $(window).on('load', function(){
 //   var top = $(window.location.hash).offset().top;
@@ -6,8 +8,7 @@
 //   }, 600);
 // });
 
-$(document).ready(function(){
 
-
+$(document).ready(function () {
 
 });
