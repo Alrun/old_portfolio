@@ -2,37 +2,48 @@ header.header.tip-bg
 
   .container
     .row
-      .version Version 0.5.0
+      .version Version 0.9.0
 
     .row
-      .col-md-4.order-md-2
+      .col-md-6.order-md-2
         .main-circle
-          .main-circle__decor
-          .main-circle__content
-            h1 Alrun
-            p Web developer
+          .main-circle__wrap
+            .main-circle__decor
+            .main-circle__content
+              h1.main-circle__title Alrun
+              p.main-circle__desc Web developer
 
-      .col-md-4.order-md-3
-        .circle-right
-          .circle-right-line
-            p Text
-            p Text
-            p Text
-
-      .col-md-4.order-md-1
+      .col-md-3.order-md-1
         .circle-left
-          .circle-left-line
+          .circle-left__line
 
-          .social
-            .social__item
-              a.social__link(href="#")
-                i.icon-vk
-            .social__item
-              a.social__link(href="#")
-                i.icon-facebook
-            .social__item
-              a.social__link(href="#")
-                i.icon-skype
-            .social__item
-              a.social__link(href="#")
-                i.icon-viber
+          .circle-left__content
+            .social
+              .social__item
+                a.social__link(href="https://vk.com/id56336273", target="_blank")
+                  i.icon-vk
+              .social__item
+                a.social__link(href="https://www.facebook.com/alex.run.756", target="_blank")
+                  i.icon-facebook
+              .social__item
+                a.social__link(href="#")
+                  i.icon-skype
+              .social__item
+                a.social__link(href="#")
+                  i.icon-viber
+
+      .col-md-3.order-md-3
+        .circle-right
+          .circle-right__line
+          .circle-right__content
+            .contacts
+              .contacts__left
+                .contacts__item Github:
+                .contacts__item E-mail:
+                .contacts__item Phone:
+                .contacts__item Address:
+              .contacts__right
+                .contacts__item https://github.com/Alrun
+                .contacts__item alrun-mail@yandex.ru
+                .contacts__item +7 930 116 15 20
+                .contacts__item Russia, Yaroslavl

@@ -4,51 +4,51 @@ main.home
     .container
       .row
 
-        .about-left.col-md-5.col-lg-4
-
+        .about-left.col-md-4
           .about-left__wrap.row.flex-column
-            .block
-              .about-left__item.col-md-auto
+
+            .about-left__item.block
+              .col-md-auto
                 .about-photo
-                  img.about-photo__img(src="img/photo.jpg")
-            .block
-              .about-left__item.col-md-auto
+                  img.about-photo__img(src="img/photo.jpg", alt="")
+
+            .about-left__item.block
+              .col-md-auto
                 .about-desc.grad
                   .about-desc__text
                     | Разработка быстрых, адаптивных сайтов с валидной, кросс-браузерной версткой и интуитивно понятным для пользователя интерфейсом. Сайты-визитки, посадочные страницы, многостраничные сайты и интернет-магазины.
                     | Также, имеется опыт в работе с дизайном для полиграфии: визитные карточки, листовки, буклеты и иная печатная продукция.
+
             .about-left__item.col-md.block
               .block_bg.h_100
-
                 .block__head
                   .block__icon
                     .icon-tech
                   h6.block__title.h2 Технологии
-
                 .about-tech.block__content
                   .about-tech__list
-                    .about-tech__item.text_double
+                    .about-tech__item.about-tech__item_big
+                      span.tooltip Gulp
+                    .about-tech__item
+                      span.tooltip SmaCSS
+                    .about-tech__item.about-tech__item_big
                       span.tooltip Sass
                     .about-tech__item
-                      span.tooltip Sass
-                    .about-tech__item.text_double
-                      span.tooltip Sass
+                      span.tooltip Bootstrap
+                    .about-tech__item.about-tech__item_big
+                      span.tooltip Git
                     .about-tech__item
-                      span.tooltip Sass
+                      span.tooltip Bem
                     .about-tech__item
-                      span.tooltip Sass
-                    .about-tech__item.text_double
-                      span.tooltip Sass
+                      span.tooltip SVG
                     .about-tech__item
-                      span.tooltip Sass
-                    .about-tech__item.text_double
-                      span.tooltip Sass
-                    .about-tech__item.text_double
-                      span.tooltip Sass
+                      span.tooltip Git-Flow
                     .about-tech__item
-                      span.tooltip Sass
+                      span.tooltip WordPress
+                    .about-tech__item.about-tech__item_big
+                      span.tooltip Pug
 
-        .about-right.col-md-7.col-lg-8
+        .about-right.col-md-8
           .block.block_bg
             .block__head
               .block__icon
@@ -65,7 +65,7 @@ main.home
                     .skills__item
                       +knob('CSS', '95')
                     .skills__item
-                      +knob('JS', '55')
+                      +knob('JS', '65')
 
                   .skills__bg
                     h4.skills__title Бэкенд
@@ -79,11 +79,11 @@ main.home
                   .skills__bg
                     h4.skills__title Графика
                     .skills__item
-                      +knob('PS', '80')
+                      +knob('PS', '85')
                     .skills__item
-                      +knob('AI', '70')
+                      +knob('AI', '75')
                     .skills__item
-                      +knob('CDR', '45')
+                      +knob('CDR', '65')
 
   section
     .container.block.block_bg

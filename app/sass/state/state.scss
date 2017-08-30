@@ -229,10 +229,32 @@
 //  margin-bottom: 1.5rem;
 //}
 
+
+
 .h_100 {
   height: 100%;
 }
 
 .overflow_hidden {
   overflow: hidden;
+}
+
+.cl_second {
+  color: $second !important;
+}
+
+.cl_second-dark {
+  color: $second-dark !important;
+}
+
+.bg_main-light {
+  background-color: $main-light;
+}
+
+.bg_second {
+   background-color: $second;
+}
+
+.bg_second-dark {
+  background-color: $second-dark;
 }

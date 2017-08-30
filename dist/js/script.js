@@ -266,17 +266,8 @@ d.slice(e-c+1,e+c+2).addClass("slick-active").attr("aria-hidden","false")),0===a
     ]
   });
 // });
-'use strict';
-
-// // Fix anchor
-// $(window).on('load', function(){
-//   var top = $(window.location.hash).offset().top;
-//   $('html, body').stop().animate({
-//     scrollTop: top
-//   }, 600);
+// 'use strict';
+//
+// $(document).ready(function () {
+//
 // });
-
-
-$(document).ready(function () {
-
-});
