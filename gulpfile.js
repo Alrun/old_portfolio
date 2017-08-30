@@ -259,6 +259,7 @@ gulp.task('app:prod', function () {
   return gulp.src([
     'dist/fonts/**/*.*',
     'dist/img/**/*.*',
+    'dist/vendor/**/*.*',
     'dist/robots.txt'
   ], {base: 'dist'})
     .pipe(gulp.dest('.'));
@@ -267,7 +268,7 @@ gulp.task('app:prod', function () {
 
 // BUILD
 gulp.task('build:dev', $.sequence('clean:dist', 'app:dev', 'pug:dev', 'js:dev', 'sass:dev'));
-gulp.task('build:prod', $.sequence('clean:prod', 'app:prod', 'htmlmin', 'js:prod', 'sass:prod', 'sitemap'));
+gulp.task('build:prod', $.sequence('clean:prod', 'favicon:generate', 'app:prod', 'htmlmin', 'js:prod', 'sass:prod'));
 
 gulp.task('default', $.sequence('build:dev', 'build:prod'));
 
