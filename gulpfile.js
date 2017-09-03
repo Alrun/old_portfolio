@@ -175,8 +175,6 @@ var plugJS = [
   'bower_components/slick-carousel/slick/slick.min.js',
   'app/blocks/slick-carousel_center/_slick-carousel_center.js',
 
-  // 'app/vendor/share42/share42.js',
-
   'app/js/common.js'
 ];
 
@@ -220,7 +218,7 @@ gulp.task('clean:prod', function () {
 
 // APP DEVELOP
 // Images
-gulp.task('img:dev', ['clean:img'], function () {
+gulp.task('img:dev', function () {
   return gulp.src([
     'app/img/**/*.{jpg,png,gif}',
     '!app/img/favicon.*' // исключить favicon

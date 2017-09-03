@@ -2,10 +2,9 @@
 
 @font-face {
   font-family: 'icons';
-  src:
-    url('#{$icomoon-font-path}/icons.ttf?kbvpj2') format('truetype'),
+  src: url('#{$icomoon-font-path}/icons.ttf?kbvpj2') format('truetype'),
     //url('#{$icomoon-font-path}/icons.svg?kbvpj2#icons') format('svg'),
-    url('#{$icomoon-font-path}/icons.woff?kbvpj2') format('woff');
+  url('#{$icomoon-font-path}/icons.woff?kbvpj2') format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -30,56 +29,67 @@
     content: $icon-email;
   }
 }
+
 .icon-facebook {
   &:before {
     content: $icon-facebook;
   }
 }
+
 .icon-github {
   &:before {
     content: $icon-github;
   }
 }
+
 .icon-on-off {
   &:before {
     content: $icon-on-off;
   }
 }
+
 .icon-phone {
   &:before {
     content: $icon-phone;
   }
 }
+
 .icon-skype {
   &:before {
     content: $icon-skype;
   }
 }
+
 .icon-study {
   &:before {
     content: $icon-study;
   }
 }
+
 .icon-tech {
   &:before {
     content: $icon-tech;
   }
 }
+
 .icon-viber {
   &:before {
     content: $icon-viber;
   }
 }
+
 .icon-vk {
   &:before {
     content: $icon-vk;
   }
 }
+
 .icon-web {
   &:before {
     content: $icon-web;
   }
 }
+
 .icon-wp {
   &:before {
     content: $icon-wp;
