@@ -1,21 +1,4 @@
 .page {
-	background-color: lighten($second-color, 12%);
-	background-image: url("../img/fon.png")
-}
-
-section:last-child {
-	margin-bottom: 3rem;
-}
-.home__why {
-	margin-bottom: 0 !important;
-}
-
-
-.footer__container,
-.downline__text {
-	font-size: 0.8125rem;
-}
-.downline__text {
-	padding-top: 0.5rem;
-	font-style: normal;
+	background-color: lighten($second, 10%);
+	background-image: url("../img/bg.png");
 }

@@ -15,30 +15,30 @@
 }
 
 // Options
-$enable-flex:               false !default;
-$enable-grid-classes:       true !default;
+$enable-flex: false !default;
+$enable-grid-classes: true !default;
 
 // Grid breakpoints
 $grid-breakpoints: (
-  xs: 0,
-  sm: 544px,
-  md: 768px,
-  lg: 992px,
-  xl: 1200px
+        xs: 0,
+        sm: 544px,
+        md: 768px,
+        lg: 992px,
+        xl: 1200px
 ) !default;
 @include _assert-ascending($grid-breakpoints, "$grid-breakpoints");
 
 // Grid containers
 $container-max-widths: (
-  sm: 576px,
-  md: 720px,
-  lg: 940px,
-  xl: 1140px
+        sm: 576px,
+        md: 720px,
+        lg: 940px,
+        xl: 1140px
 ) !default;
 @include _assert-ascending($container-max-widths, "$container-max-widths");
 
 // Grid columns
-$grid-columns:      12 !default;
+$grid-columns: 12 !default;
 $grid-gutter-width: 15px !default;
 
 @mixin clearfix() {
@@ -148,7 +148,7 @@ $grid-gutter-width: 15px !default;
           max-width: 100%;
           min-height: 1px;
           padding-right: ($grid-gutter-width / 2);
-          padding-left:  ($grid-gutter-width / 2);
+          padding-left: ($grid-gutter-width / 2);
         }
       }
 
@@ -182,7 +182,7 @@ $grid-gutter-width: 15px !default;
 @mixin make-container($gutter: $grid-gutter-width) {
   margin-left: auto;
   margin-right: auto;
-  padding-left:  ($gutter / 2);
+  padding-left: ($gutter / 2);
   padding-right: ($gutter / 2);
   @if not $enable-flex {
     @include clearfix();
@@ -205,7 +205,7 @@ $grid-gutter-width: 15px !default;
   } @else {
     @include clearfix();
   }
-  margin-left:  ($gutter / -2);
+  margin-left: ($gutter / -2);
   margin-right: ($gutter / -2);
 }
 
@@ -213,7 +213,7 @@ $grid-gutter-width: 15px !default;
   position: relative;
   min-height: 1px; // Prevent collapsing
   padding-right: ($gutter / 2);
-  padding-left:  ($gutter / 2);
+  padding-left: ($gutter / 2);
 
   // Prevent columns from becoming too narrow when at smaller grid tiers by
   @if $enable-flex {

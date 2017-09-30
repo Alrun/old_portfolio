@@ -1,5 +1,5 @@
 {
-  "name": "verstka_test_001",
+  "name": "mbeg",
   "description": "",
   "main": "index.js",
   "authors": [
@@ -18,7 +18,7 @@
     "jquery": "^3.1.1",
     "normalize-css": "normalize.css#^5.0.0",
     "jquery-migrate": "3.0.0",
-    "slick-carousel": "^1.6.0",
+    "slick-carousel": "~1.6.0",
     "magnific-popup": "^1.1.0"
   }
 }

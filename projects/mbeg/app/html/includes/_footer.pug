@@ -1,101 +1,105 @@
 footer.footer
-	.footer__container.container
-		.footer__row.row
-			.footer__item.col-md-6.col-lg-3.col-xl-4
-				.footer__logo
-					.logo
-						.logo__icon
-							+svg-icon('logo')
-						p.logo__text
-							|Общество с ограниченной ответственностью «МБ Инжиниринг Групп» (ООО «МБИ») – это профессиональная команда инженеров-проектировщиков и монтажников, которая предлагает Вам свои услуги в области проектирования и строительства различных объектов недвижимости и инженерных систем.
-			
-			.footer__item.col-md-6.col-lg-3.col-xl-3.text-lg-left
-				p.footer__title.h2.text_small Карта сайта
-				.footer-nav
-					ul.footer-nav__list
-						li.footer-nav__item
-							a.footer-nav__link(href="index.html") Главная
-						li.footer-nav__item
-							a.footer-nav__link(href="about.html") О компании
-						li.footer-nav__item
-							a.footer-nav__link(href="portfolio.html") Портфолио
-						li.footer-nav__item
-							a.footer-nav__link(href="montazh.html") Монтаж
-						li.footer-nav__item
-							a.footer-nav__link(href="project.html") Проектирование
-						li.footer-nav__item
-							a.footer-nav__link(href="contacts.html") Контакты
+  .footer__container.container
+    .footer__row.row
 
-			.footer__item.col-md-6.col-lg-3.col-xl-3
-				p.footer__title.h2.text_small Адрес
-				address.address
-					p.address__text г.Санкт-Петербург, ул.Якорная, д.13, литер А, офис 311. 
+      .footer__item.col-md-6.col-lg-4.text-md-left
+        .footer__logo
+          .logo
+            .logo__icon.logo__icon_footer
+              +svg-icon('logo', 'svg-logo_footer')
+            p.logo__text.text-xs-left
+              | Общество с ограниченной ответственностью «МБ Инжиниринг Групп» (ООО «МБИ») – это профессиональная команда инженеров-проектировщиков и монтажников, которая предлагает Вам свои услуги в области проектирования и строительства различных объектов недвижимости и инженерных систем.
 
-						a.address__link.footer-map.hidden-sm-down(href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.3578709979063!2d30.43407872929586!3d59.94279672170409!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631f855b811b5%3A0xbe2730b98941f0ee!2z0K_QutC-0YDQvdCw0Y8g0YPQuy4sIDEzLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTk1MjQ4!5e0!3m2!1sru!2sru!4v1496305502126") Карта
 
-					.address__text.footer-phone Тел: 
-						span.footer-phone__one.cl_main +7 (812) 937-59-77
-						.footer-phone__two.cl_main +7 (921) 855-51-66
-					.address__text E-mail: info@mbeg.ru
+      .footer__item.col-md-6.col-lg-2.text-md-right.text-lg-left
+        p.footer__title.h2.text_small Карта сайта
+        .footer-nav
+          ul.footer-nav__list
+            li.footer-nav__item
+              a.footer-nav__link(href="index.html") Главная
+            li.footer-nav__item
+              a.footer-nav__link(href="about.html") О компании
+            li.footer-nav__item
+              a.footer-nav__link(href="portfolio.html") Портфолио
+            li.footer-nav__item
+              a.footer-nav__link(href="montazh.html") Монтаж
+            li.footer-nav__item
+              a.footer-nav__link(href="project.html") Проектирование
+            li.footer-nav__item
+              a.footer-nav__link(href="contacts.html") Контакты
 
-			.footer__item.col-md-6.col-lg-3.col-xl-2.text-lg-left
-				p.footer__title.h2.text_small Поделиться
-				.share
-					.share42init(data-path="img/")
-			
-		.footer__row.row
-			.col-xs-10.offset-xs-1
-				.home__title.h2.text_small Наши партнеры
-				.row
-					.slider-partner.text-xs-center
-						
-						.slider-partner__item
-							a.slider-partner__link(href="partners-2.html#tt")
-								+svg-icon('p-tt')
-						.slider-partner__item
-							a.slider-partner__link(href="partners-2.html#kvartira")
-								+svg-icon('p-kvartira', 'text_double')
-						.slider-partner__item
-							a.slider-partner__link(href="partners.html#ikea")
-								+svg-icon('p-ikea', 'text_double')
-						.slider-partner__item
-							a.slider-partner__link(href="partners.html#fazer")
-								+svg-icon('p-fazer')
-						.slider-partner__item
-							a.slider-partner__link(href="partners.html#kidburg")
-								+svg-icon('p-kidburg', 'text_double')
-						.slider-partner__item
-							a.slider-partner__link(href="partners.html#technosbit")
-								+svg-icon('p-technosbit', 'text_big')
-						.slider-partner__item
-							a.slider-partner__link(href="partners.html#mega")
-								+svg-icon('p-mega', 'text_double')
-						.slider-partner__item
-							a.slider-partner__link(href="partners.html#yota")
-								+svg-icon('p-yota')
-						.slider-partner__item
-							a.slider-partner__link(href="partners.html#aviasales")
-								+svg-icon('p-aviasales', 'text_double')
-						.slider-partner__item
-							a.slider-partner__link(href="partners.html#wp")
-								+svg-icon('p-wp', 'text_big')
-						.slider-partner__item
-							a.slider-partner__link(href="partners-2.html#minimax")
-								+svg-icon('p-minimax', 'text_double')
-						.slider-partner__item
-							a.slider-partner__link(href="partners-2.html#nepspb")
-								+svg-icon('p-nepspb', 'text_double')
-						.slider-partner__item
-							a.slider-partner__link(href="partners-2.html#vibrotechmash")
-								+svg-icon('p-vibrotechmash', 'text_double')
-						.slider-partner__item
-							a.slider-partner__link(href="partners.html#yes")
-								+svg-icon('p-yes')
-						.slider-partner__item
-							a.slider-partner__link(href="partners.html#daikin")
-								+svg-icon('p-daikin', 'text_double')
 
-	.footer__downline
-		.container
-			p.downline__text.h5.text-xs-center ©2017 МБ Инжиниринг Групп
-			include ../../vendor/yandex/yandex_metrika
+      .footer__item.col-md-6.col-lg-3.text-md-left
+        p.footer__title.h2.text_small Адрес
+        address.address
+          p.address__text г.Санкт-Петербург, ул.Якорная, д.13, литер А, офис 311.
+
+            a.address__link.footer-map.hidden-sm-down(href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.3578709979063!2d30.43407872929586!3d59.94279672170409!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631f855b811b5%3A0xbe2730b98941f0ee!2z0K_QutC-0YDQvdCw0Y8g0YPQuy4sIDEzLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTk1MjQ4!5e0!3m2!1sru!2sru!4v1496305502126") Карта
+
+          .address__text.footer-phone Тел:
+            span.footer-phone__one.cl_main +7 (812) 937-59-77
+            .footer-phone__two.cl_main +7 (921) 855-51-66
+          .address__text E-mail: info@mbeg.ru
+
+      .footer__item.col-md-6.col-lg-3.text-md-right.text-lg-left
+        p.footer__title.h2.text_small Поделиться
+        .share42-svg
+          .share42init
+          include ../../blocks/share42-svg/x16/share42-svgx16
+
+    .footer__row.row
+      .col-xs-10.offset-xs-1
+        .home__title.h2.text_small Наши партнеры
+        .row
+          .slider-partner.text-xs-center
+
+            .slider-partner__item
+              a.slider-partner__link(href="partners-2.html#tt")
+                +svg-icon('p-tt')
+            .slider-partner__item
+              a.slider-partner__link(href="partners-2.html#kvartira")
+                +svg-icon('p-kvartira', 'svg_x64')
+            .slider-partner__item
+              a.slider-partner__link(href="partners.html#ikea")
+                +svg-icon('p-ikea', 'svg_x64')
+            .slider-partner__item
+              a.slider-partner__link(href="partners.html#fazer")
+                +svg-icon('p-fazer')
+            .slider-partner__item
+              a.slider-partner__link(href="partners.html#kidburg")
+                +svg-icon('p-kidburg', 'svg_x64')
+            .slider-partner__item
+              a.slider-partner__link(href="partners.html#technosbit")
+                +svg-icon('p-technosbit', 'svg_x48')
+            .slider-partner__item
+              a.slider-partner__link(href="partners.html#mega")
+                +svg-icon('p-mega', 'svg_x64')
+            .slider-partner__item
+              a.slider-partner__link(href="partners.html#yota")
+                +svg-icon('p-yota')
+            .slider-partner__item
+              a.slider-partner__link(href="partners.html#aviasales")
+                +svg-icon('p-aviasales', 'svg_x64')
+            .slider-partner__item
+              a.slider-partner__link(href="partners.html#wp")
+                +svg-icon('p-wp', 'svg_x48')
+            .slider-partner__item
+              a.slider-partner__link(href="partners-2.html#minimax")
+                +svg-icon('p-minimax', 'svg_x64')
+            .slider-partner__item
+              a.slider-partner__link(href="partners-2.html#nepspb")
+                +svg-icon('p-nepspb', 'svg_x64')
+            .slider-partner__item
+              a.slider-partner__link(href="partners-2.html#vibrotechmash")
+                +svg-icon('p-vibrotechmash', 'svg_x64')
+            .slider-partner__item
+              a.slider-partner__link(href="partners.html#yes")
+                +svg-icon('p-yes')
+            .slider-partner__item
+              a.slider-partner__link(href="partners.html#daikin")
+                +svg-icon('p-daikin', 'svg_x64')
+
+  .footer__downline
+    .container
+      p.downline__text.h5.text-xs-center ©2017 МБ Инжиниринг Групп
+      include ../../vendor/yandex/yandex_metrika

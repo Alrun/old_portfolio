@@ -6,16 +6,16 @@ include ../_mixins
 
 html(lang='ru')
 
-	block head
-		include ../includes/_head
-	
-	body.page
-		include ../includes/_header
+  block head
+    include ../includes/_head
 
-		block body
-			include ../pages/_home
+  body.page
+    include ../includes/_header
 
-		include ../includes/_footer
+    block body
+      include ../pages/_home
 
-		block scripts
-			script(src="js/main.js", async)
+    include ../includes/_footer
+
+    block scripts
+      script(src="js/main.js", async)

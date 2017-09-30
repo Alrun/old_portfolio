@@ -1,0 +1,13 @@
+// Font
+$sans-serif: Tahoma, Verdana, Arial, sans-serif;
+$serif: serif;
+$font: 'Exo2', $sans-serif;
+
+// Variables
+$main: #47b900;
+
+$second: #000;
+$second-light: lighten($second, 5%);
+
+$third: #fff;
+$third-dark: darken($third, 15%);

@@ -1,18 +1,40 @@
 //- Symbol svg inject
 mixin svg-icon(name, mod)
-	- mod = mod || ''
-	svg(class="svg-" + name + ' ' + mod)
-		use(xlink:href="#" + name)
+  - mod = mod || ''
+  svg(class="svg-" + name + ' ' + mod)
+    use(xlink:href="#" + name)
 
 mixin svg-icon-full(name, mod)
-	- mod = mod || ''
-	div(class="svg-" + name + "__container")
-		svg(class="svg-" + name + "__icon" + ' ' + mod)
-			use(xlink:href="#" + name)
+  - mod = mod || ''
+  div(class="svg-" + name + "__container")
+    svg(class="svg-" + name + "__icon" + ' ' + mod)
+      use(xlink:href="#" + name)
 
 //- Examples
 //- +svg-icon-full('sec-two__map', 'red')
 
 //- +svg-icon('sec-two__map', 'green')
 
-include pages/portfolio/_works
+
+// Works portfolio
+mixin works(src, alt, title, type)
+
+  a.works__link(href= src)
+    .loupe
+      +svg-icon('loupe')
+    .works__img-wrap
+      img.works__img(src= src, alt= alt)
+    .works__desc
+      .works__title #{title}
+      .works__text #{type}
+
+mixin works-lazy(src, alt, title, type)
+
+  a.works__link(href= src)
+    .loupe
+      +svg-icon('loupe')
+    .works__img-wrap
+      img.works__img(src="/", data-lazy= src, alt= alt)
+    .works__desc
+      .works__title #{title}
+      .works__text #{type}

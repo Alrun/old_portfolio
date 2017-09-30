@@ -1,23 +1,23 @@
 head
-	block meta
-		meta(http-equiv='content-type', content='text/html; charset=utf-8')
-		meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
-		meta(http-equiv='x-ua-compatible', content='ie=edge')
-		meta(name='description', content=page.description)
-		meta(name='keywords', content=page.keywords)
+  block meta
+    meta(http-equiv='content-type', content='text/html; charset=utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    meta(http-equiv='x-ua-compatible', content='ie=edge')
+    meta(name='description', content=page.description)
+    meta(name='keywords', content=page.keywords)
 
-		title #{page.title}
+    title #{page.title}
 
-	block styles
-		link(rel='stylesheet', href='css/main.css')
-		include _styles
+  block styles
+    link(rel='stylesheet', href='css/main.css')
+    include _styles
 
-	block nav
-		style
-			|.home_active {
-			|	color: #47b900;
-			|	font-weight: 500;
-			|}
-			|.home_active:hover {
-			|	color: #47b900;
-			|}
+  block nav
+    style
+      | .home_active {
+      |  color: #47b900;
+      |  font-weight: 500;
+      | }
+      | .home_active:hover {
+      |  color: #47b900;
+      | }

@@ -1,55 +1,129 @@
+.footer {
+
+  &__item {
+    text-align: center;
+  }
+
+  &__title {
+    font-style: normal;
+    color: $third-dark;
+  }
+
+  &__container {
+    padding-top: 1rem;
+    font-size: 0.8125rem;
+  }
+
+  &__logo {
+    margin-top: 2rem;
+  }
+
+  &__downline {
+    margin-top: 4rem;
+    background-color: $second;
+  }
+}
+
 .logo__text {
-	padding-right: 45px;
-	line-height: 1.1;
-	color: $text-color;
+  padding-right: 45px;
+  line-height: 1.1;
+  color: darken($third, 30%);
 }
-.footer-nav__item + .footer-nav__item {
-	margin-top: 0.1875rem;
-}
+
 .footer-nav__link {
-	color: $title-color;
-	transition: all 0.2s;
-	
-	&:hover {
-		color: $main-color;
-	}
+  color: $third;
+  transition: all 0.2s;
+
+  &:hover {
+    color: $main;
+  }
 }
 
-.address__link {
-	border-bottom: 1px dashed;
-	border-color: $text-color;
-	text-transform: none;
-	font-style: italic;
-	color: $text-color;
-	transition: all 0.2s;
-}
-.address__link:hover {
-	color: $main-color;
-	border-color: $main-color;
-}
-.address__text {
-	color: $title-color;
+.footer-nav__item + .footer-nav__item {
+  margin-top: 0.1875rem;
 }
 
-.footer-phone__two {
-	margin-left: 1.65rem;
+.address {
+
+  &__link {
+    margin-left: 0.4em;
+    border-bottom: 1px dashed;
+    border-color: darken($third, 40%);
+    text-transform: none;
+    font-style: italic;
+    color: darken($third, 40%);
+    transition: all 0.2s;
+
+    &:hover {
+      color: $main;
+      border-color: $main;
+    }
+  }
+
+  &__text {
+    color: $third;
+  }
 }
 
+.footer-phone {
 
-.slider-partner__item {
-	margin: 0 15px;
+  &__one {
+    margin-left: 0.2em;
+  }
+
+  &__two {
+    margin-left: 2em;
+  }
 }
 
-.slider-partner__link {
-	display: block;
-	height: 64px;
+.slider-partner {
+
+  &__link {
+    display: block;
+    height: 64px;
+
+    &::before {
+      content: "";
+      display: inline-block;
+      height: 100%;
+      vertical-align: middle;
+    }
+  }
 }
-.slider-partner__link::before {
-	content: "";
-	display: inline-block;
-	height: 100%;
-	vertical-align: middle;
-}
+
 .slider-partner__item svg {
-	vertical-align: middle;
+  vertical-align: middle;
+}
+
+.downline__text {
+  padding-top: 0.5rem;
+  font-size: 0.8125rem;
+  font-style: normal;
+}
+
+@media (max-width: 767px) {
+  .logo {
+
+    &__text {
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+
+    &__icon_footer {
+      float: none;
+      margin-bottom: 1rem;
+    }
+
+    .svg-logo_footer {
+      font-size: 45px;
+    }
+  }
+}
+
+// Disable slide. Fix SVG in IE9-11
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .slider-partner .slick-list,
+  .slider-partner .slick-track {
+    transform: none !important;
+  }
 }

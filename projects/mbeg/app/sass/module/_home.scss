@@ -1,90 +1,119 @@
 .home__title {
-	margin-bottom: 2rem;
-	text-align: center;
+  margin-bottom: 2rem;
+  text-align: center;
 }
 
 .home-left__link:hover {
-	text-decoration: underline;
+  text-decoration: underline;
 }
 
-.shop__link-wrap {
-	margin-top: 2rem;
-	margin-bottom: 1rem;
+.shop {
+
+  &__link-wrap {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  &__link {
+    display: inline-block;
+    padding: 5px 20px;
+    border-radius: 10px;
+    transition: 0.6s;
+    background-color: lighten($second, 10%);
+    box-shadow: 1px 1px 15px $main;
+
+    &:hover {
+      transform: translateY(-5px);
+      background-color: lighten($second, 15%);
+      box-shadow: 1px 10px 25px $main;
+    }
+  }
 }
-.shop__link {
-	display: inline-block;
-	padding: 5px 20px;
-	border-radius: 10px;
-	background-color: transparent;
-	transition: all 1s;
-	background-color: lighten($second-color, 10%);
-	box-shadow: 1px 1px 15px $main-color;
-}
-.shop__link:hover {
-	background-color: lighten($second-color, 15%);
-	box-shadow: 1px 1px 30px #fff;
+.shop__icon svg {
+  font-size: 64px;
 }
 
+// Services section
+.uslugi {
 
-// uslugi
-.uslugi__main-title {
-	margin-bottom: 0;
-}
-.uslugi__item {
-	margin-top: 2rem;
-}
-.uslugi__icon {
-	fill: darken($title-color, 48%);
-}
-.uslugi__link {
-	margin: 0.5rem 0 1rem; 
+  &__main-title {
+    margin-bottom: 0;
+  }
+
+  &__item {
+    margin-top: 2rem;
+  }
+
+  &__icon {
+    fill: darken($third, 48%);
+  }
+
+  &__link {
+    margin: 0.5rem 0 1rem;
+  }
 }
 
-
-// projects
+// Projects section
 .slider-works {
-	margin-bottom: 4rem;
+  margin-bottom: 4rem;
+
+  &__img {
+    width: 100%;
+    padding: 0 15px 15px;
+  }
+
+  &__item {
+    margin-left: 7.5px;
+    margin-right: 7.5px;
+  }
+
 }
-.slider-works__img {
-	width: 100%;
-	padding: 0 15px 15px;
-}
+
 .slider-works .slick-dots {
-	text-align: center;	
+  text-align: center;
 }
+
 .slider-works .slick-dots li {
-	padding: 2px;
+  padding: 2px;
 }
-.slider-works__item {
-	margin-left: 7.5px;
-	margin-right: 7.5px;
-}
+
 .slider-works .works__desc {
-	background-color: lighten($second-color, 15%) !important;
+  background-color: lighten($second, 15%) !important;
 }
 
+// Why section
+.why {
 
-// why
-.home__why {
-	position: relative;
-	padding-bottom: 150px;
+  &__item {
+    margin-bottom: 2rem;
+  }
+
+  &__text {
+    font-size: 0.9375rem;
+  }
+
+  &__icon svg {
+    fill: $main;
+  }
 }
-.why__item {
-	margin-bottom: 2rem;
-}
-.why__text {
-	font-size: 0.9375rem;
-}
-.why__icon svg {
-	fill: $main-color;
+.build-wrap {
+  position: relative;
+  padding-bottom: 150px;
 }
 .building {
-	position: absolute;
-	bottom: 0;
-	opacity: 0.2;
-}
-.building__img {
-	width: 100%;
-	vertical-align: bottom;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  opacity: 0.2;
+
+  &__img {
+    width: 100%;
+    vertical-align: bottom;
+  }
 }
 
+@media (max-width: 543px) {
+  .slider-works .works__desc {
+    font-size: 0.9rem;
+  }
+}

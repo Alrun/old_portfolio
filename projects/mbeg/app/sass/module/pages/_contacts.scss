@@ -1,22 +1,29 @@
-.contacts__title {
-	margin-bottom: 0;
-}
-.contacts-address__text {
-	color: darken($title-color, 15%);
-}
-.contacts-map__iframe {
-	width: 100%;
-}
-.contacts__link {
-	border-bottom: 1px dotted darken($title-color, 25%);
-	color: darken($title-color, 25%);
-	transition: 0.25s;
+.contacts {
 
-	&:hover {
-		border-bottom: 1px dotted $main-color;
-		color: $main-color;
-	}
+  &__title {
+    margin-bottom: 0;
+  }
+
+  &__link {
+    border-bottom: 1px dotted darken($third, 25%);
+    color: darken($third, 25%);
+    transition: 0.25s;
+
+    &:hover {
+      border-bottom: 1px dotted $main;
+      color: $main;
+    }
+  }
+
+  &__btn {
+    margin-top: 1rem;
+  }
 }
-.contacts__btn {
-	margin-top: 1rem;
+
+.contacts-address__text {
+  color: darken($third, 15%);
+}
+
+.contacts-map__iframe {
+  width: 100%;
 }

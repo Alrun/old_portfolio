@@ -2,9 +2,11 @@
 .text-xs-left {
   text-align: left !important;
 }
+
 .text-xs-right {
   text-align: right !important;
 }
+
 .text-xs-center {
   text-align: center !important;
 }
@@ -183,29 +185,34 @@
 
 // Colors
 .cl_main {
-  color: $main-color;
+  color: $main;
 }
+
 .cl_second {
-  color: $second-color;
+  color: $third-dark;
 }
+
 .cl_title {
-  color: $title-color;
+  color: $third;
 }
 
 .bg_main {
-  background-color: $main-bg;
+  background-color: $second-light;
 }
+
 .bg_second {
-  background-color: $second-color;
+  background-color: $third-dark;
 }
 
 // Text-transform
 .text_up {
   text-transform: uppercase;
 }
+
 .text_low {
   text-transform: lowercase;
 }
+
 .text_norm {
   text-transform: none;
 }
@@ -213,6 +220,7 @@
 .text-italick {
   font-style: italic;
 }
+
 .text_no-italic {
   font-style: normal;
 }
@@ -226,25 +234,30 @@
 .text_small {
   font-size: 0.75rem;
 }
+
 .text_big {
   font-size: 1.5625rem;
 }
+
 .text_double {
   font-size: 2rem;
 }
 
+
 // Text-color
 .text_white {
-  color: darken($title-color, 10%);
+  color: darken($third, 10%);
   font-weight: 300;
 }
 
 .mt_0 {
   margin-top: 0;
 }
+
 .mt_1-5 {
   margin-top: 1.5rem;
 }
+
 .mb_1-5 {
   margin-bottom: 1.5rem;
 }

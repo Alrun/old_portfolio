@@ -1,0 +1,55 @@
+.share42init {
+  position: relative;
+  z-index: 2;
+}
+
+.share42-svg {
+  position: relative;
+  z-index: 1;
+
+  &__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  &__item {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin: 0 3px 6px 0;
+    vertical-align: top;
+    fill: #fff;
+    font-size: 10px;
+  }
+}
+
+.share42-svg__item > svg {
+  font-size: inherit;
+}
+
+.social-vk__share42 {
+  margin: -3px 0 0 -4px;
+}
+
+.social-ok__share42 {
+  margin: -2px 0 0 -3px;
+}
+
+.social-facebook__share42 {
+  margin: -3px 0 0 -5px;
+}
+
+.social-twitter__share42 {
+  margin: -3px 0 0 -5px;
+}
+
+.social-mail-ru__share42 {
+  margin: -3px 0 0 -3px;
+}
+
+.social-print__share42 {
+  margin: -3px 0 0 1px;
+}
